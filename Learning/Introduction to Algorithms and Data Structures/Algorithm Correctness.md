@@ -1,0 +1,2 @@
+# Algorithm Correctness
+We may need to prove an algorithm is correct. One way of doing this is with a **loop invariant**. This is similar to [[Proof by Induction]]. We start with an **initialization** where we ensure the condition is met at the start of execution. We prove **maintenance** that is if it is true before a loop iteration it will be true after. We then prove **termination** when the loop ends we can gain some useful property from the invariant being true.

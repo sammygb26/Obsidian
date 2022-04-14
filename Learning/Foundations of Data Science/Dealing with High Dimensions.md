@@ -1,0 +1,8 @@
+# Dealing with High Dimensions
+High dimensions can often be hard to work with for any data science techniques. This section will look at **Principal Component Analysis** which is a techniques that can be used to reduce the dimensionality of data.  The problem with high dimensional data is its hard to visualize for us and hard to interpret as well. Correlated variables can also cause problems and the more dimensions the more opportunity for correlation. This can also lead to problems with distance basted techniques as the idea of distance can be messed with things that are close in some dimensions may be far apart in others.
+
+# Dimensionality Reduction
+We will use *Principal Components Analysis*. A technique for dimensionality need to do two things reduce dimensions and perserve useful data. *PCA* does this in two steps. Rotate the data to get an interesting angle and ignore small details (hence loose as little data as possible). This a rotation can be given by an Orthogonal $d \times d$ matrix as the PCs are linear weighted combinations of the datapoints dimensions. To for each data point we have a $d$ dimensional vector we take a weighted sum over for heath PC hence overall we use matrix.
+
+# Influence of Original Variables on PC scores
+We can input the original variables purely by using unit vectors then the output point in the transformed space is the effect of that variable son the position of a transformed point.

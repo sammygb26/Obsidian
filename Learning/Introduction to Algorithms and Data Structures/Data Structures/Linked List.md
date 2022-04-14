@@ -1,0 +1,4 @@
+# Linked List
+A linked list is a data type which represent a list. The way it works is we have for each element in the list a pointer to the previous and next element. So from any element we don't know where all the other elements are only the local ones.
+![[Pasted image 20220211131726.png]]
+This is useful as we can have many nodes added onto this easily without copying the whole list. The problem is to find anything in the linked-list we will have to loop through all the values up to it to find it. Then this is also true for indexing into the array as we will have to follow the path and we don't know where to go from the outset. Hence this will take $\Theta(n)$ time for a list of length $n$.'#'

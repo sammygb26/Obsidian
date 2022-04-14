@@ -1,0 +1,1 @@
+When transforming data that has a long tail through the use of a logarithm it can be useful to use $log(x+1)$ instead of $log(x)$ when $x\ge0$ since this removed the possibility of  getting a large variety of negative values which could spread out the data more.
