@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Reasoning and Agents/Questions/Test.md",
+            "file": "Reasoning and Agents/Questions/Adversarial Search Questions.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#questio",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reasoning and Agents/Questions/Test.md",
+                "file": "Reasoning and Agents/Questions/Adversarial Search Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,8 +90,8 @@
   },
   "active": "3b515cfdd0c81c4a",
   "lastOpenFiles": [
-    "Reasoning and Agents/Questions/Test.md",
     "Reasoning and Agents/Questions/Adversarial Search Questions.md",
+    "Reasoning and Agents/Questions/Test.md",
     "Pictures/Pasted image 20220414133949.png",
     "Reasoning and Agents/Making Complex Decisions.md",
     "Reasoning and Agents/Making Simple Decisions.md",
