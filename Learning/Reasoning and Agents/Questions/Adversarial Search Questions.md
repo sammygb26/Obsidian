@@ -1,7 +1,7 @@
-What **problem** does adversarial search solve? #question 
-	Adversarial Search solves the problem of opponent based multi-agent systems. We cannot build a complete set of actions that will beat an opponent as we do not know what the opponent will do they are unpredictable. Instead we need a way of finding the best solution to what the opponent does.
-
+What problem does adversarial search solve? #question 
+Adversarial Search solves the problem of opponent based multi-agent systems. We cannot build a complete set of actions that will beat an opponent as we do not know what the opponent will do they are unpredictable. Instead we need a way of finding the best solution to what the opponent does.
 ---
+
 What is the idea behind the minimax algorithm? #question 
 	The idea is we know our opponent will try to pick the best choice of action every move. So we should assume they are picking the best move and chose the move that ensures we give them the worst options of moves.
 
