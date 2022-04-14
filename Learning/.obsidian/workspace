@@ -7,11 +7,9 @@
         "id": "3b515cfdd0c81c4a",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "Reasoning and Agents/Making Complex Decisions.md",
-            "mode": "source",
-            "source": false
+            "file": "Pictures/Pasted image 20220414133949.png"
           }
         }
       }
@@ -53,8 +51,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50078010559082,
-    "collapsed": true
+    "width": 216.50078010559082
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -70,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reasoning and Agents/Making Complex Decisions.md",
+                "file": "Pictures/Pasted image 20220414133949.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,6 +87,7 @@
   },
   "active": "3b515cfdd0c81c4a",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20220414133949.png",
     "Reasoning and Agents/Making Complex Decisions.md",
     "Reasoning and Agents/Making Simple Decisions.md",
     "Reasoning and Agents/Reasoning and Agents - Overview.md",
@@ -98,7 +96,6 @@
     "Reasoning and Agents/Probabilistic Reasoning Over Time.md",
     "Reasoning and Agents/Probabilistic Reasoning Over Time 2022-04-12 00_00_32.md",
     "Pictures/Pasted image 20220407213240.png",
-    "Reasoning and Agents/Probabilistic Reasoning.md",
-    "Reasoning and Agents/Quantifying Uncertainty.md"
+    "Reasoning and Agents/Probabilistic Reasoning.md"
   ]
 }
