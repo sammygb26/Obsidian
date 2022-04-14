@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Reasoning and Agents/Questions/Adversarial Search Questions.md",
+            "file": "Reasoning and Agents/Questions/Test.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "...",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reasoning and Agents/Questions/Adversarial Search Questions.md",
+                "file": "Reasoning and Agents/Questions/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "3b515cfdd0c81c4a",
   "lastOpenFiles": [
+    "Reasoning and Agents/Questions/Test.md",
     "Reasoning and Agents/Questions/Adversarial Search Questions.md",
     "Pictures/Pasted image 20220414133949.png",
     "Reasoning and Agents/Making Complex Decisions.md",
@@ -97,7 +98,6 @@
     "Reasoning and Agents/Search.md",
     "Reasoning and Agents/Quantifying Uncertainty 2022-04-12 00_00_32.md",
     "Reasoning and Agents/Probabilistic Reasoning Over Time.md",
-    "Reasoning and Agents/Probabilistic Reasoning Over Time 2022-04-12 00_00_32.md",
-    "Pictures/Pasted image 20220407213240.png"
+    "Reasoning and Agents/Probabilistic Reasoning Over Time 2022-04-12 00_00_32.md"
   ]
 }
