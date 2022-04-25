@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Reasoning and Agents/Questions/Adversarial Search Questions.md",
+            "file": "Reasoning and Agents/Questions/Search Questions.md",
             "mode": "source",
             "source": false
           }
@@ -19,86 +19,70 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f2118e0ff9aadc51",
-    "type": "split",
+    "id": "268d2880f8033532",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "e7a10725a06b77c4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "92e0631eac8f9100",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "4211ee6af4f62f79",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "tag:#questio",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "f32653c9589a1790",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "2700747e55efaf6d",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "tag:#erministic",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ],
-        "currentTab": 1
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 216.50078010559082
+    "currentTab": 0
   },
   "right": {
-    "id": "ff68a28e59093273",
-    "type": "split",
+    "id": "05664ba7fc4b0b99",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "02b30c20e0f2566f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3477e3a87de2d8ef",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Reasoning and Agents/Questions/Adversarial Search Questions.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
+        "id": "8f175616c9f5e765",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Reasoning and Agents/Questions/Search Questions.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
   "active": "3b515cfdd0c81c4a",
   "lastOpenFiles": [
+    "Reasoning and Agents/Questions/Search Questions.md",
+    "Reasoning and Agents/Questions/Problems Questions.md",
+    "Reasoning and Agents/Questions/Logical Agents Questions.md",
+    "Reasoning and Agents/Questions/Informed Search Questions.md",
+    "Reasoning and Agents/Questions/Environments Questions.md",
+    "Reasoning and Agents/Questions/Environment States Questions.md",
+    "Reasoning and Agents/Questions/Constraint Satisfaction Problems Questions.md",
+    "Reasoning and Agents/Questions/Agents Questions.md",
     "Reasoning and Agents/Questions/Adversarial Search Questions.md",
-    "Reasoning and Agents/Questions/Test.md",
-    "Pictures/Pasted image 20220414133949.png",
-    "Reasoning and Agents/Making Complex Decisions.md",
-    "Reasoning and Agents/Making Simple Decisions.md",
-    "Reasoning and Agents/Reasoning and Agents - Overview.md",
-    "Reasoning and Agents/Search.md",
-    "Reasoning and Agents/Quantifying Uncertainty 2022-04-12 00_00_32.md",
-    "Reasoning and Agents/Probabilistic Reasoning Over Time.md",
-    "Reasoning and Agents/Probabilistic Reasoning Over Time 2022-04-12 00_00_32.md"
+    "Reasoning and Agents/Questions/Test.md"
   ]
 }
