@@ -99,3 +99,5 @@ This rule underlies most of AI systems probabilistic inference. This can be expa
 ![[Pasted image 20220410230120.png]]
 
 The idea is that this can be used to switch the direction of inference. That is if we have $P(cause|effect)$ if we know the probability of cause and effect we can get $P(effect|cause)$ so we can get from a *causal* relation a *diagnostic* relation.
+
+[[Quantifying Uncertainty Questions]]

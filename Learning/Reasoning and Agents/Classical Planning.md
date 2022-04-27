@@ -69,6 +69,8 @@ We say an action is *applicable* if it can be the next step in some plan. We cal
 
 ## Heuristics
 
+
+
 ## Planning as Refinement of Partially Ordered Plans
 Previous approaches construct a linear sequence of actions as the final plan. The *POP* approach takes into account that some parts of the plan are independent and instead of having a strict order allows us to take many different sequences in the end. Instead of a list of actions in a sequence a *Partial Ordered Plan* is a set of actions with a set of sequence constraints that define that some will have to happen after others. We prefer to search through the space of plans rather than the space of actions sequences.
 
@@ -77,3 +79,5 @@ Previous approaches construct a linear sequence of actions as the final plan. Th
 We start with and empty plan $(a)$ consisting of a start state and a goal state. The algorithm then finds a *flaw* in this plan. An action is them made to correct for the flaw. For example we need $At(Space, Axle)$ to be true so we add the $PutOn(Space, Axle)$ as this is the only action that can make that true. This add more *open conditions* that do not resolve to an action from the start state. We add an ordering constrain that the new $PutOn$ action must be done before $Finish$ (although usually this is left out as of course everything is done before the end). If there is no correction for a *flaw* then the algorithm will backtrack and try another earlier option.
 
 Every step adding a new action we choose the *least commitment* possible to fix the flaw. For example when adding $Remove(Spare, Trunk)$ we require it to happen before $PutOn$ but no other action hence we keep our options as open as possible. Then also if there is a variable we leave it unbound or possible reduce its scope the least we can.
+
+[[Classical Planning Questions]]

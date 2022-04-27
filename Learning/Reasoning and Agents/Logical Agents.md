@@ -160,3 +160,5 @@ We can combine all above with a [[Search]] based agent to plan out a solution. T
 ![[Pasted image 20220212222148.png]]
 
 A major problem with this is as time goes on and we continue to add new predicates the time taken to compute the answer to a question goes up. So the time taken to get an answer goes up with the age of our agent. Another way is to replace the old states with a **belief state**. We then update this belief state using percept in a process called **state estimation**. The problem is the size of the we need to represent this belief state is very large. There will be $2^n$ possible values described by a belief state for $n$ propositions states we could encode as proposition which means there is $2^{2^n}$ possible evaluations for this. So
+
+[[Logical Agents Questions]]

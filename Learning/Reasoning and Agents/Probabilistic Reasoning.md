@@ -175,3 +175,4 @@ This gives the correct estimates we want for when we weight up all the sample we
 
 ![[Pasted image 20220411210449.png]]
 
+[[Probabilistic Reasoning Questions]]

@@ -55,3 +55,16 @@ It may be that our actions sometimes fail leaving us no closer to our goal. To t
 ![[Pasted image 20220409133638.png]]
 
 Again whether this actually works depends of if the all outcomes will happen or if there is a hidden state which means what we need to happen will never happen. We may need to **learn** to overcome this.
+
+## Searching with Partial Observations
+This is the case where we don't precisely know the state we are in instead we can make observations which narrow down what state we are in. This gives a *belief state* which is a set of possible states the agent may be in. Through further. If we have no percepts we are *Sensorless* and the problem becomes a Sensorless or *conformant* problem, where we attempt to coral all states to be the same through some sequence of actions. For example there are methods for orientating parts in a factory without knowledge of their initial orientation. This may be impossible if our actions are also non-deterministic as we cannot ensure we have completed any of the steps. Still the idea is to search in a belief state space to ensure we reach some goal state.
+
+When we have a partially observable state we have to say how the environment generates percepts for the agent. We might for example have a local dirt sensor and a positions sensor but not a sensor for surrounding dirt as in the vacuum bot example. The problem specification will include a $Percept(s)$ function that define the percept that will be achieved in some state $s$. If this is also non-deterministic then this will return a set of possible percepts. With partial observations the states that could have lead to a percept will be a set. A three step solution is given for integrating belief onto the Sensorless version.
+
+1. *Prediction* this is the same as the Sensorless problem where we predict a set of states from our current belief state given some action with will be $$\hat b=\text{Predict($b,a$)}$$
+2. *Observation prediction* here we determine a set of percepts $o$ that could be observed in the belief state. $$\text{Possible-Percepts($\hat b$)}=\{s:o=\text{Percept($s$) and $s\in\hat b$}\}$$
+3. *Update* stage is where we determine for each possible percept the belief state that would result form the percept. This will be a new belief state $b_o$ which is the set of states that could have given the percept.$$b_0=\text{Update($\hat b,o$)}=\{s:o=\text{Percept(s) and $s\in \hat b$}\}$$
+So we update our belief state given our action then we find what percepts we could observe then we reduce our belief state to be only those states that could have produced the action. If we combine this with the possible percepts we can get the $Results$ which is a list of possible results we could have obtained $$\text{Results}(b,a)=\{b_o:b_o=\text{Update}(\text{Predict}(b,a),o)\text{ and }$$$$o\in\text{Possible-Percepts}(\text{Predict}(b,a))\}$$
+
+
+[[Beyond Classical Search Questions]]

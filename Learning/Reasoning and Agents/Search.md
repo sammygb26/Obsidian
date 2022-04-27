@@ -124,3 +124,5 @@ The idea here is we search from a goals state and a start state at the same time
 ![[Pasted image 20220211222420.png]]
 
 These are alright but we can get better results by instead of using these **uninformed** searches using [[Reasoning and Agents/Search/Informed Search]]
+
+[[Search Questions]]

@@ -59,3 +59,5 @@ We want to try find best moves with a heuristic. An approach that makes sense is
 
 We can also store **transposition** where we arrive at the same position by multiple routs. We can store minimax values in a hash table in case they come up again. Then we can use this table to guide our search at the same time.
 
+[[Adversarial Search Questions]]
+

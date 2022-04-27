@@ -19,7 +19,7 @@ $A$ and $B$ can be through of as representing something the agent gets. We may n
 
 1. *Orderability* two things are either greater, lesser or equal in preference, we have to decide.
 2. *Transitivity* if we have three lotteries $A$ $B$ and $C$ and $A\succ B$ and $B\succ C$ then $A\succ C$
-3. *Continuity* if some lottery $B$ is between $A$ and $B$ in preference then there is some probability of getting $A$ or $C$ in another lottery which we would be indifferent to $B$ from.
+3. *Continuity* if some lottery $B$ is between $A$ and $C$ in preference then there is some probability of getting $A$ or $C$ in another lottery which we would be indifferent to $B$ from.
 4. *Substitutability* If an agent is indifferent to two lotteries $A$ and $B$ then it is also indifferent to a more complex lottery with $A$ or $B$ subbed in
 5. *Monotonicity* if we prefer $A$ to $B$ then we will prefer a lottery that gives a higher change of $A$ and $B$ otherwise
 6. *Decomposability* this means we can combine any sequence of lotteries into a larger lottery where each final outcomes has a summed probability form the outcomes of the more complex lottery
@@ -60,3 +60,5 @@ This is an example of a *decision network* it has three types of nodes
 We can also connect the utility directly to the random variables in this case it will be the expected utility instead as the random variables have a distribution that defines expected utility.
 
 ![[Pasted image 20220412194809.png]]
+
+[[Making Simple Decisions Questions]]

@@ -99,3 +99,5 @@ Without replanning our plans will therefore be fragile as our models must wok wi
 In the above diagram we see an agent who starts in $S$ and attempts to reach $G$ with $wholeplan$ this leaves it at state $S$ where it realizes it is in state $O$. From here the plan is *repaired* and then continues from $P$.
 
 The runs into problems if we find our self in a dead end like running out of power. But also when the outcome of our actions isn't non-deterministic but just depends on a value not measured like for example the can being empty. We can just retry to get it to work eventually it will never work to paint with an empty can. We can either *randomly* select form possible plans then or **learn**.
+
+[[Planning and Acting in the Real World Questions]]

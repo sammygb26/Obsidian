@@ -163,3 +163,5 @@ To get around this we can use either throw always samples with low likelihood an
 ![[Pasted image 20220412121227.png]]
 
 This algorithm is in fact *consistent* and keeps good probabilities as $N\to\infty$
+
+[[Probabilistic Reasoning Over Time Questions]]
