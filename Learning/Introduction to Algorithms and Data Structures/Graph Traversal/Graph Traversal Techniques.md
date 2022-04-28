@@ -8,3 +8,5 @@ The way we store a graph will change the asymptotic properties of how that graph
 
 **Adjacency Matrix** -> This is a data structure where we have for $n$ nodes a $n\times n$ matrix of binary values (other values can be used in the case of an unweighted graph). To look up a edge for a node $a$ to some $b$ we simply index in the matrix taking $O(1)$ time.
 ![[Pasted image 20220206121734.png]]
+
+[[Graph]]

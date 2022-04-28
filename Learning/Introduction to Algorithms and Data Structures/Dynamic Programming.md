@@ -16,6 +16,6 @@ This is a technique use for **optimization** where we want to find the **best** 
 You can just check if a program is suffering from recursion based inefficiency by running a memoized version.
 
 ## Problems
-Many problems can be solved via dynamic programming such as [[Coin Change]], [[Fibonacci Numbers]], [[Seam Carving]], [[Edit Distance]] and [[All-pairs shortest paths]].
+Many problems can be solved via dynamic programming such as [[Coin Change]], [[Fibonacci Numbers]], [[Seam Carving]], [[Edit Distance]], [[Viterbi Algorithm]] and [[All-pairs shortest paths]].
 
 [[Dynamic Programming Questions]]

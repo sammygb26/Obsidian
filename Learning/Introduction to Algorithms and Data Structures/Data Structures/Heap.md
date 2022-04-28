@@ -44,3 +44,8 @@ Since we do this at most $h$ times each time taking $\Theta(1)$ time it will tak
 We can extract the max simple by making a copy of the value stored and then swapping the last valid element into the place of the max element. This will mean we will sort this value all the way to the end of the heap in the process finding the correct choice for any conflict in which $Left$ or $Right$ is larger. Since this just does $\Theta(1)$ work with $O(lg(n))$ time used on $Max-heapify$. It will take overall $O(lg(n))$ time.
 
 ## Heapsort
+To perform a heap sort all we need is heap. This gives us a partial order to the elements however we can retrieve the max in time $O(lg\hspace{3pt}n)$. We we repeat this many times getting the "next max" each time. This can be appended to a list to give a final sorted order.
+
+![[Pasted image 20220428110340.png]]
+
+The time taken to run $HeapSort$ can be found to be $O(n\cdot lg\hspace{3pt} n)$ just as the minimum for any sorting algorithm. This is a *in-place* sorting algorithm. And is not *stable* so doesn't keep the same relative order after sorting.
