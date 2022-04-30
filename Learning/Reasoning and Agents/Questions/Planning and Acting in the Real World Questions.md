@@ -64,3 +64,53 @@ What problems can online planning not solve? #flashcard #RA #PlanningAndActingIn
 	Online planning cannot solve problems where something unknow is required to be understood to complete a task. For example if an agent runs out of power and can no longer perform some required action no amount of replanning will allow it to solve a problem if it doesn't understand how to recharge.
 
 ---
+What is a high level action? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	A high level action is an abstract action. It can be refined later in a sequence of more HLAs or primitive actions, eventually refining to a sequence of primitive actions. This is called an implementation.
+
+---
+What are primitive actions in the context of HLAs (high level actions)? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	Primitive actions are just standard actions. They cannot be broken down further into more simpler actions. That is they are where our actions hierarchy bottoms out.
+
+---
+What is an implementation of a HLA and what is a refinement of a HLA? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	An refinement of a HLA is a sequence of HLAs or primitive actions. An implementation is a refinement that is made up of only primitive actions.
+
+---
+When is a HLA said to achieve some goal? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	A HLA can be said to achieve some goal then at least one of its implementations would achieve the goal.
+
+---
+How is a hierarchical search performed in a planning setting using HLAs? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	A hierarchical search is performed by dividing some HLA plan for a problem. Then we continue to refine each part; finding a refinement that matches what each HLA should do until we have devised the whole solution.
+
+---
+What does it mean to search for an abstract problem? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	This means we search for a partial solution made up of unrefined HLAs. The details of how the plan will  be implemented isn't concrete however we ensure the HLAs all do their job to fulfill the overall plan.
+
+---
+What is the reachable set for a hierarchical plan and a sequence of hierarchical plans? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	The reachable set for a single HLA $h$ from a state $s$ is the set of states the HLA could possibly terminate at. The reachable set for a sequence will just be the union of every state reachable from given the final HLA from any state reachable from the rest of the plan. Denoted $Reach(s,h)$ or $Reach(s,[h_1,...h_n])$
+
+---
+What are the three ways a HLA can describe its effect on a variable other than how a standard action would effect it? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	1. $\tilde+$ can choose to make it true or leave it unchanged
+	2. $\tilde-$ can choose to make it false or leave it unchanged
+	3. $\tilde\pm$ can choose to make it true or false or leave it unchanged
+
+---
+What is the optimistic set of states reachable from some HLA? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	The optimistic set of states assumes that we can always choose fully between the states we can affect and there is no case where one choice in variable value make another impossible. Denoted $Reach^+(s,h)$
+
+---
+What is the pessimistic set of states reachable from some HLA? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	This pessimistic set of states assumes that we can only choose one variables value freely at once. So we can at most ensure the value of one variable when we expand. Denoted $Reach^-(s,h)$
+
+---
+Given the optimistic and pessimistic sets of reachable states for some HLA what can we conclude about some set of goal states? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	If the pessimistic set intersects with the goal set then our HLA is guaranteed to fulfil our goal. If the optimistic set doesn't intersect then our HLA is guaranteed to not be able to fulfill our goal. And if the optimistic set does intersect but the pessimistic set doesn't then we need to refine our HLA to understand if it can reach a goal state.
+
+---
+What does it mean for a HLA to have the downward refinement property of some goal? #flashcard #RA #PlanningAndActingInTheRealWorld 
+	It means at least one of the implementations of the HLA achieves the goal.
+
+---

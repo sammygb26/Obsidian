@@ -1,7 +1,7 @@
 # Inference in First-Order Logic
 We will attempt to interface with **First-Order Logic**  to get to a place where we can actually perform inference with it. First we can consider **reduction to propositional logic**. The following rules are different form the **extended interpretations** used in [[First-Order Logic]] these instead refer to new sentences and symbols created as we perform inference.
 
-**Universal Installation** -> If we have a statement with universal quantifiers we can use the rule of **universal instantiation**. This says that anything we can obtain from substituting a **ground term** into a variable can be inferred by a universal rule. This is written using **substitution** notation as seen in [[First-Order Logic]]. We can write this formally by saying that $Subst(\theta, \alpha)$ is the result of applying the substitution $\theta$ to the sentence $\alpha$. Then **universal instantiation** is the following
+**Universal Installation** -> If we have a statement with universal quantifiers we can use the rule of **universal instantiation**. This says that anything we can obtain from substituting a **ground term** into a variable within a universal statement is implied by that statement being true. This is written using **substitution** notation as seen in [[First-Order Logic]]. We can write this formally by saying that $Subst(\theta, \alpha)$ is the result of applying the substitution $\theta$ to the sentence $\alpha$. Then **universal instantiation** is the following
 
 ![[Pasted image 20220213191655.png]]
 
@@ -24,7 +24,7 @@ We can apply **UI** to remove the universal statement. We instead get the follow
  Now we have a proposition based knowledge base if we view all the **ground terms** as propositions such as $Evil(John)$. Now we can apply an algorithm such as those in [[Logical Agents]] to obtain any inference we want. There is a problem however if we have a **function symbol** we have **infinite ground terms**. For example if we have $Father(John)$ then we also have $Father(Father(John))$ and so on. None of our techniques can solve an infinite set of propositions. However there is a solution a **theorem** that if a sentence is entailed by the original first order knowledge base then there is a proof for any entailed sentence that take only a finite number of the propositionalized knowledge base. So we can solve this with a depth based approach starting with constant symbols then allowing 1 level of functions and then 2 and so on until we have found a proof. The problem is if the sentence isn't entailed the our recursion will never end! So **FOL** is **semidecidable** meaning we can tell if a sentence is entailed but not if its not entailed.
 
  ## Unification and Lifting
- One problem with the **propositionalization** approach is that there is not matching. For instance we all know not to generate the sentence $King(Richard)\land Greedy(Richard)\implies Evil(Richard)$ from the knowledge base in 9.1. The only sentences involved are the following.
+ One problem with the **propositionalization** approach is that there is not matching. For instance we all know not to generate the sentence $King(Richard)\land Greedy(Richard)\implies Evil(Richard)$ from the knowledge base in 9.1 as Richard isn't the king so we can never satisfy the preconditions. The only sentences involved are the following.
 
  ![[Pasted image 20220213211452.png]]
 
@@ -92,7 +92,21 @@ Once no new inferences can be made the **KB** is said to be at a **Fixed point**
 
 We want to do this all efficiently, a lot of the computation comes down to matching to find new inferences. We can store our knowledge by the **predicates** and **terms** but we would still need to find an optimal solution to look at them in to solve this. This is an **NP-hard** problem but we can use heuristics like **MRV** where we use inferences with rules that give the most flexibility as in [[Constraint Satisfaction Problems]].
 
-Another efficiency problem is how much we will generate that is irrelevant to our finial goal we will flood our until we reach our goal state.
+### Efficient Forward Changing
+#### Matching Rules Against Known FacTS
+This is the problem of filling out the conjuncts in the rules (a problem called *matching*). We may need to find an object for which many predicates are true. It can be inefficient to search through all objects fulfilling one predicate and then the next. Instead we can search through the predicates in the order of how many objects are in them. This will give us the least objects to search through. This would be using the *minimum remaining value* heuristic.
+
+#### Incremental Forward Chaining
+For some times step $t$ in the algorithms execution we will use all our knowledge to derive every possible new sentence. In the algorithm given we check every combination of statement every timestep. But if both statements used were present in the previous timestep then any sentence they could have derived would already be derived. Hence the only combinations worth looking at are combination containing at least one sentences derived in the previous timestep. 
+
+The way this is implemented is we only check a rule if one of the conjuncts it unifies with was generated in the previous timestep $t-1$ for timestep $t$. With this approach we can also index rules by what types of predicates they require. This way we only check a rule if at $t-1$ a matching conjunct was derived.
+
+#### Irrelevant Facts
+The problem here is we are trying to perform inference by considering every possible combination of variables. There may be some variables that are completely irrelevant to our goal conjunct however. If we know many rules are irrelevant to our goal we can restrict the set we consider to this. 
+
+One way to deal with this is to make new rules that are restricted to just the values we care about. We can do this by adding so called *magic facts*. Which just help with book keeping to make sure we are using facts on track. The magic set which applies to certain variables such that they can only have certain values. Hence restricting what options we can try out.
+
+
 
 ## Pattern Matching and [[Constraint Satisfaction Problems]]
 There is actually a strong connection between why the **CSP** heuristics work with **forward checking**. To se this if we take the Australia example we can reduce it to a **FOL** problem where the **constants** are the colors and the **predicates** are saying the different variables for the different states are the same.

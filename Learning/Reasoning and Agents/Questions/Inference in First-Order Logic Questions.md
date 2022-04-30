@@ -26,6 +26,10 @@ How can *unification* be used with *generalized modus ponens*? #flashcard #RA #I
 	*GMP* says if we have a statement of the form $p_1\land p_2\land ... p_n \implies q$ then if we have some $p_1^*, p_2^*...p_n^*$ that unifies with $p_1\land p_2\land ... p_n$ under some substitution $\alpha$ then we can imply $q$ with the substitution $\alpha$. So we can use unification to find this substitution and then infer the result.
 
 ---
+In what form must sentences be to be used by generalized modus ponens? #flashcard #RA #InferenceInFOL 
+	To be used in generalize modus ponens the statements must be in the form of a con
+
+
 What must we always do to our variables when *unifying*? #flashcard #RA #InferenceInFOL
 	We must *standardize apart* this means we give every variable a different name so that we aren't trying to unify so that two variable are the same when they shouldn't be.
 
@@ -63,5 +67,33 @@ What is *non-ground term binary resolution*? #flashcard #RA #InferenceInFOL
 ---
 What is *resolution*? #flashcard #RA #InferenceInFOL
 	Resolution is a technique where we reduce our *FOL* to *CNF* then we use *Non-ground Binary Resolution* to infer a contradiction with the negation of the statement we are trying to prove hence proving the whole thing. If all our $KB$ is in *CNF* then all the disjunctions can be used as parts of *non-ground binary resolution* we can continue to match to conjunctions until either we reach no remaining clauses in our disjunction (contradiction we can infer the opposite of what we were trying to resolve) or we can no longer apply rules hence we know under the substitution $\theta$ we have built up the statement we were trying to resolve can be true. 
+
+---
+What are the three main ways to improve the efficiency of forward? #flashcard #RA #InferenceInFOL 
+	The main types are 
+	*Incremental forward chaining* - new facts must be derived form rules unifying with a set of conjuncts containing at least one conjunct not present the in the last loop.
+	*Matching rules against known facts* - need to find a variable to unify into a rule. Can order which variables we look for by which predicate has the least objects in it.
+	*Irrelevant facts* - sections of rules may be left out if they aren't relevant to our query. Equally variable bindings can be restricted to a set that fit our goal.
+
+---
+How can incremental forward chaining improve the efficiency of forward chaining? #flashcard #RA #InferenceInFOL
+	Incremental forward chaining comes from the observations that with a standard forward chaining algorithm everything that can be inferred is inferred for each time step. So only a unification containing a conjunct from the last timestep has the potential of generating some new fact, so we don't need to evaluate any other. We can also index rules so that we only check ones matching conjunct types generated in the last timestep.
+
+---
+What is matching when it comes to forward chaining? #flashcard #RA #InferenceInFOL 
+	Matching in forward chaining is the task of finding sets of conjuncts to match into the premise of a rule.
+
+---
+
+How can matching in forward chaining be improved from a standard forward chaining algorithm? #flashcard #RA #InferenceInFOL 
+	Matching can be improved reducing the size of the set of variable substitutions we check. We can do this by storing possible variable bindings for conjuncts by the conjunct type they fulfill. This way to fill out all possible unifications with a conjugation we start with the conjunct with the fewest possible unifiers. If some variable is bound to multiple conjuncts then we can also start with the one that yields the fewest options. This way we have the least to check.
+
+---
+What is the problem of irrelevant facts in forward chaining? #flashcard #RA #InferenceInFOL 
+	The problem of irrelevant facts in forward chaining is the general problem that we may infer many statements and use entire rules that have nothing to do with the statement we are trying to entail.
+
+---
+How can we get past the problem of irrelevant facts in forward chaining? #flashcard #RA #InferenceInFOL 
+	To get around this problem we can use only a subset of rules that relate to our query. We can also restrict what variables can be used in some rule allowing us to restrict the values allow to a set of "magic" variables.
 
 ---

@@ -4,6 +4,40 @@ We have looked at basic logical planning in [[Classical Planning]] but in the re
 ## Time, Schedules and Resources
 
 ## Hierarchical Planning
+We cannot hope to plan down to the lowest possible detail and for all actions, this is just too hard a problem. Instead we need to plan at a higher level and using abstraction we can do this. This all comes from *hierarchical task networks* that is HTN planning.
+
+#### High Level Actions
+The lowest level set of actions are called *primitive actions* (these are the same as regular PDDL actions). High level actions can be *refined* to one or more a sets of these primitive actions called *refinements*. They themselves may be treated as their own planning problem for later. Seen below is a definitions of many possible refinements for an action.
+
+![[Pasted image 20220429165722.png]]
+
+HLA refinements can also contain other HLAs and have preconditions just like normal actions. A HLA refinements that doesn't contain further HLAs is called an *implementation*. The implementation of any HLA is a sequence made by adding together all the primitive actions gathered by expanding the HLA's sub-actions. We can say a HLA achieves a goal if one of its implementations does. When a HLA has one solution hence only one implementation we can easily find it's preconditions and effects. Otherwise we can either search through implementations to find one that works or we can use just the abstract HLA and reason about it on its own.
+
+#### Searching for Primative Solutions
+We can define a HLA recursively. To do this for example to refine the HLA $Act$ we get for any action $a_1$ which can be part of our refinement $[a_1,Act]$. We can then add a refinement to $[]$ which has the preconditions that the effect of $Act$ is already completed. This means once we have completed our action we can stop there. Expanding these HLAs it a search problem solved by a Hierarchical search. We can use any of the standard search techniques to do this.
+
+![[Pasted image 20220429173202.png]]
+
+#### Searhing for Abstract Solutions
+Here we must ensure for any HLA in a sequence at least one of its implementations does achieve what we need the HLA to do. We can then work the precise details out later. A HLA achieving this' description is said to have the *downward refinement property* hence all that is needed is for the HLAs to have this then we can reason about them. The problem comes when we can't know without expanding some HLA if it will achieve a goal as we have to inspect all its refinements to ensure this. But this can never be ensured if we don't know if the preconditions for any action action is satisfied. Instead we work with the *reachable set* of a HLA. Written as $Reach(s,h)$ for state $s$ and HLA $h$. Is the set of states that are reachable by any implementation of the HLA. The reachable set of a sequence is all the states reachable from any state reachable from the subsequence. Hence
+
+![[Pasted image 20220429175449.png]]
+
+We can say a HLA achieves a goal if its reachable set intersects with the set of goal states. This is *angelic semantics*. Where as with *demonic semantics* all reachable states must be goal states. The angelic comes from the agent choosing the eventual refinement. This way of defining a HLA means the effects can have many states for variables. Either it becomes negative, positive or we choose (positive, negative or both).
+
+1. $\tilde+$ means we can make something positive or leave it the same if we want to
+2. $\tilde-$ means we can make something negative (false) or leave it the same 
+3. $\tilde\pm$ means we can make something negative or positive or leave it the same
+
+We cannot capture the different combinations of these however for example a state may allow us to choose $\tilde\pm A$ and $\tilde\pm B$ individually but may to be able to ensure they are both positive. We can give two estimates of the true set $Reach$ therefore. $Reach^-$ the pessimistic set where we may only be able to ensure one variable at a time or $Reach^+$ the optimistic set where we choose for all variables.
+
+![[Pasted image 20220429181347.png]]
+
+If our optimistic set intersects with a goal but the pessimistic set doesn't then we cannot tell if a HLA will reach our goal. In this case we need to refine further to know for sure if we can reach the goal. Angelic search is the strategy used to solve these problems
+
+![[Pasted image 20220429182917.png]]
+
+The idea is to solve a problem we will begin by checking if the optimistic set of reachable states contains our goal state if not we have failed. We check if out plan pessimistically intersects with out solutions and if it does we expand it. If not then we will try to refine our plan to make the pessimistic option match out goal state.
 
 ## Planning and Acting in Nondeterministic Domains
 We aim to extend planning to handle partially observable, observable, nondeterministic and unknown environment. There are three types of planning that we can incorporate to deal with these states.

@@ -4,26 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "cd9a9aaf337be8ba",
+        "id": "2d2785d548ab36d3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Reasoning and Agents/First-Order Logic.md",
+            "file": "Introduction to Algorithms and Data Structures/Balance Trees.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "6fd354e8556b5c76",
+        "id": "656064c1449a8a74",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "Reasoning and Agents/Questions/Inference in First-Order Logic Questions.md",
-            "mode": "source",
-            "source": false
+            "file": "Pictures/Pasted image 20220430194204.png"
           }
         }
       }
@@ -52,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#RA",
+                "query": "tag:#questio",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reasoning and Agents/Questions/Inference in First-Order Logic Questions.md",
+                "file": "Pictures/Pasted image 20220430194204.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +97,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6fd354e8556b5c76",
+  "active": "656064c1449a8a74",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20220430194204.png",
+    "Introduction to Algorithms and Data Structures/Questions/Balance Trees Questions.md",
+    "Introduction to Algorithms and Data Structures/Balance Trees.md",
+    "Introduction to Algorithms and Data Structures/Sorting Algorithms/Insert Sort.md",
+    "Introduction to Algorithms and Data Structures/Questions/Sorting Algorithms Questions.md",
+    "Introduction to Algorithms and Data Structures/Sorting Algorithms/Merge Sort.md",
+    "Introduction to Algorithms and Data Structures/Asymptotic Analysis.md",
     "Reasoning and Agents/Questions/Inference in First-Order Logic Questions.md",
-    "Reasoning and Agents/Questions/First-Order Logic Questions.md",
-    "Reasoning and Agents/Questions/Making Complex Decisions Questions.md",
-    "Reasoning and Agents/Reasoning and Agents - Overview.md",
-    "Reasoning and Agents/First-Order Logic.md",
-    "Reasoning and Agents/Planning and Acting in the Real World.md",
-    "Reasoning and Agents/Questions/Planning and Acting in the Real World Questions.md",
-    "Reasoning and Agents/Questions/Making Simple Decisions Questions 2022-04-27 14_49_17.md",
-    "Reasoning and Agents/Questions/Making Simple Decisions Questions.md",
-    "Reasoning and Agents/Questions/Making Complex Decisions Questions 2022-04-27 16_37_44.md"
+    "Reasoning and Agents/Inference in First-Order Logic.md",
+    "Reasoning and Agents/Questions/Planning and Acting in the Real World Questions.md"
   ]
 }

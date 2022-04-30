@@ -9,5 +9,13 @@ When $n$ is a power of 2 the number of layers of subsists is $lg(n)$ then for ev
 #### Best and average
 Since to merge two list of size $m$ it will take at least $m$ comparisons that is to check one list is smaller than all the elements in the other list. For $2^k$ size lists for each level or merger it will take $\frac{n}{2}$ comparisons at least. With $lg(n)$ levels it will therefore take $\frac{n}{2}\cdot lg(n)$ comparisons in the best case. That is $O(n\cdot lg(n))$
 
+![[Pasted image 20220430181820.png]]
+
+This is the algorithm for merging sections of the already sorted arrays. This part of the algorithms makes it no longer *in place* as it requires two extra arrays. The only way to make the algorithm in fact in place would increase the time complexity to $O(n^2\cdot ln\hspace{3pt}n)$. 
+
+![[Pasted image 20220430182307.png]]
+
+This is the full algorithm as given.
+
 
 

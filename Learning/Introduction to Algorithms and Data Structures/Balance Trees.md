@@ -93,3 +93,5 @@ This again can continue reclusively if the parent is black. Then the blackness c
 ![[Pasted image 20220224115750.png]]
 
 ![[Pasted image 20220224115812.png]]
+
+[[Balance Trees Questions]]
