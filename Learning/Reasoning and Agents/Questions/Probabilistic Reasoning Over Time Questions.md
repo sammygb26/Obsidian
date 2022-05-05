@@ -50,7 +50,7 @@ How can the filtering and backwards messages be simplified in a hidden Markov mo
 	The transition matric $T$ is a $S\times S$ matric (when we have $S$ states in the state) that for some cell $i,j$ gives the change of some $i$ state becoming the $j$ state. Hence a vector distribution can be taken in an weighted to give a new distribution. We can use the transpose of the matrix to update a message from the future. When we update with some perceptions taken into account we need to reweight the vector based on how likely the output is. We can use a diagonal matrix for each time splice to do this. It will take in some vector in $R_S$ and multiply each value by some number that is the likelihood of the perceptions given the state. This allows us to represent the filtering message as $f_{1:t+1}=\alpha O_{t+1}T^Tf_{1:t}$ and the backwards message as $b_{k+1:t}=TO_{k+1}b_{k+2:t}$
 
 ---
-What are th parts of a Bayesian network? #flashcard #RA #ProbabilisticReasoningOverTime 
+What are th parts of a Dynamic Bayesian network? #flashcard #RA #ProbabilisticReasoningOverTime 
 	The parts are a collection of state Random variable. The interaction from one time slice to the next is captures by the transition model. There are also random variables we can perceive who values are conditional on the state variables. This connection is described in the emissions model or sensor model. We also describe an initial distribution for the state variables in the first time slice.
 
 ---

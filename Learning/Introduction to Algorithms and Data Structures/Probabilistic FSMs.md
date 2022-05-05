@@ -12,3 +12,5 @@ $$
 \sum_{q'\in Q, (q,a,q')\in\Delta}p_{q,a,q'}=1
 $$
 In this case the **probabilistic FSM** has a given change of accepting some string.
+
+[[[Probabilistic FSMs and Viterbi Questions]]

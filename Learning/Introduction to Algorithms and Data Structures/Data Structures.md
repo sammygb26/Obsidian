@@ -20,7 +20,7 @@ A list is a common required data type that will require similar functionality ov
 A [[Set]] is a collection of entries whose order doesn't matter. We can loop over all entries in a set and we can query if an element exists within a set.
 
 ## Dictionary
-A [[Dictionary]] is a collection of elements that aren't organized by some order but instead can be referenced by another element called a key. The dictionary given a key will return an element. If we implement a dictionary as a list we will have to check over all the elements until we find a matching key this will take on average $O(n)$ time. This can be reduced in our list is sorted as we can do a binary search taking $O(ln(n))$ time.
+A [[Introduction to Algorithms and Data Structures/Data Patterns/Dictionary]] is a collection of elements that aren't organized by some order but instead can be referenced by another element called a key. The dictionary given a key will return an element. If we implement a dictionary as a list we will have to check over all the elements until we find a matching key this will take on average $O(n)$ time. This can be reduced in our list is sorted as we can do a binary search taking $O(ln(n))$ time.
 
 There are many data structures that are common like [[Array]], [[Heap]], [[Linked List]], [[Tree]]
 All of these are valid and all have drawbacks and strengths.

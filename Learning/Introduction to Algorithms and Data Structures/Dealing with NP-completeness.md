@@ -61,3 +61,5 @@ We check if every literal is pure, in this case it is trivial hence we return tr
 5. The variable with the highest weighted sum of clause sizes where smaller clauses have higher weights.
 
 These are all *heuristics* and help speed up but don't guarantee a faster time. *DPLL* is the basic algorithm used in many *SAT* solvers.
+
+[[Dealing with NP-completeness Questions]]

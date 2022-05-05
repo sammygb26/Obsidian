@@ -54,3 +54,11 @@ How is a partially ordered plan found? #flashcard #RA #ClassicalPlanning
 	We find a flaw in the plan then add an action to take care of this. This may lead to more or less open conditions. If we can resolve these to our start state by adding more actions we have found a POP.
 
 ---
+What parts are needed to describe a partially ordered plan? #flashcard #RA #ClassicalPlanning 
+	To describe a partially ordered plan we need a list of actions in the plan. A list of orderings that describe the constraints on the plan. A list of links that describe why the plan has the constraints.
+
+---
+What is the benefit of partially ordered plans? #flashcard #RA #ClassicalPlanning 
+	Partially ordered plans search through a space of possible plans rather than simply what possible final plans exist. They allow for flexibility and choice when the plan is being executed while reducing the search space as search POP represents many actual plans.
+
+---

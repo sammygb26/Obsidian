@@ -53,11 +53,13 @@ What solutions are there. Since all squares must be positive we can do a *bounde
 $$
 x^2+y^3+z^2=42
 $$
-But cubes can be negative and positive hence we don't know the range of values we will have to look through. There has only recently solve din 2019 with the solution.
+But cubes can be negative and positive hence we don't know the range of values we will have to look through. There has only recently solved in 2019 with the solution.
 
 ![[Pasted image 20220329105108.png]]
 
 Hence these problems can be wildly harder. We also can't tell from the equation purely. The more general problem is deciding given a multivariable polynomial equation, we want to know if there is a solution. It has been proven there is no such solution and this is similar to the halting problem as we do an unbounded search and don't know how long it will run.
 
 ## Post's word problem
-This is another unsolvable problem. We consider string over a finite alphabet $\{a,b\}$ for example. We want to know if given two sets of strings we want to know if there is some string that can be formed by both a combination of those in one set and the other (where we can take the same element multiple times).
+This is another unsolvable problem. We consider strings over a finite alphabet $\{a,b\}$ for example. We want to know if given two sets of strings $A$ and $B$ (the strings are made out of the alphabet) if there is some string that can be formed by both a combination of those in one set and the other (where we can take the same element multiple times).
+
+[[Unsolvable Problems Questions]]

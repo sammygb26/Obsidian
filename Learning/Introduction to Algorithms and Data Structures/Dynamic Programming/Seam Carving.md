@@ -26,5 +26,7 @@ We are writing a function $opt(i,j)$ to find the cost of the minimum-cost vertic
 Setting $e_I$ to $\infty$ makes sure we don't go the edges of the image.
 
 To solve the problem we will have an $\textrm{opt}[i,j]$ array to keep track of the opt values. We will then keep another table $p[i,j]$ keeping track of the previous pixel from $(i,j)$ with the best value. Each table is bounded $[m]\textrm{x}[n]$. Since the $\textrm{opt}$ table only relied on the last row we can build it up row by row to get a solution.
+
 ![[Pasted image 20220124154023.png]]
+
 This will be our solution in this case. To calculate each opt it will take $O(1)$ work since its just finding the min of 3. We have to do this for the whole image so it is $O(nm)$ for finding all $\textrm{opt}$ values. The last loop will take $O(n)$ time. Then the top is $O(nm)$ hence overall it is $O(mn)$ time.

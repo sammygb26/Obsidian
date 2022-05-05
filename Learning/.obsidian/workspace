@@ -4,24 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "2d2785d548ab36d3",
+        "id": "953ee8025cafdd3a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Introduction to Algorithms and Data Structures/Balance Trees.md",
+            "file": "Introduction to Algorithms and Data Structures/Sorting Algorithms/Quick Sort.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "656064c1449a8a74",
+        "id": "48b35981538b0f17",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "Pictures/Pasted image 20220430194204.png"
+            "file": "Introduction to Algorithms and Data Structures/Questions/Sorting Algorithms Questions.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -50,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#questio",
+                "query": "tag:#flashcar",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pictures/Pasted image 20220430194204.png",
+                "file": "Introduction to Algorithms and Data Structures/Questions/Sorting Algorithms Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "656064c1449a8a74",
+  "active": "48b35981538b0f17",
   "lastOpenFiles": [
-    "Pictures/Pasted image 20220430194204.png",
-    "Introduction to Algorithms and Data Structures/Questions/Balance Trees Questions.md",
-    "Introduction to Algorithms and Data Structures/Balance Trees.md",
-    "Introduction to Algorithms and Data Structures/Sorting Algorithms/Insert Sort.md",
     "Introduction to Algorithms and Data Structures/Questions/Sorting Algorithms Questions.md",
-    "Introduction to Algorithms and Data Structures/Sorting Algorithms/Merge Sort.md",
-    "Introduction to Algorithms and Data Structures/Asymptotic Analysis.md",
-    "Reasoning and Agents/Questions/Inference in First-Order Logic Questions.md",
-    "Reasoning and Agents/Inference in First-Order Logic.md",
-    "Reasoning and Agents/Questions/Planning and Acting in the Real World Questions.md"
+    "Introduction to Algorithms and Data Structures/Sorting Algorithms/Quick Sort.md",
+    "Introduction to Algorithms and Data Structures/Sorting Algorithms/Sorting.md",
+    "Introduction to Algorithms and Data Structures/Sorting Algorithms/Quick Sort 2022-04-28 10_36_56.md",
+    "Introduction to Algorithms and Data Structures/Questions/Heap Questions.md",
+    "Introduction to Algorithms and Data Structures/Data Structures/Heap.md",
+    "Introduction to Algorithms and Data Structures/Satisfiability and NP-completeness.md",
+    "Introduction to Algorithms and Data Structures/Questions/P and NP Questions.md",
+    "Introduction to Algorithms and Data Structures/Data Structures.md",
+    "Introduction to Algorithms and Data Structures/Questions/Data Structures Questions.md"
   ]
 }

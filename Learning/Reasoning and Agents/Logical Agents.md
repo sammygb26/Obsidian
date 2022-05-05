@@ -90,9 +90,13 @@ Then we also have **And-Elimination** which basically means if we know the **con
 Now that we have these rules we can find a proof bringing us from our knowledge base to an inference and we can formulate it as a search with **Initial State** (KB), **Actions** (inferences), **Results** (inferences), **Goal** (inferred sentence). The benefit of doing it this way is we don't concern ourselves with propositions that aren't relevant.  We can also say propositional logic has **monotonicity** meaning that as we add information to our knowledge base we only increase information. A logic can be **nonmonotonic** if this isn't the case.
 
 We also need **resolution** in our inference. This is when we have some **disjunction** of literals but we know one of them to be false.
+
 ![[Pasted image 20220212192038.png]]
+
 here $l_i$ and $m$ are complementary literals meaning one is the negation of the other. This really means we are combining the two statements sentences which are both true and reducing the total size. The general rule is called **resolution**
+
 ![[Pasted image 20220212192627.png]]
+
 Where $m_j$ is the dual of $m_i$. To perform resolution we need to have a disjunction of literals without repetition. But repartition can be easily removed with a trivial inference where $(A\lor A)\models A$. The **resolution** rules makes sense as if two literals are duals one or the other is true. If this is the case either one sentence of the other is true without these literals as the sentence would only need to be true if the literal was false. If we ever find two dual literals in the same **disjunction** we know it will always be true so we can discard this statement.
 
 ## Conjunctive Normal Form
@@ -144,7 +148,7 @@ We would also need rules like this for every possible timestep. But we also need
 
 ![[Pasted image 20220212220140.png]]
 
-The problem is we would need to keep adding these axioms for every possible action this is called the **representational frame problem**. This is a problem as in the real world there are very many **fluents** so it becomes impossible to describe how the real world actually functions. We can just say it only changes when a certain action is taken as follows.
+The problem is we would need to keep adding these axioms for every possible action this is called the **representational frame problem**. This is a problem as in the real world there are very many **fluents** so it becomes impossible to describe how the real world actually functions. It would take $O(mn)$ frame axioms when $m$ is the number of different actions and $n$ is the number of fluents. We can just say it only changes when a certain action is taken as follows.
 
 ![[Pasted image 20220212220609.png]]
 

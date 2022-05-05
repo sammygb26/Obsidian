@@ -6,3 +6,5 @@ If we implement a dictionary as a list we will have to check over all the elemen
 
 ## [[Hash-Table]]s
 The idea behind hash tables is we would like to have a fixed array the length of the number of possible keys for a dictionary. But this space is far to large. We use a **hash function** which breaks a key into a value that varies over a much smaller range possible of our choosing. We then have a list in each of these **bins** that allows us to store multiple actual key pairs.
+
+[[Dictionary Questions]]

@@ -100,4 +100,7 @@ This rule underlies most of AI systems probabilistic inference. This can be expa
 
 The idea is that this can be used to switch the direction of inference. That is if we have $P(cause|effect)$ if we know the probability of cause and effect we can get $P(effect|cause)$ so we can get from a *causal* relation a *diagnostic* relation.
 
+#### Naive Bayes
+If we want to know th probability of a cause given many effects. We can use bayes to turn the relations around to a causal one.$$P(cause|effect_1,...effect_n)=P(cause)P(effect_1,...,effect_n|cause)$$We make a naïve bayes assumption if we further suppose that these effects are independent of each other. $$P(cause|effect_1,...effect_n)=P(cause)\prod_{i}P(effect_i|cause)$$
+
 [[Quantifying Uncertainty Questions]]

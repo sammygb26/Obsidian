@@ -17,7 +17,7 @@ We can use [[Breadth-First Search]] to traverse an unweighted graph in the short
 3. *while* $S$ still has fringe edges, we update as follows:
 	1. Consider the current *fringe edges* $(u,v)\in E$ with $u\in S$ with $v \in V-S$
 	2. We find $v^*\in V-S$ which is the *fringe vertex* with *minimum* $d[u^*]+w(u^*,v^*)$ looking over all fringe edges.
-	3. Assign $d[v^*]\leftarrow d[u^*]+w(u^*,v^*)$, the update $\pi[v^*]\leftarrow u^*$ and $S\leftarrow S\cup\{v^*\}$
+	3. Assign $d[v^*]\leftarrow d[u^*]+w(u^*,v^*)$, then update $\pi[v^*]\leftarrow u^*$ and $S\leftarrow S\cup\{v^*\}$
 	
 	*This can at most happen $n-1$ times since at this point all points will be in $S$ so there will be no fringe edges*
 

@@ -29,7 +29,7 @@ Lecture 7: Abstract data types: Lists stacks, queues
 [[Queue]]
 
 Lecture 8: Sets, dictionaries and hashing
-[[Dictionary]]
+[[Introduction to Algorithms and Data Structures/Data Patterns/Dictionary]]
 [[Set]]
 [[Hash-Table]]
 

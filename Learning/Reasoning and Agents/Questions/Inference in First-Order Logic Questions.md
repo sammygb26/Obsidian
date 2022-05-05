@@ -97,3 +97,13 @@ How can we get past the problem of irrelevant facts in forward chaining? #flashc
 	To get around this problem we can use only a subset of rules that relate to our query. We can also restrict what variables can be used in some rule allowing us to restrict the values allow to a set of "magic" variables.
 
 ---
+What is Logic Programming? #flashcard #RA #InferenceInFOL 
+	Logic Programming a technique for describing some knowledge to a compute so it can infer facts on it. The Logic Programmers give the computer rules in a language like Prolog for example. Then we can query the compute with statements we want it to find answers to.
+
+---
+What are three ways to improve the speed of Logic Programs within backward chaining? #flashcard #RA #InferenceInFOL 
+	We can instead of running a recursive program use a more dynamic approach where our path is stored in a stack; this makes it easier to find errors and can make other improvements easier to implement.
+	We can keep track of variable bindings at all times. Combined with using a stack instead of recursion this allows for simpler code that saves on space and time. Each path of bindings is called a *trial*.
+	We can compile our logic program so that the knowledge base is instilled into it and for each rule it can more efficiently find solution bindings.
+
+---

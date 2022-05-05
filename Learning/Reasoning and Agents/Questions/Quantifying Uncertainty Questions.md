@@ -61,3 +61,7 @@ Why is independence useful for real world computation? #flashcard #RA #Quantifyi
 	Independence allows us to break a large JDP into smaller independent pats that don't effect each other. Since the size of any JDP grows $O(2^n)$ for a number of RVs $n$ this can drastically reduce the size.
 
 ---
+What is a naïve bayes assumption? #flashcard #RA #QuantifyingUncertainty 
+	The naïve bayes assumption is when we assume that the effects of a cause are all conditionally independent given the cause. That is $P(cause|effect_1,...effect_n)=P(cause)\prod_{i}P(effect_i|cause)$
+
+---

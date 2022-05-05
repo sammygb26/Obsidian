@@ -18,3 +18,11 @@ Is merge-sort in place? #flashcard #IADS #SortingAlgorithms
 	No it isn't. The merge step requires the creation of two extra arrays. To sort in place would require a more complicated merge function taking the time complexity to $O(n^2\cdot ln\hspace{3pt}n)$.
 
 ---
+How does quick-sort work? #flashcard #IADS #Heap 
+	Quick sort works by taking some pivot point then sorting an array of values into a section less and a section greater than the pivot. Each of the smaller sections can then be further quick sorted recursively.
+
+---
+How does the partition algorithm for quicksort work? #flashcard #IADS #Heap 
+	The idea is we use two pointers to keep track of the end of the lesser values and the end of the greater values. Each time we move the greater one along and if the value is smaller we can move the lesser pointer along and swap. 
+
+---

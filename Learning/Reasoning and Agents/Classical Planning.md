@@ -80,4 +80,7 @@ We start with and empty plan $(a)$ consisting of a start state and a goal state.
 
 Every step adding a new action we choose the *least commitment* possible to fix the flaw. For example when adding $Remove(Spare, Trunk)$ we require it to happen before $PutOn$ but no other action hence we keep our options as open as possible. Then also if there is a variable we leave it unbound or possible reduce its scope the least we can.
 
+#### For Questions
+In order to put these orders into a questions we have to encode the actions we are using aswell as their ordering constraints. We then also need to add in the links. These describe what predicates link two statements together.
+
 [[Classical Planning Questions]]

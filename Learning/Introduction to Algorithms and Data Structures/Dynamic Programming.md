@@ -1,7 +1,7 @@
 # Dynamic Programming
 This is a technique use for **optimization** where we want to find the **best** solution to a problem. Hence these algorithms are more computationally difficult. The idea is to structure the problem in terms of a recurrence relation, this breaks our problem down into subproblems. If we can then find an [[Algorithm]] to *compute* and *store* all the subproblems we **may** need for our solution in polynomial time $O(n^k)$
 
-[[Divide and Conquer]] another problem solving tequniques where we split up some $n$ size problem into smaller ones. We can recursively do this and then we can take the smaller parts together to get the solution. The splitting up increases efficiency if the pieces are *proportionally* small enough. But if they are not these algorithms can be very costly taking exponential time $O(k^n)$
+Divide and Conquer another problem solving tequniques where we split up some $n$ size problem into smaller ones. We can recursively do this and then we can take the smaller parts together to get the solution. The splitting up increases efficiency if the pieces are *proportionally* small enough. But if they are not these algorithms can be very costly taking exponential time $O(k^n)$
 
 ## Common Features in Dynamic Programming
 1. Understand the problem well enough to understand the structure so that we can find solutions for smaller problems and bring them together. So we generalize so that we will compute **items we do not need** but are still less than the problem we are solving.

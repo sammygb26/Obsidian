@@ -1,11 +1,15 @@
 # All-pairs shortest paths
 We want for every pair of vertices $u$ and $v$ with a weighted graph and we want to find the shortest path values (negative weights are allowed, but no negative cycles that is a cycle whose total weight is negative).
+
 ![[Pasted image 20220126121156.png]]
-We know that without negatives loops it only makes sense to at most hit each vertex once in the shortest path so $n-1$ points in a path. As if there was a loop you could cut it out and reduce the distance or make no difference. S  o a vertex can only be in the graph one.
+
+We know that without negatives loops it only makes sense to at most hit each vertex once in the shortest path so $n-1$ points in a path. As if there was a loop you could cut it out and reduce the distance or make no difference. So a vertex can only be in the graph one.
 
 ## Floyd-Warshall Algorithm
 We will work with a pool of points with paths calculated for all points in.
+
 ![[Pasted image 20220126122207.png]]
+
 So $k$ will be increased slowly to $n+1$. So $k$ is the number of vertices allowed in a path from $i$ to $j$ and we for every $i$, $j$ slowly add vertices in until we have the full path. We are calculating $D^{<k+1}$ from $D^{<k}$. Here $d_p=\sum_i^pw(e_i)$. $V_k$ starts empty but we slowly add in relaxing the graph. We are basically building up a path slowly for each pair by slowly adding vertices from the overall group.
 
 If we note for any path from $i$ to $j$ in the one $D^{<k}$ ($D^{<k}[i,j]$) each path can at most have $k$ in it once when we move to $D^{<k+1}$. So there are two cases either $k$ isn't used in which case it is the same as before ($D^{<k+1}[i,j]=D^{<k}[i,j]$) or it is used once in which case $D^{<k+1}[i,j]=D^{<k}[i,k]+D^{<k}[k,j]$ (note its not a strictly allowed vertex but can be used here as an endpoint). Hence $D^{<k+1}[i,j]=min(D^{<k}[i,k]+D^{<k}[k,j], D^{<k}[i,j])$. This given the recurrence relation

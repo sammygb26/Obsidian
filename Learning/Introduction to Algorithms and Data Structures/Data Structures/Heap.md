@@ -49,3 +49,5 @@ To perform a heap sort all we need is heap. This gives us a partial order to the
 ![[Pasted image 20220428110340.png]]
 
 The time taken to run $HeapSort$ can be found to be $O(n\cdot lg\hspace{3pt} n)$ just as the minimum for any sorting algorithm. This is a *in-place* sorting algorithm. And is not *stable* so doesn't keep the same relative order after sorting.
+
+[[Heap Questions]]

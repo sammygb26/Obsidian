@@ -20,3 +20,5 @@ We can apply the **master theorem** to solve it. If we call $e=log_b\hspace{2pt}
 ![[Pasted image 20220224123449.png]]
 
 The way this works out is the relationship between $a$ and $b$ describes how the complexity shrinks relatively. But $k$ describes the complexity needed for each instance on its own. These forces are battling and whichever one has the creates influence will have the final say (accept if $e=k$ where there is some middle ground)
+
+[[The Master Theorem Questions]]

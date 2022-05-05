@@ -8,11 +8,11 @@ We focus on partial functions $f:N\to N$ (after all all data could just be one n
 ## Church-Turing Computable
 This was reached by many roads. One from the $\lambda$ calculus and one form FSM called (*Turing machines*). We can instead look at *register machines* a version made by *Marvin Minsky*.
 
-**Register Machine** - A register machine have a fixes finite set of *registers* (A, B ... I ). each can store any *natural number* (not memory constrained). We build machines by plugging together trivial components.
+**Register Machine** - A register machine have a fixes finite set of *registers* (A, B ... I ) each can store any *natural number* (not memory constrained). We build machines by plugging together trivial components.
 
 ![[Pasted image 20220329001346.png]]
 
-So the first one adds one to $C$ , the second removes a number from $E$ the third is a branch an splits it path based on a test of $F$. Then we have a merge which is really just ensuring that two paths becomes one. Finally we have an example where we can decrease $B$ while increasing $A$ until $B=0$. So adds $A$ to $B$. We can one we have made these simple components make larger machines using them as parts.
+So the first one adds one to $C$ , the second removes a number from $E$ the third is a branch an splits it path based on a test of $F$. Then we have a merge which is really just ensuring that two paths becomes one. Finally we have an example where we can decrease $B$ while increasing $A$ until $B=0$. So adds $B$ to $A$. We can once we have made these simple components make larger machines using them as parts.
 
 ![[Pasted image 20220329002134.png]]
 
@@ -45,3 +45,5 @@ We call the machine being simulated the *object machine*. Out universal machine 
 
 ## General-purpose Computer
 This gives the idea of general purpose computers. Since a values in the A register can program any universal machine (even another universal machine). So we can reuse the same machine for multiple algorithms. We program it with suitable inputs hence programmable computers that can do many things at once. The *hardware* is the universal machine and the *software* is the encoding of the program.
+
+[[Introduction to Computability Theory Questions]]
