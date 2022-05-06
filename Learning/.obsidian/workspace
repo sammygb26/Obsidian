@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "a7dfb909252b6e5f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Introduction to Algorithms and Data Structures/Graph Traversal/Topological Sort.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "7738bf80d72f3cc9",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Introduction to Algorithms and Data Structures/Questions/Graphs Questions.md",
+            "file": "Introduction to Algorithms and Data Structures/Grammars/LL(1) Predictive Parsing.md",
             "mode": "source",
             "source": false
           }
@@ -65,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50078010559082
+    "width": 216.50078010559082,
+    "collapsed": true
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -81,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Algorithms and Data Structures/Questions/Graphs Questions.md",
+                "file": "Introduction to Algorithms and Data Structures/Grammars/LL(1) Predictive Parsing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +90,15 @@
   },
   "active": "7738bf80d72f3cc9",
   "lastOpenFiles": [
+    "Introduction to Algorithms and Data Structures/Grammars/LL(1) Predictive Parsing.md",
+    "Introduction to Algorithms and Data Structures/Questions/LL(1) Predictive Parsing Questions.md",
+    "Introduction to Algorithms and Data Structures/The Master Theorem.md",
+    "Introduction to Algorithms and Data Structures/Questions/The Master Theorem Questions.md",
+    "Introduction to Algorithms and Data Structures/Questions/Dynamic Programming Questions.md",
     "Introduction to Algorithms and Data Structures/Questions/Graphs Questions.md",
     "Introduction to Algorithms and Data Structures/Graph Traversal/Topological Sort.md",
     "Introduction to Algorithms and Data Structures/Graph Traversal/Graph Traversal Techniques.md",
     "Introduction to Algorithms and Data Structures/Graphs.md",
-    "Introduction to Algorithms and Data Structures/Graph Traversal/Breadth-First Search.md",
-    "Mathematical Objects/Graph.md",
-    "Introduction to Algorithms and Data Structures/Introduction to Algorithms and Data Structures - Overview.md",
-    "Introduction to Algorithms and Data Structures/Dynamic Programming/Edit Distance.md",
-    "Introduction to Algorithms and Data Structures/Grammars/LL(1) Predictive Parsing.md",
-    "Introduction to Algorithms and Data Structures/Grammars/Parsing Context Free Languages.md"
+    "Introduction to Algorithms and Data Structures/Graph Traversal/Breadth-First Search.md"
   ]
 }

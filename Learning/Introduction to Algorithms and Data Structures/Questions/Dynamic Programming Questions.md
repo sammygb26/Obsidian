@@ -50,3 +50,9 @@ What is the main idea behind the Floyd Warshall algorithm? #flashcard #IADS #Dyn
 	The main idea is we only allow a restricted set of vertices to be used to find paths. We can then grow this set one at a time comparing the old path between two nodes with this new node in between or the old path without. Overtime this updates all the paths between any vertices to work with the most efficient one.
 
 ---
+What four properties do we need to consider a dynamic solution to a problem? #flashcard #IADS #Graphs 
+	1/2. We need to be able to break down a solution into smaller problems of the same type. We need a recurrence relation breaking larger instances in to smaller ones
+	3. We need to be able to organize the results for the subproblems in a polynomial bounded amount of space
+	4. We need an algorithm that controls the order of the subproblems solved such that we have computed many results we need in advance and so can take advantage of our recursion.
+
+---
