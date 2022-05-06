@@ -20,3 +20,5 @@ Where $n$ is the number of vertices and $m$ is the number of edges. $m$ will alw
 A *planer graph* is a graph that can be laid out on a 2d surface such that edges only touch at their endpoints. That is the edge lines don't overlap.
 
 A *traversal* is a strategy for visiting all vertices of a graph. There are two main types [[Breadth-First Search]] and [[Depth-First Search]]. ([[Graph Traversal Techniques]])
+
+[[Graphs Questions]]
