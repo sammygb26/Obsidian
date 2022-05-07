@@ -18,3 +18,7 @@ What does it mean for f=0(g)? #question
 	This means f is asymptotically bound to g. There is some value we can scale down g and some value we can scale it up such that after a certain value of n f will always remain in-between these two versions of g.
 
 ---
+Why is n!=O(2^(n/2)) and n!=Theta(2^n)? #flashcard #IADS #PnNP 
+	For $n>4$ we have $2^{n}<n!<2^{2n}$ hence $n!=\Omega(2^n)$ and $n!=O(2^{2n})$
+
+---

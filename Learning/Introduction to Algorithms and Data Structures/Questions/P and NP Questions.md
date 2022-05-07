@@ -30,3 +30,15 @@ Why is SAT **NP**? #flashcard #IADS #PnNP
 	**SAT** must be NP as if we are given some combination of propositional variable assignment to ($\top$ and $\bot$) then it will take time proportional to the length of the input sequence to find out what the final value is. This can be done character by character hence is polynomial bounded.
 
 ---
+How can we make a 2 variable clause into 3CNF? #flashcard #IADS #PnNP 
+	A 2 variable clause will be of the form $C_k=(l_1\lor l_2)$ we can replace this with two 3-CNF clauses adding in a dummy variables $y_k$ this will give $C_{k1}^*=(l_1\lor l_2\lor y_k)$ and $C_{k2}^*=(l_1\lor l_2\lor \bar{y_k})$. This way no matter the value of $y_k$, $(l_1\lor l_2)$ has to be true just as with the original clause.
+
+---
+How can we make a k clause with k>4 variable into a 3CNF form? #flashcard #IADS #PnNP 
+	We will introduce $k-3$ dummy variables $y_1,y_2,...,y_{k-3}$ for this. Then we will make $k-2$ clauses as follows. We make $C_1=(l_1\lor l_2\lor y_1)$ then $C_2=(\bar{y_1}\lor l_3\lor y_2)$ and in general for $2\le j\le k-3$  we have $C_j=(\bar{y_{j-1}}\lor l_{j+1}\lor y_j)$ and $C_{k-2}=(\bar{y_{k-3}}\lor l_{k-1}\lor l_k)$. This way if we have all dummies true then one of the last two variables must be true and if all dummies are false then the first two variables must be true. For any combination of assignment for the variables any true variable followed by a false one will leave some literal needing to be true. Hence no matter the assignment we will need to make at least one literal true just as in the original clause.
+
+---
+How can 3-SAT be encoded as a vertex cover problem? #flashcard #IADS #PnNP 
+	We can make a vertex for every positive and negative literal in each clause. So for 6 clauses we will have 3 * 6 = 18 literals. For each clause we make a triangle this way the minimum vertex cover must have one vertex from each triangle. We can then make edges between all the negated literals this way ensuring either $a$ is true or $\bar a$ is true.
+
+---

@@ -19,3 +19,7 @@ How does the LL1_Parse algorithm work? #flashcard #IADS #LL1PredictiveParsing
 	We always keep a stack of the remaining non-terminals that need to be expanded and terminals that need to match our tree. Then whenever we find a terminal we match it with the next element in our phrase (if it doesn't match we have an error), we can not move to the next character in our phrase. If we have a non-terminal we need to look up its expansion in the parse table and then add this expansion to our stack (if there is no expansion we also have an error). By the end the stack should be empty and we should match the empty string to the final non-terminal.
 
 ---
+Why is LL(1) not a good fit for natural language? #flashcard #IADS #PnNP 
+	LL(1) isn't a good fit for language as it only deals well with unambiguous languages and therefore may not be able to parse NL in many cases. Even if it can it may remove genuine ambiguities that exits, picking one interpretation could therefore lead to misunderstanding.
+
+---
