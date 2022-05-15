@@ -7,7 +7,7 @@ How can a heap be encoded into an array? #flashcard #IADS #Heap
 
 ---
 How can a parent and left and right child indices be found form one another? #flashcard #IADS #Heap 
-	It depends of if the root is at 0 or 1. If its 0 then the parent will be $\lfloor i/2\rfloor$ for a child node $i$. Then for a parent node $i$ the left child will be $2i$ and the right child will be $2i+1$.
+	It depends of if the root is at 0 or 1. If its 0 then the parent will be $\lfloor i/2\rfloor$ for a child node $i$. Then for a parent node $i$ the left child will be $2i+1$ and the right child will be $2i+2$.
 
 ---
 How is the heap property maintained while making small changes to a heap? #flashcard #IADS #Heap 

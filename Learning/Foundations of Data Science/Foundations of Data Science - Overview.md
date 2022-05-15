@@ -22,7 +22,7 @@ Statistical tools:
 	[[Bootstrap Method]]
 	[[Hypothesis Testing]]
 	[[P-values]]
-	[[Confidence Intervals]]
+	[[Foundations of Data Science/Confidence Intervals]]
 	[[Statistical Preliminaries]]
 	[[AB Testing]]
 	[[Inferencing and Relationships]]

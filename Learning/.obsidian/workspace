@@ -4,24 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "7738bf80d72f3cc9",
+        "id": "cb2aebb7ed172f84",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Introduction to Algorithms and Data Structures/P and NP.md",
+            "file": "Fundamentals of Neuroscience/Passive Membrane Properties.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "5f81a91a0c1e258f",
+        "id": "e3107572f6a12bbb",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "Pictures/Pasted image 20220506161931.png"
+            "file": "Fundamentals of Neuroscience/Action Potential Propogation.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -50,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Graphs",
+                "query": "tag:#MachineLeanringMIT",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50078010559082
+    "width": 199.50078010559082
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -79,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pictures/Pasted image 20220506161931.png",
+                "file": "Fundamentals of Neuroscience/Action Potential Propogation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5f81a91a0c1e258f",
+  "active": "e3107572f6a12bbb",
   "lastOpenFiles": [
-    "Pictures/Pasted image 20220506161931.png",
-    "Introduction to Algorithms and Data Structures/Questions/Asymptotic Analysis Questions.md",
-    "Introduction to Algorithms and Data Structures/Questions/LL(1) Predictive Parsing Questions.md",
-    "Introduction to Algorithms and Data Structures/Questions/Heap Questions.md",
-    "Introduction to Algorithms and Data Structures/Questions/P and NP Questions.md",
-    "Introduction to Algorithms and Data Structures/P and NP.md",
-    "Introduction to Algorithms and Data Structures/Grammars/LL(1) Predictive Parsing.md",
-    "Introduction to Algorithms and Data Structures/The Master Theorem.md",
+    "Fundamentals of Neuroscience/Action Potential Propogation.md",
+    "Fundamentals of Neuroscience/Passive Membrane Properties.md",
+    "Fundamentals of Neuroscience/The Action Potential.md",
+    "Fundamentals of Neuroscience/Questions/The Action Potential Questions.md",
+    "Machine Learning MIT/Questions/Recurrent Neural Networks Questions.md",
     "Introduction to Algorithms and Data Structures/Questions/The Master Theorem Questions.md",
-    "Introduction to Algorithms and Data Structures/Questions/Dynamic Programming Questions.md"
+    "Fundamentals of Neuroscience/Questions/Resting Potential Questions.md",
+    "Fundamentals of Neuroscience/Questions/Passive Membrane Properties Questions.md",
+    "Pictures/Pasted image 20220513162424.png",
+    "Machine Learning MIT/Recurrent Neural Networks.md"
   ]
 }

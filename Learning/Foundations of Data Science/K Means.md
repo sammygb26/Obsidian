@@ -68,3 +68,5 @@ The reasons for this is that the error of the $E$ function is not taking into ac
 There is no correct way to do this without knowing some detail about the data. We can use a **scree plot** and we see as $K$ increases $E\to0$ We are looking for an elbow where the change in error for one more cluster becomes low. A problem can also arise when even though our error function is low locally we cannot move to the true lowest minimum.
 ![[Pasted image 20220131094621.png]]
 There is a lot of research into how to get rid of minimums. One way is using the **online** version instead of the **batch** version. In **batch** we assign all point then compute new means. In **online** we randomly assign points and after each assignment change the means. There is also the need for efficient distance measures. Another problem is the **curse of dimensionality** where distance becomes a worse measure and points becomes further apart with more and more dimensions. We can use **dimensionality reduction** techniques like [[Principle Components Analysis]] to get around this.
+
+[[K Means Questions]]

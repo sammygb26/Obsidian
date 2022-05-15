@@ -3,3 +3,4 @@ Lecture 1: Introduction
 
 Lecture 2: Recurrent Neural Networks
 [[Recurrent Neural Networks]]
+

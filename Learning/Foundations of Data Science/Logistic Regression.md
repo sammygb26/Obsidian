@@ -65,7 +65,7 @@ We can then fit our multiple regression model to the training data giving us our
 ![[Pasted image 20220118223941.png]]
 So this means the log odds increase by 1.881 when a person in employed vs not employed. Then the Odds or receiving a load goes up by a factor of 6.562 for a person we is employed bs not employed.
 
-### Bootstrap [[Confidence Intervals]] for coefficients
+### Bootstrap [[Foundations of Data Science/Confidence Intervals]] for coefficients
 ![[Pasted image 20220118224429.png]]
 *Note: These are really the distributions of $e^\hat{B_i}$* not just $\hat{B_i}$
 

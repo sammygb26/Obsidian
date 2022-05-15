@@ -86,7 +86,7 @@ The propagation happens through each instance of the *RNN* but also through each
 
 When we are calculating the gradients with respect to the state of the RNN $h_0$ involves *many-factors* of $W_{hh}$ and repeated computation of the gradients. Hence if the weight is continually greater than 1 our gradients can *explode* where gradients becomes extremely large (we can do gradient clipping by scaling back large gradients). Another problem is when our gradient values are smaller than 1 hence we get *vanishing gradients*. 
 
-## Vanishing Gradients
+## Vanishing Gradient Solutions
 We will look at 3 ways to solve this by cleverly choosing our activation function, my smart choice of weight initialization and then by changing the architecture. But why are they a problem. If we keep multiplying a small number by another smaller number (smaller than 1) this will cause the product to get smaller and smaller. This will cause errors the further back in time we go hence if can cause errors with taking gradients for relationships that are far back in time.
 
 ![[Pasted image 20220305145411.png]]
@@ -167,7 +167,7 @@ Another example is *machine translation*. This is how for example *google-transl
 
 ![[Pasted image 20220305155002.png]]
 
-Here the language is encoded into a *state vector* then we use a decoder that converts this to a different language sentence. There are some issues with this fore example we have an *encoding bottleneck* that goes from the encoder to the decoder. This limits the amount of information that can be stored. These *RNNs* are also quite slow as they need sequential processing of the data. This means they don't work well on modern GPU hardware since they are hard to parallelize. Then also to train the *RNN* we need to go from the decoded output all the way back to the input here we need t go through order $t$ networks to train. But this is more costly the larger the networks we are training will be. There is also no long term memory, *RNNs* have vanishing gradients, *LSTMs* work better but still not perfect.
+Here the language is encoded into a *state vector* then we use a decoder that converts this to a different language sentence. There are some issues with this fore example we have an *encoding bottleneck* that goes from the encoder to the decoder. We need to condense out input into the network which can loose a lot of the meaning.  These *RNNs* are also quite slow as they need sequential processing of the data. This means they don't work well on modern GPU hardware since they are hard to parallelize. Then also to train the *RNN* we need to go from the decoded output all the way back to the input here we need t go through order $t$ networks to train. But this is more costly the larger the networks we are training will be. There is also no long term memory, *RNNs* have vanishing gradients, *LSTMs* work better but still not perfect.
 
 ## Attention
 So overcome these problems a method called *attention* was devised. They way this works is the decoder component doesn't just have the single *state vector* to make the output but has access to every previous output form the *RNN* layers.
@@ -175,3 +175,23 @@ So overcome these problems a method called *attention* was devised. They way thi
 ![[Pasted image 20220305155656.png]]
 
 The network they weights and combines these different outputs and this is learned. The attention learn what from the input is important. This is more efficient as it doesn't pay the same amount of *attention* to every single state. This is more efficient as only a single pass through the attention layer is needed instead of backpropagation through time as it is learning to access memory in an efficient way.
+
+## Attention in Practice
+Attention is done through an *attention mask*. We can think about a search where we have a query then every result has a key. We measure the similarity to the key to decide on how much attention to pay to a given piece of information. We then extract value based on the information we are now paying attention to. This is analogous to how *self-attention* works in practice.
+
+The way this works in *self-attention* is we encode our values based on *position*. This is as since using attention we are trying to eliminate recurrence to get rid of its limitations but we still need to incorporate order in some way that previously came form the recurrence. We then extract our *query, key, value* for search, this is done by a linear matrix multiplication for each. We then *compute attention weighting*. As these are vectors we can compute the similarity between the key and query based on a dot product. We can also do this with a matrix giving a similarity matrix capturing the difference between the query and key matrices. We finally apply a SoftMax to get the values between 0 and 1.
+
+![[Pasted image 20220513162047.png]]
+
+We can then see in a heatmap the relationships between the words. so tossed and ball are related. We finally use this matrix to *extract feature with high weighting*. We can just multiply our value matrix through our attention matrix to finally get an output matrix of features we care about (high attention). In steps this is
+
+1. Encode *position* information
+2. Extract *query*, *key*, *value* for search
+3. Compute *attention weighting*
+4. Extract *features with high attention*
+
+![[Pasted image 20220513162424.png]]
+
+Transformer networks are most famous in language processing. 
+
+[[Recurrent Neural Networks Questions]]
