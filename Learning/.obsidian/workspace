@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "cb2aebb7ed172f84",
+        "id": "a5df0cb1725faad1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Fundamentals of Neuroscience/Passive Membrane Properties.md",
+            "file": "Fundamentals of Neuroscience/Action Potential Propagation.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "e3107572f6a12bbb",
+        "id": "b77928a85490bf33",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Fundamentals of Neuroscience/Action Potential Propogation.md",
+            "file": "Fundamentals of Neuroscience/Questions/Action Potential Propagation Questions.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#MachineLeanringMIT",
+                "query": "tag:#LogisticRegression",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fundamentals of Neuroscience/Action Potential Propogation.md",
+                "file": "Fundamentals of Neuroscience/Questions/Action Potential Propagation Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e3107572f6a12bbb",
+  "active": "b77928a85490bf33",
   "lastOpenFiles": [
-    "Fundamentals of Neuroscience/Action Potential Propogation.md",
-    "Fundamentals of Neuroscience/Passive Membrane Properties.md",
-    "Fundamentals of Neuroscience/The Action Potential.md",
-    "Fundamentals of Neuroscience/Questions/The Action Potential Questions.md",
-    "Machine Learning MIT/Questions/Recurrent Neural Networks Questions.md",
-    "Introduction to Algorithms and Data Structures/Questions/The Master Theorem Questions.md",
-    "Fundamentals of Neuroscience/Questions/Resting Potential Questions.md",
-    "Fundamentals of Neuroscience/Questions/Passive Membrane Properties Questions.md",
-    "Pictures/Pasted image 20220513162424.png",
-    "Machine Learning MIT/Recurrent Neural Networks.md"
+    "Fundamentals of Neuroscience/Questions/Action Potential Propagation Questions.md",
+    "Fundamentals of Neuroscience/Action Potential Propagation.md",
+    "Pictures/Pasted image 20220516163024.png",
+    "Pictures/Pasted image 20220516163313.png",
+    "Pictures/Pasted image 20220516163643.png",
+    "Pictures/Voltage_003_animated_v2.gif",
+    "Pasted image 20220516165248.png",
+    "Pictures/Pasted image 20220516153828.png",
+    "Machine Learning MIT/Convolutional Neural Networks.md",
+    "Foundations of Data Science/Questions/Hypothesis Testing Questions.md"
   ]
 }

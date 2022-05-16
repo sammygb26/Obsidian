@@ -5,7 +5,9 @@ This is to do with the classification problem (where a solution is [[K Nearest N
 Take a binary classification for a bank where we have to predict if a load is approved or not. We can see that for in the following example an age increase increases the approval chance so we want some line going from low with low age and high with high age for probability of approval.
 ![[Pasted image 20220118185223.png]]
 This isn't very useful however so instead we can use a contingency table showing the empirical probability (relative frequency) of having credit approved or not approved based on employment status. Below we are plotting (P(X=x, Y=y) where X is employment and Y is approval)
+
 ![[Pasted image 20220118190241.png]]
+
 In logistic regression we use odds which is calculated as follows.
 $$
 \textrm{Odds(Sucess)}=\frac{\textrm{P(Sucess)}}{\textrm{P(Failure)}}=\frac{\textrm{P(Sucess)}}{1-\textrm{P(Sucess)}}
@@ -17,8 +19,11 @@ $$
 $OR(x)$ means is how many times more likely you are to be successful in this case given that x is false compared to it bring true. That is the effect of being employed in this case increases your change of getting approved by 7.09 times. We say that the effect size if $OR(x)-1)$ (6.09 in this case).
 
 If we use a regression for the case above we will get a line that goes above 1 and below zero but this is impossible for or a probability so we need to modify this to make since. We do this with a logistic curve.
+
 ![[Pasted image 20220118192148.png]]
+
 This curve is $f(x)=\frac{e^x}{1+e^x}=\frac{1}{1+e^{-x}}$  hence $f(B_0 + B_1\cdot x) =\frac{1}{1-e^{-B_0 - B_1}}$ the following is what we get when we apply this to the above example
+
 ![[Pasted image 20220118192657.png]]
 
 ## Interpretation of Logistic Regression
@@ -32,7 +37,7 @@ $$
 $$
 This means that for $\textrm{Odds}=1$ we have $\textrm{Log Odds}=0$ meaning equal probability of success and failure. If $\textrm{Odds}>1$ then $\textrm{Log Odds}>0$ meaning success is more likely than failure. Finally if $\textrm{Odds}<1$ then $\textrm{Log Odds}<0$ meaning failure is more likely than success. We should noy also that if $P$ is probability of success then $P=\frac{1}{2}$ implies $\textrm{Odds}=1$. Then $P>\frac{1}{2}$ means $\textrm{Odds}>1$ and $P<\frac{1}{2}$ means $\textrm{Odds}<1$.
 
-When the $\textrm{Log odds}$ increase by 1 then the $\textrm{Log odds}$ will increase by $e$. When we refer to probability in terms of log odds we will then use logits (logistic units). We might might also see logistic regression written as $f(\hat{B_0})=x$ and $\hat{B_0}=z$ this just means $f(z)=\frac{1}{1+e^{-z}}=x$ when we have this $x$ is in logits and $z$ is normal. Hence also $z=ln\frac{x}{1-x}$ so we have
+When the $\textrm{Log odds}$ increase by 1 then the $\textrm{Odds}$ will increase by $e$. When we refer to probability in terms of log odds we will then use logits (logistic units). We might might also see logistic regression written as $f(\hat{B_0})=x$ and $\hat{B_0}=z$ this just means $f(z)=\frac{1}{1+e^{-z}}=x$ when we have this $x$ is in logits and $z$ is normal. Hence also $z=ln\frac{x}{1-x}$ so we have
 $$
 \textrm{logit}(p)=ln\frac{p}{1-p}
 $$
@@ -41,7 +46,7 @@ This is just the inverse of the logistic function. Hence the change in log odds 
 When we are using logits they are what is given by a regular [[Linear Regression]] where as our probability is given by the logistic function on the prediction from the regression. This is why $\hat{B_0}$ is measured in logits. 
 
 ### Logistic regression model in terms of log odds
-Success is $P(\textrm{Y=1|x})=f(\hat{B_0})+\hat{B_1}\cdot x)=\frac{1}{1+e^{-\hat{B_0}-\hat{B_1}\cdot x}}$ 
+Success is $P(\textrm{Y=1|x})=f(\hat{B_0}+\hat{B_1}\cdot x)=\frac{1}{1+e^{-\hat{B_0}-\hat{B_1}\cdot x}}$ 
 
 Failure is $P(\textrm{Y=0|x})=1-f(\hat{B_0})+\hat{B_1}\cdot x)=1-\frac{1}{1+e^{-\hat{B_0}-\hat{B_1}\cdot x}}=\frac{e^{-\hat{B_0}-\hat{B_1}\cdot x}}{1+e^{-\hat{B_0}-\hat{B_1}\cdot x}}$ 
 
@@ -107,7 +112,7 @@ KNN differs from logistic regression in a number of key ways
 *Transparent* meaning it can be easily understood why a data point was placed in a given category. This is since the score that determines log odds is a simple linear combination of the data points attributes $\underline{x}$ 
 
 ### Finding the Logistic Regression Coefficients with [[Principle of Maximum Likelihood]]
-In [[Linear Regression]] we estimated the $\hat{B_0}$ and $\hat{B_1}$ by the [[Principle of Least Squares]]. Finding the coefficient by minimizing the least squares function. With logistic regression we can use the principle of least squares. So the [[Principle of Maximum Likelihood]] will be used instead. In this we will adjust the coefficient to maximize the likelihood. These coefficient will then be called the **maximum likelihood estimators**.  We need an expression for the maximum loverhood to do this then we optimize with respect to our parameters. However we will have to use [[Numerical Optimization]] to do this instead of solving like in principle of least squares.
+In [[Linear Regression]] we estimated the $\hat{B_0}$ and $\hat{B_1}$ by the [[Principle of Least Squares]]. Finding the coefficient by minimizing the least squares function. With logistic regression we cannot use the principle of least squares. So the [[Principle of Maximum Likelihood]] will be used instead. In this we will adjust the coefficient to maximize the likelihood. These coefficient will then be called the **maximum likelihood estimators**.  We need an expression for the maximum likelihood to do this then we optimize with respect to our parameters. However we will have to use [[Numerical Optimization]] to do this instead of solving like in principle of least squares.
 
 First to help we will redefine success and failure from $y_i=0$ for failure and $y_i=1$ for success. We will change this to $y_i=-1$ for failure and $y_i=1$ for success. This them makes
 $$
@@ -131,7 +136,7 @@ P(Y=y_i|X=x_i)=f(yi(B_0+B_1x))
 $$
 We can then look at all datapoints together with a $n$ dimensional vectors $\underline{y}$ and $\underline{x}$ giving us
 $$
-P(Y=\underline{y}|X=\underline{x})=P(Y=y_1|X=x_1)P(Y=y_2|X=x_2)=\prod_{i=1}^nP(Y=y_i|X=x_i)
+P(Y=\underline{y}|X=\underline{x})=P(Y=y_1|X=x_1)P(Y=y_2|X=x_2)...=\prod_{i=1}^nP(Y=y_i|X=x_i)
 $$
 So from the above equation we the the bellow expression which is the **likelihood of the dataset given the model**/
 $$

@@ -41,7 +41,7 @@ We can use the [[Bootstrap Method]] and sample from a multinomial population wit
 ![[Pasted image 20220119121938.png]]
 *The orange line is a chi-squared distribution with 4 degrees of freedom*
 
-The number of degrees of freedom is the number of datapoints that actually define the distribution. In this case is is 4 since even through there are 5 ethnic groups they always sum to the same total $n$ so the 5th doesn't matter.
+The number of degrees of freedom is the number of datapoints that actually define the distribution. In this case is is 4 since even through there are 5 ethnic groups they always sum to the same total $n$ so the 5th doesn't matter, so there are $n-1$ degrees of freedom.
 
 #### Goodness-of-fit
 Now that we have a statistic to measure how well multiple categories fit an expected we can find [[P-values]] from this statistic. Large $\chi^2$ values therefore indicate poor **goodness-of-fit** while small ones may indicate that the data has been doctored in some way (a different type of extreme).

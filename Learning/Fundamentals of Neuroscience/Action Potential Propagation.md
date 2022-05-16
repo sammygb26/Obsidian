@@ -24,3 +24,5 @@ Giant axons can be hard to make and very large for longer distances instead in h
 
 The effect of myelin is it reduces the membrane resistances (by increased membrane (dielectric) thickness) and increases membrane resistance (by reducing permeability as ion channels are blocked by the myelin.)
 
+[[Action Potential Propagation Questions]]
+

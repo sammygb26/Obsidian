@@ -26,11 +26,13 @@ What are log odds? #flashcard #FDS #LogisticRegression
 	These are just the log of the odds. They shift the values so that negative log odds refer to odds between 0 and 1 and positive log odds refer to odds between 1 and infinity.
 
 ---
+What is a logit? #flashcard #FDS #LogisticRegression 
+	The logit or "logistic unit" for some probability $p$ is basically the corresponding log odds that  
 How can the coefficients of a logistic regression be interpreted? #flashcard #FDS #LogisticRegression
 	We can see that the **log odds** and **logistic function** are inverses. If we interpret the output of our linear model to be in log odds the two functions will cancel out and the probability behind log odds will becomes out output. Therefore we can interpret $\beta_0$ as the log odds when $x=0$ and we can interpret $\beta_1$ as the change in log odds corresponding to a change in $x$ of $1$.
 
 ---
-How might $\beta_1$and $\beta_0$ be interpreted in light of their connection to log odds? #flashcard #FDS #LogisticRegression
+How might $\beta_1$and $\beta_0$ be interpreted relative to their change in odds given their connection to log odds? #flashcard #FDS #LogisticRegression
 	Since if we interpret the output of the linear regression function to be in log odds then output of the function becomes probability. Hence we have $$Odds=e^{\hat\beta_0}\cdot e^{\hat\beta_1x}$$
 	This means a change $x$ by $1$ corresponds to an $e$ increase in $Odds$.
 
@@ -45,3 +47,5 @@ How can we interpret multiple $\beta_i$ coefficients in multiple logistic regres
 ---
 How can logistic regression be used as a classifier? #flashcard #FDS #LogisticRegression
 	Logistic regression gives us a predicted probability for an outcome we can pick a threshold probability to turn this into a classifier.
+
+---
