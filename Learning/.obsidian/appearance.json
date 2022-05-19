@@ -1,6 +1,6 @@
 {
-  "baseFontSize": 22,
+  "baseFontSize": 16,
   "theme": "moonstone",
   "translucency": false,
-  "cssTheme": "Things"
+  "cssTheme": "Primary"
 }

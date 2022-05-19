@@ -15,7 +15,7 @@ How does a concentration gradient and electrostatic force cancel out to give a e
 
 ---
 What is the **Nernst Equation** and what are its parts? #flashcard #FundamentalsOfNeuroscience #RestingPotential 
-	$E_{\textrm{ion}}=\frac{RT}{zF}ln\frac{\textrm{[ion]}_\textrm{extracellular}}{\textrm{[ion]}_\textrm{intracellular}}$ ,$E_{ion}$ is the Nernst potential (equilibrium potential) $R$ is the gas constant, $F$ Faraday's constant, $z$ ion valence, $T$ temperature and $[ion]_e$ and $[ion]_i$ are the concentrations of the ion inside and outside of the cell.
+	It is $E_{\textrm{ion}}=\frac{RT}{zF}ln\frac{\textrm{[ion]}_\textrm{extracellular}}{\textrm{[ion]}_\textrm{intracellular}}$ , $E_{ion}$ is the Nernst potential (equilibrium potential) $R$ is the gas constant, $F$ Faraday's constant, $z$ ion valence, $T$ temperature and $[ion]_e$ and $[ion]_i$ are the concentrations of the ion inside and outside of the cell.
 
 ---
 What is driving force? #flashcard #FundamentalsOfNeuroscience #RestingPotential
