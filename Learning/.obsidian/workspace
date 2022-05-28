@@ -4,14 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "55572ea6f342b4c3",
+        "id": "5b626626bf7ae259",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "Foundations of Data Science/Hypothesis Testing.md",
-            "mode": "source",
-            "source": false
+            "file": "Pictures/Pasted image 20220527175206.png"
           }
         }
       }
@@ -40,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#MachineLeanringMIT",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foundations of Data Science/Hypothesis Testing.md",
+                "file": "Pictures/Pasted image 20220527175206.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +85,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "55572ea6f342b4c3",
+  "active": "5b626626bf7ae259",
   "lastOpenFiles": [
-    "Foundations of Data Science/Hypothesis Testing.md",
-    "Foundations of Data Science/AB Testing.md",
-    "Pictures/Pasted image 20220517144327.png",
-    "Machine Learning MIT/Questions/Convolutional Neural Networks Questions.md",
-    "Machine Learning MIT/Convolutional Neural Networks.md",
+    "Pictures/Pasted image 20220527175206.png",
+    "Machine Learning MIT/Limitations and New Frontiers.md",
+    "Machine Learning MIT/Questions/Reinforcement Learning Questions.md",
+    "Machine Learning MIT/Reinforcement Learning.md",
+    "Machine Learning MIT/Questions/Deep Generative Modeling Questions.md",
     "Machine Learning MIT/Deep Generative Modeling.md",
-    "Foundations of Data Science/Multiple Regression.md",
-    "Fundamentals of Neuroscience/Resting Potential.md",
-    "Fundamentals of Neuroscience/Action Potential Propagation.md",
-    "Fundamentals of Neuroscience/Questions/Resting Potential Questions.md"
+    "Fundamentals of Neuroscience/Questions/The Syanpse Questions.md",
+    "Fundamentals of Neuroscience/Questions/The Synapse Questions.md",
+    "Pictures/Pasted image 20220527122604.png",
+    "Fundamentals of Neuroscience/Excitation and Inhibition.md"
   ]
 }

@@ -1,5 +1,5 @@
 # Deep Generative Modeling
-This is a different type of task where we generate synthetic new data base don some training subset. This is an example of *unsupervised learning*. As apposed to *supervised learning* where we have a pair of data $(x, y)$ and we want to learn the function $x\to y$. In *unsupervised* take just some data $x$ and we attempt to learn the underlying structure of the data. **Deep Generative Modeling** is an example of . We take in data that is distributed bellow some model and we want to generate out own model represents the the data.
+This is a different type of task where we generate synthetic new data based on some training subset. This is an example of *unsupervised learning*. As apposed to *supervised learning* where we have a pair of data $(x, y)$ and we want to learn the function $x\to y$. In *unsupervised* take just some data $x$ and we attempt to learn the underlying structure of the data. **Deep Generative Modeling** is an example of . We take in data that is distributed bellow some model and we want to generate out own model represents the the data.
 
 ![[Pasted image 20220517144327.png]]
 
@@ -125,3 +125,4 @@ The main idea here it that GANs are key is transferring between different distri
 
 ![[Pasted image 20220517170949.png]]
 
+[[Deep Generative Modeling Questions]]
