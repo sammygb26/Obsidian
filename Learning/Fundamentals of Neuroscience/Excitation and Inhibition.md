@@ -8,7 +8,7 @@ Synaptic transmission across the cleft only takes around a microsecond as the ne
 Now the *synapse* is actually quite wide and takes a millisecond to **escape**. This is a significant difference as the neuron needs to be able to register when a signal is observed in time exactly. If neurotransmitters stayed they could bind again and again to the receptors. So there are mechanisms found that make sure this doesn't happen.
 
 2. They can be **absorbed** by the downstream neuron (and sometimes the whole receptor bound complex aswell).
-3. Receptors can be broken down by enzymes in the synaptic cleft. For example *acetylcholine* is cleaved by *acetylcholinesterase* in the synaptic cleft.
+3. Receptors can be **broken down** by enzymes in the synaptic cleft. For example *acetylcholine* is cleaved by *acetylcholinesterase* in the synaptic cleft.
 4. **Transporter** proteins can take up the transmitters that exist on glia cells around and sometimes in the synaptic cleft.
 5. There can also be a combination of all of the above. Like the parts of a broken NT being absorbed by the post synaptic cell.
 
@@ -25,7 +25,7 @@ With the *blue* excitatory neuron the post synaptic potential will move to be mo
 
 There is also the Inhibitory Post Synaptic Potential or IPSP which reduces the likelihood of the post synaptic neuron firing. The **red** inhibitory neuron connects to the post synaptic cell. The membrane potential seen in the post synaptic potential after stimulating this **red** neuron is small. But tends to prevent post synaptic neuron form firing an action potential. It is therefore seen as a stop signal. The IPSP may not change the membrane potential a lot but it changes the *electrical properties* of the membrane to work against EPSPs.
 
-Different ions have different Nernst potentials. For example Potassium -90mV, Sodium 55mV and Chlorine -65mV. When the membrane is made more *permeable* to an ion the membrane potential moves towards that ions Nernst potential in general. Making the membrane more permeable to Sodium therefore depolarizes the membrane. If we make the ion concentration of potassium greater we can change the membrane potential to be more positive. The IPSP can then be observed. For example with a small dip. This may be caused by opening Chloride channels so pulling the potential closer to -65mV. So the IPSP can even increase the ion membrane potential to just be closer to some ion's Nernst potential. This acts like an anchor making it harder for the EPSP to affect the membrane potential. They don't just have to *open chloride channels* but have also been found to *open potassium channels*, *block calcium channels*. Different placements of synapses can also affect which signals are inhibited or which areas of the cell are excited etc. **Somatic** mean cell body targeted. 
+Different ions have different Nernst potentials. For example Potassium -90mV, Sodium 55mV and Chlorine -65mV. When the membrane is made more *permeable* to an ion the membrane potential moves towards that ions Nernst potential in general. Making the membrane more permeable to Sodium therefore depolarizes the membrane. If we make the ion concentration of potassium greater we can change the membrane potential to be more negative. The IPSP can then be observed. For example with a small dip. This may be caused by opening Chloride channels so pulling the potential closer to -65mV. So the IPSP can even increase the ion membrane potential to just be closer to some ion's Nernst potential. This acts like an anchor making it harder for the EPSP to affect the membrane potential. They don't just have to *open chloride channels* but have also been found to *open potassium channels*, *block calcium channels*. Different placements of synapses can also affect which signals are inhibited or which areas of the cell are excited etc. **Somatic** mean cell body targeted. 
 
 ![[Pasted image 20220527101611.png]]
 
@@ -44,7 +44,7 @@ Looked at from above the receptor has the shape of a donut. From the side it has
 
 ![[Pasted image 20220527104338.png]]
 
-Each fully assembled receptor has two binding sites for acetylcholine neurotransmitter on the alpha subunits on the large extracellular domain. The whole complex it made out of 4 subunits. Each subunit in turn has four membrane spanning domains termed M1-4. The subunits are arranged such that all the M2 subunits are in the central pore. When *both* ligand binding site (for acetylcholine) are bound the receptor pore will open allowing ions to flow through.
+Each fully assembled receptor has two binding sites for acetylcholine neurotransmitter on the alpha subunits on the large extracellular domain. The whole complex it made out of 5 subunits. Each subunit in turn has four membrane spanning domains termed M1-4. The subunits are arranged such that all the M2 subunits are in the central pore. When *both* ligand binding site (for acetylcholine) are bound the receptor pore will open allowing ions to flow through.
 
 When a single receptor is activated not much happens as only around 1-2pA of current flows. But a typical synaptic current at the NMJ is around 600,000pA therefore around 300,000 receptors for acetylcholine must be bound. All the receptors open at roughly the *same time*. However they close randomly. Once enough ligand-gated AchR are bound sodium channels can take over.
 
@@ -105,3 +105,5 @@ Receptor blockers are called *antagonists* while activators *agonists* have been
 
 ### Inhibition Disease States
 Diseases can also influence inhibitory synaptic responses in the nervous system. One example is **hyperekplexia** which is a neurological disorder classically characterized by an exaggerated startle response and generalized stiffness. This is caused by a variety of genes encoding for glycine receptor related proteins. Small single amino acid changes in the glycine receptor impaired is ability to open upon activation. Hence reducing chloride influx post synaptic. The best treatment for this is *clonazepam* which acts to increase the effects of GABA and its inhibitory effects.
+
+[[Excitation and Inhibition Questions]]

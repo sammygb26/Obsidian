@@ -7,9 +7,23 @@
         "id": "5b626626bf7ae259",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "Pictures/Pasted image 20220527175206.png"
+            "file": "Fundamentals of Neuroscience/Excitation and Inhibition.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "ed5c5d323d30e90d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Fundamentals of Neuroscience/Questions/Excitation and Inhibition Questions.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -67,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pictures/Pasted image 20220527175206.png",
+                "file": "Fundamentals of Neuroscience/Questions/Excitation and Inhibition Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5b626626bf7ae259",
+  "active": "ed5c5d323d30e90d",
   "lastOpenFiles": [
+    "Fundamentals of Neuroscience/Questions/Excitation and Inhibition Questions.md",
+    "Fundamentals of Neuroscience/Excitation and Inhibition.md",
+    "Fundamentals of Neuroscience/Small Circuits.md",
+    "Machine Learning MIT/LiDAR for Autonamous Driving.md",
     "Pictures/Pasted image 20220527175206.png",
     "Machine Learning MIT/Limitations and New Frontiers.md",
     "Machine Learning MIT/Questions/Reinforcement Learning Questions.md",
     "Machine Learning MIT/Reinforcement Learning.md",
     "Machine Learning MIT/Questions/Deep Generative Modeling Questions.md",
-    "Machine Learning MIT/Deep Generative Modeling.md",
-    "Fundamentals of Neuroscience/Questions/The Syanpse Questions.md",
-    "Fundamentals of Neuroscience/Questions/The Synapse Questions.md",
-    "Pictures/Pasted image 20220527122604.png",
-    "Fundamentals of Neuroscience/Excitation and Inhibition.md"
+    "Machine Learning MIT/Deep Generative Modeling.md"
   ]
 }
