@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Fundamentals of Neuroscience/Understanding Neuromodulation.md",
+            "file": "Fundamentals of Neuroscience/Neuronal Plasticity.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "b2872585be26a19a",
+        "id": "4e9b6532a22c08fe",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Fundamentals of Neuroscience/Questions/Understanding Neuromodulation Questions.md",
+            "file": "Fundamentals of Neuroscience/Questions/Neuronal Plasticity Questions.md",
             "mode": "source",
             "source": false
           }
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 199.50078010559082
+    "width": 199.50078010559082,
+    "collapsed": true
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -81,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fundamentals of Neuroscience/Questions/Understanding Neuromodulation Questions.md",
+                "file": "Fundamentals of Neuroscience/Questions/Neuronal Plasticity Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +100,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b2872585be26a19a",
+  "active": "4e9b6532a22c08fe",
   "lastOpenFiles": [
-    "Fundamentals of Neuroscience/Questions/Understanding Neuromodulation Questions.md",
+    "Fundamentals of Neuroscience/Questions/Neuronal Plasticity Questions.md",
+    "Fundamentals of Neuroscience/Neuronal Plasticity.md",
     "Fundamentals of Neuroscience/Understanding Neuromodulation.md",
+    "Fundamentals of Neuroscience/Questions/Understanding Neuromodulation Questions.md",
     "Research List.md",
     "Fundamentals of Neuroscience/Small Circuits.md",
     "Fundamentals of Neuroscience/Questions/Small Circuits Questions.md",
     "Fundamentals of Neuroscience/The Action Potential.md",
     "Fundamentals of Neuroscience/Questions/Excitation and Inhibition Questions.md",
-    "Fundamentals of Neuroscience/Excitation and Inhibition.md",
-    "Machine Learning MIT/LiDAR for Autonamous Driving.md",
-    "Pictures/Pasted image 20220527175206.png"
+    "Fundamentals of Neuroscience/Excitation and Inhibition.md"
   ]
 }
