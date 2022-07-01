@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "ed5c5d323d30e90d",
+        "id": "73e069c010d38768",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Fundamentals of Neuroscience/Vision.md",
+            "file": "Fundamentals of Neuroscience/Audition.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "73e069c010d38768",
+        "id": "677ca8f729fb9927",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Fundamentals of Neuroscience/Questions/Vision Questions.md",
+            "file": "Fundamentals of Neuroscience/Questions/Audition Questions.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Audition",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,11 +61,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 199.50078010559082
+    "width": 199.50078010559082,
+    "collapsed": true
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -81,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fundamentals of Neuroscience/Questions/Vision Questions.md",
+                "file": "Fundamentals of Neuroscience/Questions/Audition Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +101,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "73e069c010d38768",
+  "active": "677ca8f729fb9927",
   "lastOpenFiles": [
+    "Fundamentals of Neuroscience/Questions/Audition Questions.md",
+    "Fundamentals of Neuroscience/Audition.md",
+    "Fundamentals of Neuroscience/Resting Potential.md",
     "Fundamentals of Neuroscience/Questions/Vision Questions.md",
     "Fundamentals of Neuroscience/Vision.md",
     "Machine Learning MIT/Transformers.md",
     "Pictures/Pasted image 20220528112830.png",
     "Fundamentals of Neuroscience/Neuronal Plasticity.md",
     "Fundamentals of Neuroscience/Questions/Neuronal Plasticity Questions.md",
-    "Fundamentals of Neuroscience/Understanding Neuromodulation.md",
-    "Fundamentals of Neuroscience/Questions/Understanding Neuromodulation Questions.md",
-    "Research List.md",
-    "Fundamentals of Neuroscience/Small Circuits.md"
+    "Fundamentals of Neuroscience/Understanding Neuromodulation.md"
   ]
 }
