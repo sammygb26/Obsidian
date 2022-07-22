@@ -9,3 +9,5 @@ How do transformers work?
 
 How does graph ML work
 
+https://www.deeplearningbook.org/
+
