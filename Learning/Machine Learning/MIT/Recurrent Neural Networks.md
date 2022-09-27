@@ -1,7 +1,7 @@
 # Recurrent Neural Networks
 We will now move past simple feed forward neural networks to an approach capable of sequential modeling. The idea can be signified by the idea of predicting where a ball will be. We cannot predict form a still image but with more images we can get an idea. This is the core of **sequential modeling**. This can work for many systems like *audio* (into soundwaves), *text* (into sentences or words)these can all be labeled with time slices. Sequence can as you can see model many things that have some component of order to them.
 
-In *feedforward networks* (covered in [[Introduction]]) static data went to more static data there is no idea of time or change only **FROM** --> **TO**. With sequence modeling we add networks that can take in not only input but time as well so we can add a wider variety of relations that can be captured.
+In *feedforward networks* (covered in [[Machine Learning/MIT/Introduction]]) static data went to more static data there is no idea of time or change only **FROM** --> **TO**. With sequence modeling we add networks that can take in not only input but time as well so we can add a wider variety of relations that can be captured.
 
 ![[Pasted image 20220305030800.png]]
 

@@ -1,5 +1,5 @@
 # Multiple Regression
-[[Linear Regression]] can be expanded to work with not just single independent variables, we can use **multiple regression** to do this. We can do this with categorical variables as well by transforming them into numbers. For example a binary number can be transformed into a variables who's values are 0 and 1. As **multiple regression** is just an extension of linear regression the model used is similar. A basic multiple regression model for $k$ variables would look like
+[[Foundations of Data Science/Linear Regression]] can be expanded to work with not just single independent variables, we can use **multiple regression** to do this. We can do this with categorical variables as well by transforming them into numbers. For example a binary number can be transformed into a variables who's values are 0 and 1. As **multiple regression** is just an extension of linear regression the model used is similar. A basic multiple regression model for $k$ variables would look like
 $$
 y=\beta_0+\beta_1x_1+\beta_2x_2+...+\beta_nx_k
 $$

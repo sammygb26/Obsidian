@@ -24,7 +24,7 @@ $$
 ## Simple Regression Method
 One simple way of regressing y from x is we split the range of values of x into sections and for each section calculate a mean. We can then predict that for every new x its y value is the average of its bin.
 ![[Pasted image 20220131104353.png]]
-This can work however it doesn't work well for bins with little data and also for bins with no data values cannot be predicted. This leads to another method [[Linear Regression]]
+This can work however it doesn't work well for bins with little data and also for bins with no data values cannot be predicted. This leads to another method [[Foundations of Data Science/Linear Regression]]
 
 ## Linear Regression
-This is a method where we build a linear model that is a function on the x value we give it. Linear function meaning it has the form $y=mx+c$. In specific we want $y=\beta_0+\beta_1x$ where $\beta_0$ and $\beta_1$ are the regression coefficients. This is covered in [[Linear Regression]]
+This is a method where we build a linear model that is a function on the x value we give it. Linear function meaning it has the form $y=mx+c$. In specific we want $y=\beta_0+\beta_1x$ where $\beta_0$ and $\beta_1$ are the regression coefficients. This is covered in [[Foundations of Data Science/Linear Regression]]

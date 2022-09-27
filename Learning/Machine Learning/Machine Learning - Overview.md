@@ -1,5 +1,5 @@
 Lecture 1: Introduction
-[[Introduction]]
+[[Machine Learning/MIT/Introduction]]
 
 Lecture 2: Recurrent Neural Networks
 [[Recurrent Neural Networks]]

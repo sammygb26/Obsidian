@@ -22,7 +22,7 @@ Sometimes *normalization* can lead to **instability** in the evaluation phase. I
 **Batch Normalization** is also seen as superior when *CNNs* are involved but **RNNs** work better with [[Layer Normalization]]
 
 ### Test/Deployment vs Training Phases
-In the real world and when testing we cannot normalize over some values in a *batch* we must normalize each batch at once. One way of doing this is to use the batch stats as estimations of $\mu$ and $\sigma^2$ for the population but this only makes sense for testing as in deployment we have no batch to predict. In the *evaluation* phase the average of the $\mu$ and $\sigma^2$ used in training can be used.
+In the real world and when testing we cannot normalize over some values in a *batch* we must normalize each batch at once. One way of doing this is to use the batch stats as estimations of $\mu$ and $\sigma^2$ for the population but this only makes sense for testing as in deployment we have no batch to predict. In the *evaluation* phase the average of the $\mu$ and $\sigma^2$ used in training can be used. We can do this by taking a exponentially weighted average of the minibatch $\mu$ and $\sigma^2$ values. This gives the highest weight to the earlier batches but doesn't discount all batches. We keep this over all the batches we have computed.
 
 A problem with this comes when some value the network isn't used to is inputted. Since the mean and variance was calculated with the training data. Hence with these values which are not taking into account when calculating the $\mu$ and $\sigma$ may have a normalized distribution where $\mu\neq0$ and $\sigma\neq1$. This shift is called **covariate shift**. This means the training set must be *"similar enough"* to the evaluated data.
 

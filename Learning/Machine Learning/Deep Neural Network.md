@@ -92,7 +92,26 @@ When we train neural nets we need to set many **hyperparameters**. Perhaps the m
 
 ![[Pasted image 20220722183302.png]]
 
-Its hard to know which are the most important  But with random samples instead of only testing out a limited number of a given variables say if another hardly has an effect you will instead try as many as you have samples.
+Its hard to know which are the most important  But with random samples instead of only testing out a limited number of a given variables say if another hardly has an effect you will instead try as many as you have samples. You can also sample randomly in a higher dimensional space and so sample it more richly.
+
+We can also use a **coarse to fine** sampling scheme. Yo may sample a region of a given size and find a cluster of well performing sample. At this point we can take the region around this and sample it with the same number of points getting a more densely sampled area. 
+
+![[Pasted image 20220722183818.png]]
+
+Using appropriate scale to pick **hyperparameters**. We shouldn't pick uniformly over possible values but instead over reasonable values. If we want to pick the number of layers say between 50 and 100. We may pick uniformly randomly within the range. Or within a small number of values say 2-4. This works well for these kinds of *hyperparameters*. We may also pick $\alpha$ from say 0.0001 to 1. If we sample uniformly we will sample using 90% of our search space from 0.1-1 and only 10% from 0.0001-0.1. But the relative difference for the greater values may be unimportant. Hence instead we can sample on a uniform log scale. Giving more samples to the smaller values. Say 20% from 0.0001 to 0.001 20% from 0.001-0.01 and so on. We do this from sampling form $10^a$ to $10^b$ we sample $r\in[a,b]$ then take $10^{r}$.
+
+Another case is picking $\beta$ from 0.9 to 0.999. In this case the first is an average for 10 values and the second is for 1000 days. It doesn't make sense to sample on the linear scale. We can instead sample $1-\beta$ in a log scale as before we can sample from 0.1 to 0.001 hence we sample $r\in[0.1,0.001]$ and take $\beta=1-10^r$.
+
+The idea behind all of these is the sensitivity is relative to the change of the values 0.9-0.9005 is a lesser change than 0.0001 to 0.0005.
+
+### SoftMax Regression
+This is a generalization of [[Binary Classification and Logistic Regression]] where by we classify an example into one of a range of classes instead of just one. For examples $4$ classes form class $0$ to class $3$. We use $C$ to be the number of classes. So $C=4$ for above. We build an output layer where we have $C$ units so $n^{[L]}=C$. We want the output to be the probability of all the other classes. So $a^{[L]}_0=P(class=0|x)$.  These activations in $a^{[L]}$ must sum to one and a **SoftMax** function is used to perform this. We calculate $z$ as usual as $$z^{[L]}=W^{[L]}a^{[L-1]}+b^{[L]}$$We apply the *SoftMax* activation function. We calculate a column vector $t$ of the sam dimension as $z$ to be.$$t=e^{z^{[L]}}$$Then we calculate our final activation to be the normalized version of $t$ such that all values sum to 1.$$a^{[L]}=\frac{e^{z^{[L]}}}{\sum_{j=1}^{n^{[L]}}t_{j}}=\frac{t}{\sum t}$$The unusual part of the SoftMax is the normalization over the whole output vector. The kinds of dissections this performs follows.
+
+![[Pasted image 20220723173157.png]]
+
+The name *SoftMax* comes in contrast to **HardMax** where we would set the max value to 1 and everything else to 0. With $C=2$ *SoftMax* becomes the same as logistic regression as we would only need to compute 1 number.
+
+Our labels will be of the form $y=[0, 1, 0, 0]$ for example. Say our prediction is $\hat y=[0.3, 0.2, 0.1, 0.4]$. Our loss becomes $$\mathcal L(\hat y, y)=-\sum_{j=1}^Cy_jlog(\hat y_j)$$This reduces to just be the negative log of the probability of the class we wanted. Hence higher when its close to 0 and low when its close to 1. The cost will be defined as simple the sum of the losses over the training examples. When applying gradient descent $dz^{[L]}$ becomes $\hat y-y$ when we are using a *SoftMax*. Then we just use this derivative to find $da^{[L-1]}$ hence stating of the backprop chain.
 
 [[Deep Neural Network Questions]]
 

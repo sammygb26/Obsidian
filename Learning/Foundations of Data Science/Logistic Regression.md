@@ -1,5 +1,5 @@
 # Logistic Regression
-This is to do with the classification problem (where a solution is [[K Nearest Neighbors]] for example) where you are trying to find the class of a data point given a number of attributes say fruit size and color. In logistic regression the task is to predict the probability that an unseen datapoint belongs to a given category given the independent variables. As the name suggests this is based on [[Linear Regression]]
+This is to do with the classification problem (where a solution is [[K Nearest Neighbors]] for example) where you are trying to find the class of a data point given a number of attributes say fruit size and color. In logistic regression the task is to predict the probability that an unseen datapoint belongs to a given category given the independent variables. As the name suggests this is based on [[Foundations of Data Science/Linear Regression]]
 
 ## Principles of Logistic Regression
 Take a binary classification for a bank where we have to predict if a load is approved or not. We can see that for in the following example an age increase increases the approval chance so we want some line going from low with low age and high with high age for probability of approval.
@@ -43,7 +43,7 @@ $$
 $$
 This is just the inverse of the logistic function. Hence the change in log odds in our regular regression function. $\beta_0$ and $\beta_1$ are both measured in logits. This means a change in the dependent variable will increase the log odds by $\beta_1$ and so increase the odds by $e^{\beta_1}$. Then the odds ratio will just leave change factor for a unit increase hence the odds ratio is $e^{\beta_1}$ for the dependent variable.
 
-When we are using logits they are what is given by a regular [[Linear Regression]] where as our probability is given by the logistic function on the prediction from the regression. This is why $\hat{B_0}$ is measured in logits. 
+When we are using logits they are what is given by a regular [[Foundations of Data Science/Linear Regression]] where as our probability is given by the logistic function on the prediction from the regression. This is why $\hat{B_0}$ is measured in logits. 
 
 ### Logistic regression model in terms of log odds
 Success is $P(\textrm{Y=1|x})=f(\hat{B_0}+\hat{B_1}\cdot x)=\frac{1}{1+e^{-\hat{B_0}-\hat{B_1}\cdot x}}$ 
@@ -96,7 +96,7 @@ Implies Y = 0. C can be anything we like if C = 0 then our  Odds must be 1 ($ln0
 ![[Pasted image 20220119000545.png]]
 *This is a variety of choices applies to c for a logistical regression classifier of approval for Income and Age*
 
-Here like in [[Linear Regression]] Income has been take log base 10 so just as in linear regression we can change bases to get a more accurate result.
+Here like in [[Foundations of Data Science/Linear Regression]] Income has been take log base 10 so just as in linear regression we can change bases to get a more accurate result.
 
 Another reason why logistic regression is useful is it works simple as a scoring system where the value we compare against c is a linear combination of say a persons data relating to their credit score. We can therefore if we want tell them these values so they can understand how to change it.
 
@@ -112,7 +112,7 @@ KNN differs from logistic regression in a number of key ways
 *Transparent* meaning it can be easily understood why a data point was placed in a given category. This is since the score that determines log odds is a simple linear combination of the data points attributes $\underline{x}$ 
 
 ### Finding the Logistic Regression Coefficients with [[Principle of Maximum Likelihood]]
-In [[Linear Regression]] we estimated the $\hat{B_0}$ and $\hat{B_1}$ by the [[Principle of Least Squares]]. Finding the coefficient by minimizing the least squares function. With logistic regression we cannot use the principle of least squares. So the [[Principle of Maximum Likelihood]] will be used instead. In this we will adjust the coefficient to maximize the likelihood. These coefficient will then be called the **maximum likelihood estimators**.  We need an expression for the maximum likelihood to do this then we optimize with respect to our parameters. However we will have to use [[Numerical Optimization]] to do this instead of solving like in principle of least squares.
+In [[Foundations of Data Science/Linear Regression]] we estimated the $\hat{B_0}$ and $\hat{B_1}$ by the [[Principle of Least Squares]]. Finding the coefficient by minimizing the least squares function. With logistic regression we cannot use the principle of least squares. So the [[Principle of Maximum Likelihood]] will be used instead. In this we will adjust the coefficient to maximize the likelihood. These coefficient will then be called the **maximum likelihood estimators**.  We need an expression for the maximum likelihood to do this then we optimize with respect to our parameters. However we will have to use [[Numerical Optimization]] to do this instead of solving like in principle of least squares.
 
 First to help we will redefine success and failure from $y_i=0$ for failure and $y_i=1$ for success. We will change this to $y_i=-1$ for failure and $y_i=1$ for success. This them makes
 $$

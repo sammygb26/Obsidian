@@ -11,7 +11,7 @@ Visualization:
 
 Machine learning tools :
 	[[K Nearest Neighbors]]
-	[[Linear Regression]]
+	[[Foundations of Data Science/Linear Regression]]
 	[[Multiple Regression]]
 	[[Logistic Regression]]
 	[[Principle Components Analysis]]

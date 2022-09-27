@@ -11,3 +11,9 @@ How does graph ML work
 
 https://www.deeplearningbook.org/
 
+# Ethics
+
+Superintelligence: Paths, Danger, Strategies by Nich Bostrom
+Digital Community, Digital Citizen by Jason Ohler
+Automating Inequaliy by Virginia Eubanks
+
