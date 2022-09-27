@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "949ad3306258049d",
+        "id": "2ea732c84247ea3f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Introduction to Mobile Robotics/Hardware and Software Architectures.md",
+            "file": "Machine Learning (Uni)/Probability.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "06106e4bb0e4f44d",
+        "id": "15737a191ed77a3f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Introduction to Mobile Robotics/Questions/Hardware and Software Architectures Questions.md",
+            "file": "Machine Learning (Uni)/Questions/Probability Questions.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Optimizers",
+                "query": "tag:#MOB",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Mobile Robotics/Questions/Hardware and Software Architectures Questions.md",
+                "file": "Machine Learning (Uni)/Questions/Probability Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +100,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "06106e4bb0e4f44d",
+  "active": "15737a191ed77a3f",
   "lastOpenFiles": [
+    "Machine Learning (Uni)/Probability.md",
+    "Machine Learning (Uni)/Questions/Probability Questions.md",
+    "Machine Learning (Uni)/Questions/Linear Regression Questions.md",
+    "Machine Learning (Uni)/Linear Regression.md",
+    "Machine Learning (Uni)/Summary.md",
+    "Machine Learning/Basic Neural Network.md",
+    "Introduction to Mobile Robotics/Summary.md",
     "Introduction to Mobile Robotics/Hardware and Software Architectures.md",
     "Introduction to Mobile Robotics/Questions/Hardware and Software Architectures Questions.md",
-    "Pictures/Pasted image 20220926123417.png",
-    "Mathematical Objects/Set.md",
-    "Mathematical Objects/Graph.md",
-    "Machine Learning (Uni)/Summary.md",
-    "Machine Learning (Uni)/Probability.md",
-    "Machine Learning (Uni)/Linear Regression.md",
-    "Machine Learning (Uni)/Questions/Linear Regression Questions.md",
-    "Machine Learning (Uni)/Questions/Probability Questions.md"
+    "Pictures/Pasted image 20220926123417.png"
   ]
 }

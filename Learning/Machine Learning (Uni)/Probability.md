@@ -54,7 +54,7 @@ We will say a variable is random is it is associated with a probability distribu
 There are rules for combining random variables. For example if we have $x\sim\mathcal N(\mu_,\sigma_1^2)$ and $y\sim\mathcal(\mu_2,\sigma_2^2)$ then we have $$x+y\sim\mathcal N\left(\mu_1+\mu_2,\sigma_2^2+\sigma_2^2\right)$$Or another one that is more complex is if $u_1\sim U(0,1)$ and $u_2\sim U(0,1)$ then $$z_1=\sqrt{-2\log u_1}\cos(2\pi u_2)\sim\mathcal N(0,1)$$$$z_1=\sqrt{-2\log u_1}\sin(2\pi u_2)\sim\mathcal N(0,1)$$    
 
 ### Moment-generating functions
-We define the moment generating function for some RV $x$ as $$M_x(t)=E[e^{tx}]=\int_{-\infty}^\infty e^{tx}p(x)dx$$But this equally means that $$M_x(t)=E\left[1+\frac t{1!}x+\frac{t^2}{2!}x^2+...\right]=1+\frac{t}{1!}E[x]+\frac{t^2}{2!}E[x^2]+..$$ Hence when we differentiate this function repeatedly and set $x=0$ we get $M'_x(0)=E[x]$ and $M''_x(0)=E[x^2]$, ...
+We define the moment generating function for some RV $x$ as $$M_x(t)=E[e^{tx}]=\int_{-\infty}^\infty e^{tx}p(x)dx$$But this equally means that $$M_x(t)=E\left[1+\frac t{1!}x+\frac{t^2}{2!}x^2+...\right]=1+\frac{t}{1!}E[x]+\frac{t^2}{2!}E[x^2]+...$$ Hence when we differentiate this function repeatedly and set $x=0$ we get $M'_x(0)=E[x]$ and $M''_x(0)=E[x^2]$, ...
 
 This all comes to mean if $M_x(t)=M_y(t)$ then $x$ and $y$ have the same distribution.
 

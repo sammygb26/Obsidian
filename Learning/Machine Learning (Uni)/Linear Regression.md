@@ -11,7 +11,7 @@ Once this is set to 0 we can get $b$ (assuming $L$ is minimal as a stationary po
 
 ![[Pasted image 20220926153237.png]]
 
-Giving $b=\bar y=w^T\bar x$ once we convert the summations averages. We now differentiate with respect to $w$ producing the following.
+Giving $b=\bar y-w^T\bar x$ once we convert the summations averages. We now differentiate with respect to $w$ producing the following.
 
 ![[Pasted image 20220926153522.png]]
 
@@ -41,4 +41,4 @@ We can then differentiate with respect to $w$ and get the following
 
 ![[Pasted image 20220927153920.png]]
 
-[[]]
+[[Linear Regression Questions]]
