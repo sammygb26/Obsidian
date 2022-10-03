@@ -166,3 +166,7 @@ What are the two types of system supervisors?  #flashcard #MOB #HardwareSoftware
 	these are the **software supervisor** and the **hardware supervisor**.
 
 ---
+What does IMU stand for? #flashcard #MOB #HardwareSoftwareArchitecture 
+	Inertial Measurement Unit
+
+---
