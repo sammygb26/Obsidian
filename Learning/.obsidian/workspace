@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "2dd0d209a496cd8f",
+        "id": "fea59d9ad661999b",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#flashcard",
+                "query": "tag:#ImageFeatureMatching",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 199.50078010559082,
-    "collapsed": true
+    "width": 199.50078010559082
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -88,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2dd0d209a496cd8f",
+  "active": "fea59d9ad661999b",
   "lastOpenFiles": [
+    "Introduction to Mobile Robotics/Image Feature Matching.md",
+    "Machine Learning (Uni)/Tasks.md",
+    "Introduction to Mobile Robotics/Summary.md",
+    "Introduction to Mobile Robotics/Questions/Image Feature Matching Questions.md",
+    "Introduction to Mobile Robotics/Camera Calibration.md",
+    "Machine Learning (Uni)/Questions/Classification Questions.md",
+    "Machine Learning (Uni)/Questions/Information Theory Questions.md",
     "Machine Learning (Uni)/Summary.md",
     "Machine Learning (Uni)/Information Theory.md",
-    "Machine Learning (Uni)/Tasks.md",
-    "Machine Learning (Uni)/Questions/Information Theory Questions.md",
-    "Machine Learning (Uni)/Classification.md",
-    "Machine Learning (Uni)/Questions/Classification Questions.md",
-    "Introduction to Mobile Robotics/Questions/Image Feature Matching Questions.md",
-    "Introduction to Mobile Robotics/Image Feature Matching.md",
-    "Pictures/Pasted image 20220930151624.png",
-    "Introduction to Mobile Robotics/Cameras and Images.md"
+    "Machine Learning (Uni)/Classification.md"
   ]
 }

@@ -11,7 +11,7 @@ What is a zero-one loss? #flashcard #MachineLearningUni #Classification
 
 ---
 What are the different ways of writing a zero-one loss? #flashcard #MachineLearningUni #Classification 
-	We can write $\mathcal l_{01}(\hat y,y)=\{1 if \hat y\neq y, 0 \text{ otherwise}=\textbf{1}_{\hat y\neq y}=\textbf{1}_{\hat yy<0}$
+	We can write $$\mathcal l_{01}(\hat y,y)=\{1 if \hat y\neq y, 0 \text{ otherwise}=\textbf{1}_{\hat y\neq y}=\textbf{1}_{\hat yy<0}$$
 
 ---
 How can the zero-one loss be summed up over an entire dataset? #flashcard #MachineLearningUni #Classification 

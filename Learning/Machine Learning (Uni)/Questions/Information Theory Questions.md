@@ -22,5 +22,5 @@ How does the entropy of a coin change from when the probability of getting heads
 	The number of bits will be greatest when $u=0.5$ and $0$ when $u=1$ or $u=0$.
 
 ---
-What is the definition for conditional entropy?#flashcard #MachineLearningUni #InformationTheory 
+What is the definition for conditional entropy? #flashcard #MachineLearningUni #InformationTheory 
 	Conditional entropy is defined 

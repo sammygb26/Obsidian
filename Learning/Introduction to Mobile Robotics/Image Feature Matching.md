@@ -51,7 +51,7 @@ This is the *Scale* *Invariant Feature Transform*. There are four steps:
 
 The encoding moves around the orientations and along as if you were reading the descriptor. **SIFT** is a *human engineered* descriptor based on pixel gradients and is used in many state of the art systems. The process is computed on *rotated and scaled versions* giving multiple versions for a single point. This gives **robustness** so we try to match many versions at once. With neural networks we can do joint description and detection that reduces computation need.
 
-### Feature Matching
+### Feature Matching - Brute Force
 **Given** a feature and its *descriptor* in image 1 and image 2 we want to find the *best match*.
 
 ![[Pasted image 20221003113026.png]]
@@ -97,4 +97,4 @@ Here given two consecutive images $I_{k-1}$ and $I_k$ we **extract and match** f
 
 ![[Pasted image 20221003114438.png]]
 
-[[]]
+[[Image Feature Matching Questions]]
