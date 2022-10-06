@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Machine Learning (Uni)/Tasks.md",
+            "file": "Reasoning and Agents/Questions/Search Questions.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning (Uni)/Tasks.md",
+                "file": "Reasoning and Agents/Questions/Search Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "fea59d9ad661999b",
   "lastOpenFiles": [
-    "Introduction to Mobile Robotics/Image Feature Matching.md",
-    "Machine Learning (Uni)/Tasks.md",
-    "Introduction to Mobile Robotics/Summary.md",
-    "Introduction to Mobile Robotics/Questions/Image Feature Matching Questions.md",
-    "Introduction to Mobile Robotics/Camera Calibration.md",
-    "Machine Learning (Uni)/Questions/Classification Questions.md",
-    "Machine Learning (Uni)/Questions/Information Theory Questions.md",
-    "Machine Learning (Uni)/Summary.md",
-    "Machine Learning (Uni)/Information Theory.md",
-    "Machine Learning (Uni)/Classification.md"
+    "Reasoning and Agents/Questions/Probabilistic Reasoning Over Time Questions 2022-04-27 08_49_30.md",
+    "Reasoning and Agents/Questions/Probabilistic Reasoning Questions 2022-04-26 18_56_52.md",
+    "Reasoning and Agents/Questions/Planning and Acting in the Real World Questions.md",
+    "Reasoning and Agents/Questions/Making Simple Decisions Questions.md",
+    "Reasoning and Agents/Questions/Making Complex Decisions Questions.md",
+    "Reasoning and Agents/Questions/Logical Agents Questions.md",
+    "Reasoning and Agents/Questions/Informed Search Questions.md",
+    "Reasoning and Agents/Questions/Inference in First-Order Logic Questions.md",
+    "Reasoning and Agents/Questions/First-Order Logic Questions.md",
+    "Reasoning and Agents/Questions/Environments Questions.md"
   ]
 }
