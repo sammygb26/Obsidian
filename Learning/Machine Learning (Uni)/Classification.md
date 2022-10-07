@@ -91,7 +91,11 @@ The *multiclass* and *binary* cases can be summarized as follows:
 ![[Pasted image 20221001135305.png]]
 
 ##### Log Loss
+We can take the likelihood of getting our training data given our predicted probabilities, For a single element we have a log loss of 
 
+![[Pasted image 20221007145131.png]]
+
+for the multiclass case
 
 ### SoftMax
 The *multiclass* case is related to **SoftMax** where we have  for all values in some column vector we apply the following function:

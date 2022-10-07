@@ -23,4 +23,38 @@ How does the entropy of a coin change from when the probability of getting heads
 
 ---
 What is the definition for conditional entropy? #flashcard #MachineLearningUni #InformationTheory 
-	Conditional entropy is defined 
+	Conditional entropy is defined as the entropy of a random variable given some other variable. That is the expected information given some other value.
+
+---
+What is conditional entropy of some $x$ given $y$ if the two are independent? #flashcard #MachineLearningUni #Optimization 
+	This will just be the entropy of $x$ even if we didn't know $y$. Hence $x$ is "just as random" or we have learned nothing about $x$.
+
+---
+What relationship always holds between the conditional entropy of some $x$ and its entropy? #flashcard #MachineLearningUni #Optimization 
+	We say $$H(x|y)\le H(x)$$
+
+---
+What is the written definition of mutual information? #flashcard #MachineLearningUni #Optimization 
+	This is the information shared by two random variables. Or said another way the information gained about $x$ given some $y$ is the mutual information between $x$ and $y$ written $I(x,y)$
+
+---
+What is the mathematical definition of mutual information? #flashcard #MachineLearningUni #Optimization 
+	The mutual information or shared information is defined as: $$I(x,y)=H(x)-H(x|y)=H(y)-H(y|x)$$$$\hspace{8pt}=E_{x,y\sim p(x,y)}\left[-\log\frac{p(x)p(y)}{p(x,y)}\right]$$
+
+---
+What motivates the definition of cross entropy? #flashcard #MachineLearningUni #Optimization 
+	If we don't know the distribution of some $x$ random variable we can instead estimate it by using another $q$ distribution.
+
+---
+What is the mathematical definition of cross-entropy?#flashcard #MachineLearningUni #Optimization 
+	For distributions $p$ and $q$ where $p$ is the true distribution of $x$ we have the cross-entropy $$H(p,q)=E_{x\sim p(x)}\left[-\log q(x)\right]$$That is the expectation information given $q$.
+
+---
+If we have $H(p)$ and $H(p,q)$ what do we know about the relation between them? #flashcard #MachineLearningUni #Optimization 
+	We know there is never less entropy in $H(p,q)$ that is $$H(p)\le H(p,q)$$
+
+---
+What is the definition of Kullback-Leibler divergence? #flashcard #MachineLearningUni #Optimization 
+	The difference between the entropy with distribution $p$ and the cross-entropy assuming some variable $q$ is the KL divergence. Hence is defined as $$KL(p||q)=H(p,q)-H(p)=E_{x\sim p(x)}\left[-\log\frac{q(x)}{p(x)}\right]$$
+
+---

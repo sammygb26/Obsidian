@@ -10,3 +10,7 @@ Lecture 5: [[Information Theory]]
 
 Lecture 6: [[Tasks]]
 
+Lecture 7: [[Optimization 1]]
+
+Lecture 8: [[Optimization 2]]
+

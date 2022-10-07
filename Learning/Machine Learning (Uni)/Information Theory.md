@@ -88,8 +88,6 @@ The **extra** nats of encoding with the wrong distribution is the **Kullback-Lei
 
 We know $KL(p||q)\le 0$ and if $p=q$ then $KL(p||q)=0$. This is often used as a measure of distance between two distributions but $KL(p||q)\ne KL(q||p)$. We can however take the average instead.
 
-### Mutual Information
-
 ### Cross Entropy and log Loss
 In multiclass classification we have:
 
