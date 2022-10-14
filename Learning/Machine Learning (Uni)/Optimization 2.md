@@ -20,7 +20,7 @@ An iterative algorithm creates a sequence $x1,...,x_t$. We need to trade between
 
 There are many results we could get for example:
 
-![[Pasted image 20221007152211.png]]
+![[Pasted image 20221010123607.png]]
 
 *Sublinear* is the usual case however **linear** and **quadratic** are also cases. We also write the order of these with respect to $\epsilon$ or $t$. That is how $t$ grows with respect to epsilon or $\epsilon$ grows with respect to $t$.
 
@@ -38,14 +38,12 @@ We say something is $\mu$ strongly convex if (lower bounded by a parabola):
 
 ![[Pasted image 20221007153238.png]]
 
-Since we have a lower bound that is a parabola. We can take a derivative with respect to it  and find its lowest point.
+Since we have a lower bound that is a parabola $R$. We can take a derivative with respect to it  and find its lowest point. That for every point we can define $R$ and then solve it to get a value that is less than every other $x$ value and hence also $x^*$. This allows us to create an upper bound how how far out $f$ value is form the optimal value.
 
-![[Pasted image 20221007153509.png]]
-
-We plug the solution for the derivative back in.
+For we find $R$ as $$R(x)=f(y)+(x-y)^T\nabla f(y)+\frac\mu2||x-y||^2$$Then we find it's derivative $\frac{\delta R}{\delta x}$ and se it to $0$ to find the optimal $x$ for $R$ relative to $y$. As $$x=y-\frac1\mu\nabla f(y)$$We can the plug this back into $y$ to find the optimal value of $R$ for any $y$ as $$\min_x R(x)=f(y)-\frac1{2\mu}||\nabla f(y)||_2^2$$Then we know $R$ is a lower bound for $f$ hence it's minimizer is $\le$ the minimum of $f$ ($f(x^*)$) so we know $$f(x^*)\le f(y)-\frac1{2\mu}||\nabla f(y)||_2^2$$Hence finally we can get $$f(y)-f(x^*)\le \frac1{2\mu}||\nabla f(y)||_2^2$$So given the derivative for any $y$ we can define an upper bound on how far its value is from the optimal solution.
 
 ### Guarantee of Gradient Descent
-![[Pasted image 20221007154518.png]]
+We start with a function that is both $\mu$-**strongly convex** and $L$-*smooth*. That is we have the conditions: $$f(x)\le f(y)+(x-y)^T\nabla f(y)+L||x-y||^2.\forall x, y\in \mathbb R^d$$and $$f(x)\ge f(y)+(x-y)^T\nabla f(y)+\frac\mu2||x-y||^2.\forall x, y\in\mathbb R^d$$Now we are looking at gradient descent so we will look at $x_t$ and $x_{t-1}$, we can take the first $L$-*smooth condition* to the following (using the fact that $x_{t-1}=x_t-\eta_t\nabla f(x_t)$): $$f(x_t)\le f(x_{t-1})-\eta_t(1-L\eta_t)||\nabla f(x_{t-1})||_2^2$$then we can differentiate $\eta_t(1-L\eta_t)$ to find that it is maximized when $\eta_t=\frac1{2L}$. Then for this value we also have $0\le1-L\eta_t\le1$ hence we can say:$$f(x_t)\le f(x_{t-1})-\eta_t||\nabla f(x_{t-1})||_2^2=f(x_{t-1})-\frac1{2L}||\nabla f(x_{t-1})||_2^2$$now at this point we can add $-f(x^\star)$ to both sides giving: $$f(x_t)-f(x^\star)\le f(x_{t-1})-f(x^\star)-\frac1{2L}||\nabla f(x_{t-1})||_2^2$$But we know from **strong convexity** that $$\forall x.  f(x)-f(x^\star)\le\frac1{2\mu}||\nabla f(x)||_2^2$$Which can be written another way as $$-\frac1{2\mu}||\nabla f(x)||_2^2\le f(x^\star)-f(x)$$We can combine this with the final part of the equation above to give us: $$-\frac1{2L}||\nabla f(x_{t-1})||_2^2=\frac\mu L\left(-\frac1{2\mu}||\nabla f(x_{t-1})||_2^2\right)$$Which can be worked into the equation original equation from the $L$-*smooth condition* to give:  $$f(x_t)-f(x^\star)\le f(x_{t-1})-f(x^\star)-\frac1{2L}||\nabla f(x_{t-1})||_2^2$$$$=f(x_{t-1})-f(x^\star)+\frac\mu L\left(-\frac1{2\mu}||\nabla f(x_{t-1})||_2^2\right)$$$$\le f(x_{t-1})-f(x^\star)+\frac\mu L\left(f(x^\star)-f(x_{t-1})\right)$$Finally rearranging the terms we find $$f(x_t)-f(x^\star)\le\left(1-\frac\mu L\right)(f(x_{t-1})-f(x^\star))$$That is with $\mu$-strong convexity and $L$-smoothness with each iteration of gradient descent (with $\eta_t=\frac1{2L}$) the distance of or approximate solution to our minima reduces by the fraction $(1-\frac\mu L)$ each iteration. Hence we can roll this out to find that given and initial value $x_0$ we have $$f(x_t)-f(x^\star)\le\left(1-\frac\mu L\right)^t\left(f(x_0)-f(x^\star)\right)$$In other words the **convergence is linear**.
 
 ### Log Loss
 We can look at log loss again:
@@ -55,6 +53,8 @@ We can look at log loss again:
 Then we can take the gradient with respect to $w$ to give
 
 ![[Pasted image 20221007154838.png]]
+
+Then this function is all we need to update an approximate solution .
 
 ### Size of Data set
 We know for MSE we can get a solution setting the derivative to 0 getting $\Phi\Phi^T)^{-1}\Phi y$. But this take $O(N^3)$. But gradient descent on log loss take $O(N)$ so can still be costly as we may need to do it many times. We instead use **stochastic gradient descent**. 
@@ -71,3 +71,5 @@ A sub gradient at $x$ is a vector $g$ that satisfies:
 ![[Pasted image 20221007155827.png]]
 
 That is $g$ is some gradient which if we create a tangent with it will not go past the function.
+
+[[Optimization 2 Questions]]

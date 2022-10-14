@@ -26,6 +26,10 @@ What is the definition for conditional entropy? #flashcard #MachineLearningUni #
 	Conditional entropy is defined as the entropy of a random variable given some other variable. That is the expected information given some other value.
 
 ---
+What is the mathematical definition of cross entropy? #flashcard #MachineLearningUni #Optimization 
+	For RVs $x$ and $y$ cross entropy is defined as $$H(x|y)=\mathbb E_{x\sim p(x,y)}[-\log p(x|y)]$$
+
+---
 What is conditional entropy of some $x$ given $y$ if the two are independent? #flashcard #MachineLearningUni #Optimization 
 	This will just be the entropy of $x$ even if we didn't know $y$. Hence $x$ is "just as random" or we have learned nothing about $x$.
 
@@ -46,7 +50,7 @@ What motivates the definition of cross entropy? #flashcard #MachineLearningUni #
 	If we don't know the distribution of some $x$ random variable we can instead estimate it by using another $q$ distribution.
 
 ---
-What is the mathematical definition of cross-entropy?#flashcard #MachineLearningUni #Optimization 
+What is the mathematical definition of cross-entropy? #flashcard #MachineLearningUni #Optimization 
 	For distributions $p$ and $q$ where $p$ is the true distribution of $x$ we have the cross-entropy $$H(p,q)=E_{x\sim p(x)}\left[-\log q(x)\right]$$That is the expectation information given $q$.
 
 ---
@@ -58,3 +62,5 @@ What is the definition of Kullback-Leibler divergence? #flashcard #MachineLearni
 	The difference between the entropy with distribution $p$ and the cross-entropy assuming some variable $q$ is the KL divergence. Hence is defined as $$KL(p||q)=H(p,q)-H(p)=E_{x\sim p(x)}\left[-\log\frac{q(x)}{p(x)}\right]$$
 
 ---
+What is the optimality condition for convex functions? #flashcard #MachineLearningUni #Optimization 
+	For some convex function $f$ if $f'(x^*)=0$ then we say $x^*$ is the minimizer of $f$ and $f(x^*)$ is the minimum values of $f$.

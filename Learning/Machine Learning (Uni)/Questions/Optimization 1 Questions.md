@@ -55,7 +55,7 @@ When is MSE convex? #flashcard #MachineLearningUni #Optimization
 
 ---
 What is the optimality condition for convex functions? #flashcard #MachineLearningUni #Optimization 
-	This means for a convex function $f$ if we have some $x^*$ minimizer of $f$ then $\nabla f(x^*)=0\iff f(x^*)=\underset x{\min}f(x)$ 
+	This means for a convex function $f$ if we have some $x^\star$ minimizer of $f$ then $\nabla f(x^\star)=0\iff f(x^\star)=\underset x{\min}f(x)$ 
 
 ---
 How does the optimality condition explain the "solution" to a mean squared error loss? #flashcard #MachineLearningUni #Optimization 

@@ -30,7 +30,7 @@ We need to **train** the network to find some $\theta$ that best matches the out
 The way this system works we don't care about the *hidden layers* instead we only care about the output layers.
 
 ### Hidden units
-The *hidden units* are the internal values passes between the network functions. We have some activation function $g$, $input $h_{n-1}$ weight matrix $W$ bias $b$ (these are a subset of the parameters $\theta$). With these in each layer we perform the function:
+The *hidden units* are the internal values passes between the network functions. We have some activation function $g$, input $h_{n-1}$ weight matrix $W$ bias $b$ (these are a subset of the parameters $\theta$). With these in each layer we perform the function:
 
 ![[Pasted image 20221006112304.png]]
 
@@ -132,3 +132,5 @@ We can calculate the output size as follows for some pool size $m\times m$ and s
 ![[Pasted image 20221006115844.png]]
 
 Max pooling is resistant to small shifts and so an be resistant to noise.
+
+[[Feedforward Neural Networks Questions]]

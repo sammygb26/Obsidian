@@ -105,5 +105,5 @@ for any $x$ and $y$. $L$-smoothness also implies
 
 ![[Pasted image 20221006160018.png]]
 
-[[Optimization Questions]]
+[[Optimization 1 Questions]]
 

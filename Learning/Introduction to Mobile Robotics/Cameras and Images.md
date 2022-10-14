@@ -84,6 +84,4 @@ Cross-correlation or the kernel concept can be used for *image gradient computat
 
 ![[Pasted image 20220929114419.png]]
 
-[[]]
-
 [[Camera Questions]]

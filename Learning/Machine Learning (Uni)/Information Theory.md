@@ -103,3 +103,5 @@ where $y^*$ is the label. We can describe the cross entropy between the ground t
 
 Which we can minimize as a loss.
 
+[[Information Theory]]
+
