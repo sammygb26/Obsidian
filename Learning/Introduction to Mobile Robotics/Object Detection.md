@@ -1,7 +1,3 @@
-# Object Detection
-This is one of the applications of [[Feedforward Neural Networks]].
-
-### The Problem!
 We need for formulate the problem as a neural network problem. 
 
 ![[Pasted image 20221010111328.png]]
@@ -79,8 +75,8 @@ The *boxes* are moved as close a possible to the ground truth bounding box. The 
 
 We take the $1\times1\times D^*$ and feed it through a classifier and regression layers to get the class and to fit the box.
 
-##### Output handling (NMS) 
-There are many different boxes for different candidates but we need to pick which to use.
+##### Output handling (NMS)
+*Non-max-suppression* - There are many different boxes for different candidates but we need to pick which to use.
 
 ![[Pasted image 20221010114440.png]]
 
@@ -102,9 +98,10 @@ There will be many boxes where there is nothing in the network. These are called
 
 ![[Pasted image 20221010115435.png]]
 
-*Control training bias* - Here we take some batch with a 3:1 ration of negative to positive anchors.
+*Control training bias* - Here we take some batch with a 3:1 ration of negative to positive anchors to ensure the network isn't biased towards negative examples.
 
 *Hard Negative Anchor Mining* - Chose negative with high classification loss to be included in minibatch (hard examples).
 
 ![[Pasted image 20221010115656.png]]
 
+[[Object Detection Questions]]

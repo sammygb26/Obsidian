@@ -1,6 +1,7 @@
 {
-  "baseFontSize": 16,
+  "baseFontSize": 15,
   "theme": "moonstone",
   "translucency": false,
-  "cssTheme": "Primary"
+  "cssTheme": "Atom",
+  "accentColor": ""
 }

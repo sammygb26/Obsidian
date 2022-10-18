@@ -1,4 +1,3 @@
-# Image Correlation Convolution and Filtering
 *Convolutions and filtering* are often used to analyze images. We will use the example of identifying "denticles" in an image to illustrate this. We may have an image (left) wish to identify the "denticles" in it which are the triangle shapes. The template $\textbf T$ can be obtained by **averaging and blurring** one or more denticles together. We can then sweep this template over possible positions $(r,c)$ and compare it to the window $\textbf W(r,c)$ at the same position.
 
 ![[Pasted image 20221006141314.png]]
@@ -19,3 +18,5 @@ Where $h$ is the height of the template. Then $I$ is at least $2h+1$ in side suc
 ![[Pasted image 20221006143116.png]]
 
 ![[Pasted image 20221006143044.png]]
+
+[[Image Correlation, Convolution and Filtering Questions]]

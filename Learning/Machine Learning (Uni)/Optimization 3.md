@@ -130,3 +130,5 @@ We can find an optimal solution where $w$ is an *eigen vector*. Hence to maximiz
 
 Is called the *Rayleigh* quotient.
 
+[[Optimization 3 Questions]]
+
