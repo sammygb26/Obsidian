@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Large Practical/Notes.md",
+                "file": "Machine Learning (Uni)/Questions/Optimization 3 Questions.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 199.50078010559082
+    "width": 312.00418853759766
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Large Practical/Notes.md",
+                "file": "Machine Learning (Uni)/Questions/Optimization 3 Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +100,8 @@
   },
   "active": "db7c5974f11a1563",
   "lastOpenFiles": [
+    "Machine Learning (Uni)/Questions/Classification Questions.md",
+    "Large Practical/Notes.md",
     "Pictures/Pasted image 20221017152000.png",
     "Machine Learning (Uni)/Neural Networks 3.md",
     "Introduction to Mobile Robotics/Object Detection.md",
@@ -107,8 +109,6 @@
     "Introduction to Mobile Robotics/Questions/Image Correlation, Convolution and Filtering Questions.md",
     "Introduction to Mobile Robotics/Image Correlation, Convolution and Filtering.md",
     "Introduction to Mobile Robotics/Questions/Image Feature Matching Questions.md",
-    "Machine Learning (Uni)/Summary.md",
-    "Machine Learning (Uni)/Probability.md",
-    "Machine Learning (Uni)/Optimization 3.md"
+    "Machine Learning (Uni)/Summary.md"
   ]
 }

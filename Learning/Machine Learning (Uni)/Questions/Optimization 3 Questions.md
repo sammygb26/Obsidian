@@ -3,7 +3,7 @@ What is constrained optimization? #flashcard  #MachineLearningUni #Optimization
 
 ---
 What is the simplest way to work a constraint into a function we are optimizing? #flashcard  #MachineLearningUni #Optimization 
-	We can add a new function that is defined as 0 or either $\infty$ or $-\infty$ depending on whether we are minimizing or maximizing some values respectively. Then we add this function to our original function passing the constrain into it. For example $$\underset{w}\min L(w) \hspace{16pt}\text{ s.t.}||w||^2\le0$$ $$\underset{w}\min L(w)+V\_(||w||^2-1)$$ Where $V\_(s)$ is defined as 0 for $s\le0$ and $\infty$ otherwise.
+	We can add a new function that is defined as 0 or either $\infty$ or $-\infty$ depending on whether we are minimizing or maximizing some values respectively. Then we add this function to our original function passing the constrain into it. For example $$\underset{w}\min L(w) \hspace{16pt}\text{ s.t.}||w||^2\le0$$ $$\underset{w}\min L(w)+V(||w||^2-1)$$ Where $V(s)$ defined as 0 for $s\le0$ and $\infty$ otherwise.
 
 ---
 What solution is used to get around the undifferentiability of constraint functions? #flashcard  #MachineLearningUni #Optimization 
