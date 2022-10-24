@@ -69,3 +69,4 @@ Convolutions can take place in 1D or 2D.
 
 ![[Pasted image 20221017155919.png]]
 
+[[Neural Networks 3 Questions]]

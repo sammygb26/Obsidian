@@ -77,3 +77,4 @@ and finally the loss is:
 
 Basically we can think of applying many nested functions and therefore we can apply the chain rule to any depth we want to find derivatives for arbitrary weights.
 
+[[Neural Networks 2 Questions]]

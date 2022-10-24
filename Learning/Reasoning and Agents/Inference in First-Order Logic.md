@@ -1,4 +1,3 @@
-# Inference in First-Order Logic
 We will attempt to interface with **First-Order Logic**  to get to a place where we can actually perform inference with it. First we can consider **reduction to propositional logic**. The following rules are different form the **extended interpretations** used in [[First-Order Logic]] these instead refer to new sentences and symbols created as we perform inference.
 
 **Universal Installation** -> If we have a statement with universal quantifiers we can use the rule of **universal instantiation**. This says that anything we can obtain from substituting a **ground term** into a variable within a universal statement is implied by that statement being true. This is written using **substitution** notation as seen in [[First-Order Logic]]. We can write this formally by saying that $Subst(\theta, \alpha)$ is the result of applying the substitution $\theta$ to the sentence $\alpha$. Then **universal instantiation** is the following

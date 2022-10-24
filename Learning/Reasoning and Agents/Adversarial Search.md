@@ -1,4 +1,3 @@
-# Adversarial Search
 **Adversarial Search** is concerned with how an agent should act in a **game**. Where in AI a game is usually a **zero-sum**, **perfect-information** (observable) game (like chess). **Zero-Sum** is the condition where one agent is against another, so one winning means the other looses. This is enforced by their utility functions being opposites so they come into conflict. Most games worth studying can't be solved due to their high branching factors. Being slower in these cases means the algorithms can't perform as well. We will look at **pruning** to allow us to discount moves we wont make. **Evaluation functions** so we can limit the depth of our searches and actually get a solution.
 
 ## Formulation

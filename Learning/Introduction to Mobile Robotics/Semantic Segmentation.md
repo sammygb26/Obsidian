@@ -1,4 +1,3 @@
-# Semantic Segmentation
 Semantic segmentation is the task of generating a map of what is in an image. We give a label to every pixel of what it is part of.
 
 ![[Pasted image 20221013111129.png]]
@@ -102,3 +101,5 @@ This is a more complicated task:
 ![[Pasted image 20221013114959.png]]
 
 Mask R-CNN gets around prior boxes and proposes regions itself. We have three output heads for this network *Mask*, *Classification* and *boundary boxes*.
+
+[[Semantic Segmentation Questions]]

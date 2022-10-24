@@ -1,4 +1,3 @@
-# Informed Search
 We have already seen [[Search]] based strategies like **BFS**, **DFS** and **IDS** these are **uninformed** searches. **Informed** means we have vales assigned to nodes telling us which ones are the most desirable. The way we get these scores is with **domain knowledge**. So it is like [[Tree Search]] accept the frontier is ordered in some way in terms of desirability.
 
 ## Best First Search
@@ -20,7 +19,7 @@ This is the gold standard in pathfinding problems. In this the evaluation functi
 ![[Pasted image 20220211223002.png]]
 
 ##### Heuristics
-A* allows us to test for a god heurist. A **heuristic** is **admissible** if for every node n $h(n)\le h*(n)$ where $h*(n)$ is the true cost to reach the goal from $n$. This type of heuristic means A* will always find the most optimal solution (if we never overestimate the distance to the goal). This is why straight line distance works since it is always less than or equal to the distance to the goal.
+A* allows us to test for a god heurist. A **heuristic** is **admissible** if for every node n $h(n)\le h^*(n)$ where $h^*(n)$ is the true cost to reach the goal from $n$. This type of heuristic means A* will always find the most optimal solution (if we never overestimate the distance to the goal). This is why straight line distance works since it is always less than or equal to the distance to the goal.
 
 **Proof** 
 If some **suboptimal** goal $G_2$ has been generated in the frontier. Let $n$ be an unexpanded node in the frontier such that $n$ is on the **shortest path** to an **optimal** goal $G$. We know $f(G_2)=g(G_2)$ since the final heuristic will be 0. But we know $g(G_2)>g(G)$ since $G_2$ is suboptimal. Again since $G$ is a goal state $f(G)=g(G)$ so $f(G_2)>f(G)$ that is the evaluation function for the true goal must be smaller. Since all nodes on the path to $G$ will have a $f(n)\le f(G)$  since $g(n)+h(n)\le g(n)+h^*(n)$ (since $h$ is admissible) then $f(n)<f(G_2)$ so we will find $G$ before we finish at $G_2$.

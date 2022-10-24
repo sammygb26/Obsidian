@@ -51,7 +51,7 @@ Hos are the implication of L-smoothness when using gradient descent proved?   #f
 
 ---
 What are the implications of strong convexity?   #flashcard #MachineLearningUni #Optimization 
-	A $\mu$-strongly convex function allows us to define how far we can at most be from the minimum $f(x^*)$. As $$f(y)-f(x^*)\le\frac1{2\mu}||\nabla f((y)||_2^2$$
+	A $\mu$-strongly convex function allows us to define how far we can at most be from the minimum $f(x^\star)$. As $$f(y)-f(x^\star)\le\frac1{2\mu}||\nabla f((y)||_2^2$$
 
 ---
 How are the implication of mu-strong convexity used to prove an upper bound for epsilon (difference in solution value from optimal solution)?   #flashcard #MachineLearningUni #Optimization 

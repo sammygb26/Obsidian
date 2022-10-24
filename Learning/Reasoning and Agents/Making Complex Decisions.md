@@ -1,4 +1,3 @@
-# Making Complex Decisions
 This will focus instead of one-shot stochastic environments instead long term *sequential decision problems*. Here the agents utility depends on its performance in a sequence of actions.
 
 ## Sequential Decision Problems
