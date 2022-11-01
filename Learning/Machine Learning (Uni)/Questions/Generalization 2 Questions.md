@@ -1,5 +1,5 @@
 What is a common form for generalization bounds? #flashcard #MachineLearningUni #Generalization #Generalization2 
-	![[Pasted image 20221024152312.png]]
+	With probability $1-\delta$ for all $h\in\mathcal H$ $$L_{\mathcal D}(h)\le L_s(h)+\sqrt{\frac{C(\mathcal H)}{n}}+\sqrt{\frac{\log(1/\delta)}{2n}}$$
 
 ---
 What is C(H) a measure of in generalization? #flashcard #MachineLearningUni #Generalization #Generalization2 
@@ -7,14 +7,12 @@ What is C(H) a measure of in generalization? #flashcard #MachineLearningUni #Gen
 
 ---
 What is the sample complexity of a generalization bound? #flashcard #MachineLearningUni #Generalization #Generalization2
-	A **generalization bound** gives allow sus to define some $\epsilon$ difference we want from our training data to our test data which we then need to happen $1-\delta$ percent of the time. But this can be rearranged to give the complexity of a function giving the number of **samples needed**
-	![[Pasted image 20221024152823.png]]
+	A **generalization bound** gives allow sus to define some $\epsilon$ difference we want from our training data to our test data which we then need to happen $1-\delta$ percent of the time. But this can be rearranged to give the complexity of a function giving the number of **samples needed** $$n=O\left(\frac{C(\mathcal H)+\log(1/\delta)}{\epsilon^2}\right)$$
 
 ---
 What is VC generalization bounds? #flashcard #MachineLearningUni #Generalization #Generalization2 
 	Vapnik-Chernonenkis  generalization bounds
-	![[Pasted image 20221024153123.png]]
-	Which is independent of learning algorithms and how ERM is done.
+	$$L_{\mathcal D}(h)\le L_S(h)+2\sqrt{\frac{8d\log(en/d)+2\log(4/\delta)}n}$$Which is independent of learning algorithms and how ERM is done.
 
 ---
 What is the VC dimension for linear classifiers taking in some p features? #flashcard #MachineLearningUni #Generalization #Generalization2 

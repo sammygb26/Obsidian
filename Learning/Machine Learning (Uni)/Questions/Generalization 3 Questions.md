@@ -15,32 +15,32 @@ What is weight decay the lagrangian off? #flashcard #MachineLearningUni #General
 
 ---
 How does L2 regularization affect the capacity of a hypothesis class it is applied to? #flashcard #MachineLearningUni #Generalization #Generalization3
-	It ensures less of that class are viable and so reduces the number of possible programs and so the capacity.![[Pasted image 20221027153225.png]]
+	It ensures less of that class are viable and so reduces the number of possible programs and so the capacity.
+	$$\mathcal H=\{x\mapsto w^T\phi(x):w\in\mathbb R^d\}$$ $$\mathcal H=\{x\mapsto w^T\phi(x):||w||\le B\}$$
 
 ---
 What is Rademacher complexity for a sample? #flashcard #MachineLearningUni #Generalization #Generalization3 
-	Rademacher complexity is a measure of the capacity of a network. It is equal to the the expected best performance of the hypothesis class over all possible labeling of some $n$ points in a sable $S$.![[Pasted image 20221027153500.png]]
+	Rademacher complexity is a measure of the capacity of a network. It is equal to the the expected best performance of the hypothesis class over all possible labeling of some $n$ points in a sable $S$. $$\mathcal R_S(\mathcal H)=\mathbb E_\sigma\left[\max_{h\in\mathcal H}\frac1n\sum_{i=1}^n\sigma_ih(x_i)\right]$$
 
 ---
 What is Rademacher complexity over the dataset with n points? #flashcard #MachineLearningUni #Generalization #Generalization3 
-	It is the expected Rademacher complexity for a given set drawn from the distribution $\mathcal D$ ![[Pasted image 20221027154010.png]]
+	It is the expected Rademacher complexity for a given set drawn from the distribution $\mathcal D$ $$\mathcal R_n(\mathcal H)=\mathbb E_{S\sim\mathcal D^n}[\mathcal R_S(\mathcal H)]$$
 
 ---
 What are the Rademacher complexity bounds? #flashcard #MachineLearningUni #Generalization #Generalization3 
-	With probability $1-\delta$, for all $h\in\mathcal H$![[Pasted image 20221027154039.png]]
-	With probability $1-\delta$, for all $h\in\mathcal H$![[Pasted image 20221027154106.png]]
+	With probability $1-\delta$, for all $h\in\mathcal H$ $$L_{\mathcal D}(h)\le L_S(h)+\mathcal R_n(h)+\sqrt{\frac{\log(1/\delta)}{2n}}$$With probability $1-\delta$, for all $h\in\mathcal H$ $$L_{\mathcal D}(h)\le L_S(h)+\mathcal R_S(h)+3\sqrt\frac{\log(2/\delta)}{2n}$$
 
 ---
 For linear classifiers with bounded norm what is the upper bound for Rademacher complexity? #flashcard #MachineLearningUni #Generalization #Generalization3 
-	If $S=\{x:||x||\le r\}$ and $\mathcal H=\{x\mapsto w^Tx:||w||\le B\}$,![[Pasted image 20221027154225.png]]
-
+	If $S=\{x:||x||\le r\}$ and $\mathcal H=\{x\mapsto w^Tx:||w||\le B\}$, $$\mathcal R_S(\mathcal H)\le\sqrt\frac{r^2B^2}n$$
+	
 ---
 What is the stability of a learning algorithm? #flashcard #MachineLearningUni #Generalization #Generalization3 
 	The stability of a learning algorithm is defined as its ability to give similar programs in response to slightly different datasets. Say swapping 1 data point out wont give a completely different dataset.
 
 ---
 What is the mathematical connection between generalization bounds and stability? #flashcard #MachineLearningUni #Generalization #Generalization3 
-	We say for some dataset $S$ when $S^{(i)}$ is the same set but with one point swapped out for the same point from the $\mathcal D$ distribution. We get ![[Pasted image 20221027155315.png]]
+	We say for some dataset $S$ when $S^{(i)}$ is the same set but with one point swapped out for the same point from the $\mathcal D$ distribution. We get $$\mathbb E_{S\sim\mathcal D^n}[L_{\mathcal D}(A(S))-L_S(A(S))]=\mathbb E_{i\sim U(n),S\sim\mathcal D^n,(x,y)\sim\mathcal D}[l(A(S^{(i)})(x_i),y_i)-l(A(S)(x_i),y_i)]$$
 
 ---
 What does the generalization bound for stable algorithms mean? #flashcard #MachineLearningUni #Generalization #Generalization3 
@@ -52,10 +52,10 @@ If our loss is p-Lipschitz what does that mean in terms of stability? #flashcard
 
 ---
 If a function is p-Lipschitz and h-strongly convex what does that imply with relation to the minimizer? #flashcard #MachineLearningUni #Generalization #Generalization3 
-	It means that ![[Pasted image 20221027155936.png]] which further implies ![[Pasted image 20221027160008.png]]
+	It means that $$\frac\lambda2||x-x^\star||^2\le f(x)-f(x^\star)\le p||x-x^\star||$$which further implies $$||x-x^\star||\le\frac{2p}\lambda$$
 
 ---
 What can L2 regularization allow us to do with a p-Lipschitz loss? #flashcard #MachineLearningUni #Generalization #Generalization3 
- When optimizing over a $p$-Lipschitz loss adding L2 regularization allows us to make what we are minimizing also strongly convex.  Hence we can get and upper bound on the stability score ![[Pasted image 20221101114000.png]]which can be further passes through the Lipschitz definition to give![[Pasted image 20221101114135.png]]
+ When optimizing over a $p$-Lipschitz loss adding L2 regularization allows us to make what we are minimizing also strongly convex.  Hence we can get and upper bound on the stability score $$||A(S^{(i)}-A(S)||\le\frac{2p}{\lambda n}$$which can be further passes through the Lipschitz definition to give $$\mathbb E_{S\sim\mathcal D^n}[L_{\mathcal D}(A(S))-L_S(A(S))]\le\frac{2p^2}{\lambda n}$$
 
 ---
