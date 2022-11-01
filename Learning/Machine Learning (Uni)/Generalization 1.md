@@ -1,3 +1,4 @@
+(check PAC and uniform complexity $n$)
 We have minimized a loss to allow us to *program with data* instead of actually generating a program. But how do we know the program is correct and what does correct mean? It definitely minimized the loss. How do we get to proof like with sorting. An example of a system failing to generalize comes bellow where the pattern is actual non-linear in the device we are trying to predict:
 
 ![[Pasted image 20221021151316.png]]

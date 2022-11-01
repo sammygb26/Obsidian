@@ -4,46 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ee6abb73bfcd7f4e",
+        "id": "db18feea562b488e",
         "type": "tabs",
         "children": [
           {
-            "id": "c071ee643f5e3328",
+            "id": "adfc685bc258e26a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning (Uni)/Generalization 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4f87dc497055e391",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning (Uni)/Generalization 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "acb4107812ae22b3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b6c533c8b81b1238",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning (Uni)/Questions/Generalization 1 Questions.md",
+                "file": "Machine Learning (Uni)/Generalization 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#MachineLearningUni",
+                "query": "tag:#flashcard",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning (Uni)/Questions/Generalization 1 Questions.md",
+                "file": "Machine Learning (Uni)/Generalization 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,17 +100,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "b6c533c8b81b1238",
+  "active": "adfc685bc258e26a",
   "lastOpenFiles": [
-    "Machine Learning (Uni)/Generalization 1.md",
-    "Machine Learning (Uni)/Questions/Generalization 1 Questions.md",
+    "Machine Learning (Uni)/Questions/Generalization 3 Questions.md",
+    "Machine Learning (Uni)/Generalization 3.md",
     "Machine Learning (Uni)/Generalization 2.md",
-    "Machine Learning (Uni)/Questions/Information Theory Questions.md",
-    "Pictures/Pasted image 20221024100317.png",
-    "Reasoning and Agents/Informed Search.md",
-    "Introduction to Mobile Robotics/Least Squares.md",
-    "Introduction to Mobile Robotics/Coordinate Systems and Reference Frames.md",
-    "Reasoning and Agents/Adversarial Search.md",
-    "Reasoning and Agents/Making Complex Decisions.md"
+    "Machine Learning (Uni)/Questions/Generalization 2 Questions.md",
+    "Pictures/Pasted image 20221028153104.png",
+    "Machine Learning (Uni)/Personal Attributes.md",
+    "Machine Learning (Uni)/Generalization 1.md",
+    "Introduction to Mobile Robotics/LIDAR, Point Cloud and Iterativ Clossest Points.md",
+    "Introduction to Mobile Robotics/Ocupancy Grid and Maps.md",
+    "Machine Learning (Uni)/Principal Compounent Analysis.md"
   ]
 }
