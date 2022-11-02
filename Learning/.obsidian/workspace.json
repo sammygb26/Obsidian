@@ -36,8 +36,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8d6da1e8ede5fe18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introduction to Mobile Robotics/Questions/Kalman Filter Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -79,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.00418853759766,
-    "collapsed": true
+    "width": 312.00418853759766
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -96,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Mobile Robotics/Questions/Least Squares Questions.md",
+                "file": "Introduction to Mobile Robotics/Questions/Kalman Filter Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,10 +126,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f21070c58694ac2c",
+  "active": "8d6da1e8ede5fe18",
   "lastOpenFiles": [
-    "Introduction to Mobile Robotics/Least Squares.md",
     "Introduction to Mobile Robotics/Questions/Least Squares Questions.md",
+    "Introduction to Mobile Robotics/Least Squares.md",
     "Introduction to Mobile Robotics/Camera Calibration.md",
     "Pictures/Pasted image 20221101102157.png",
     "Pictures/Pasted image 20221101114135.png",
