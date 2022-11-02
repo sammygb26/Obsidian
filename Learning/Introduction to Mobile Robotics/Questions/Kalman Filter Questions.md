@@ -88,7 +88,7 @@ How would we linearize a motion model in EKF? #flashcard #MOB #KalmanFilter
 
 ---
 How would we linearize a measurement model? #flashcard #MOB #KalmanFilter 
-	We take some function giving $\textbf y$ values $\textbf y_k=\textbf h_{k}(\textbf x_{k},\textbf v_k)$ this can be approximated form our estimate value. That is: $$\textbf y_k=\textbf h_{k}(\textbf x_{k},\textbf v_k)$$$$\approx\textbf h_{k}(\dot{\textbf x}_{k-1},\textbf 0) + \left. \frac {\partial\textbf h_{k}} {\partial\textbf x_{k}} \right| _{\dot{\textbf x}_{k},\textbf 0} (\textbf x_{k}-\dot{\textbf x}_{k}) + \left. \frac {\partial\textbf h_{k}} {\partial\textbf v_{k}} \right| _{\dot{\textbf x}_{k},\textbf 0} \textbf v_k$$Where the first partial derivative becomes $\textbf F_{k-1}$ and the second becomes $L_{k-1}$.
+	We take some function giving $\textbf y$ values $\textbf y_k=\textbf h_{k}(\textbf x_{k},\textbf v_k)$ this can be approximated form our estimate value. That is: $$\textbf y_k=\textbf h_{k}(\textbf x_{k},\textbf v_k)$$$$\approx\textbf h_{k}$$$$(\dot{\textbf x}_{k-1},\textbf 0)$$$$ + \left. \frac {\partial\textbf h_{k}} {\partial\textbf x_{k}} \right| _{\dot{\textbf x}_{k},\textbf 0} (\textbf x_{k}-\dot{\textbf x}_{k}) + \left. \frac {\partial\textbf h_{k}} {\partial\textbf v_{k}} \right| _{\dot{\textbf x}_{k},\textbf 0} \textbf v_k$$Where the first partial derivative becomes $\textbf F_{k-1}$ and the second becomes $L_{k-1}$.
 
 ---
 What is a Jacobian matrix? #flashcard #MOB #KalmanFilter 
