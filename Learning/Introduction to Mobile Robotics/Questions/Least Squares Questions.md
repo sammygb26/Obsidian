@@ -7,11 +7,6 @@ What is the squared error criterion? #flashcard #MOB #LeastSquares
 
 ---
 With a linear model what is the form of the model with m measurement and n variables in least squares? #flashcard #MOB #LeastSquares 
-	This would be $$\textbf y=
-\begin{bmatrix}y_1\\\vdots\\y_m\end{bmatrix}=
-\begin{bmatrix}e_1\\\vdots\\e_m\end{bmatrix}=
-\begin{bmatrix}H_{11}&\dots &H_{1n}\\\vdots&&\vdots\\H_{m1}&\dots&H_{mn}\end{bmatrix}
-\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}+\begin{bmatrix}v_1\\\vdots\\v_m\end{bmatrix}=
-\textbf{Hx}+\textbf v$$ Where $\mathbf H$ is the Jacobian matrix of partial derivative of $\mathbf y$ with respect to $\mathbf x$.
+	This would be $$\textbf y=\textbf{Hx}+\textbf v$$ Where $\mathbf H$ is the Jacobian matrix of partial derivative of $\mathbf y$ with respect to $\mathbf x$.
 
 ---
