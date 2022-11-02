@@ -87,3 +87,5 @@ Putting the above definitions together we get a three step process.
 3. **Begin recursion** - Now we recursively compute the next estimation based on the new measurements. We first estimate our gain matrix $\textbf K_k$ and then use this to estimates $\hat{\textbf x}_k$. Then we also update our covariance matrix.
 
 ![[Pasted image 20221024103408.png]]
+
+[[]]
