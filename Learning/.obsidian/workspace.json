@@ -11,12 +11,8 @@
             "id": "67daa0e1c9543632",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introduction to Mobile Robotics/Least Squares.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -49,8 +45,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -79,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#flashcard",
+                "query": "tag:#flas",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.00418853759766
+    "width": 312.00418853759766,
+    "collapsed": true
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -108,7 +104,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Mobile Robotics/Questions/Kalman Filter Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,17 +121,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8d6da1e8ede5fe18",
+  "active": "67daa0e1c9543632",
   "lastOpenFiles": [
-    "Introduction to Mobile Robotics/Questions/Least Squares Questions.md",
     "Introduction to Mobile Robotics/Least Squares.md",
+    "Introduction to Mobile Robotics/Questions/Least Squares Questions.md",
+    "Introduction to Mobile Robotics/Questions/Kalman Filter Questions.md",
     "Introduction to Mobile Robotics/Camera Calibration.md",
     "Pictures/Pasted image 20221101102157.png",
     "Pictures/Pasted image 20221101114135.png",
     "Untitled.md",
     "Introduction to Mobile Robotics/Questions/Image Correlation, Convolution and Filtering Questions.md",
     "Introduction to Mobile Robotics/Image Correlation, Convolution and Filtering.md",
-    "Machine Learning (Uni)/Generalization 4.md",
-    "Machine Learning (Uni)/Questions/Generalization 4 Questions.md"
+    "Machine Learning (Uni)/Generalization 4.md"
   ]
 }

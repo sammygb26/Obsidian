@@ -53,7 +53,7 @@ This gives us:
 ![[Pasted image 20221024101906.png]]
 
 ### Solve the Optimum Estimation for RLS
-We start by taking our recursive model and find a relationship to $\mathbb E(\textbf e_k)$.
+We start by taking our recursive model and find a relationship to $\mathbb E(\textbf e_k)$ from $\mathbb E(\mathbf e_k)$.
 
 ![[Pasted image 20221024102158.png]]
 
@@ -88,4 +88,4 @@ Putting the above definitions together we get a three step process.
 
 ![[Pasted image 20221024103408.png]]
 
-[[]]
+[[Least Squares Questions]]
