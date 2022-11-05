@@ -4,42 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "f09fad188501ccad",
+        "id": "60ea301f486e466a",
         "type": "tabs",
         "children": [
           {
-            "id": "67daa0e1c9543632",
+            "id": "0b4e13b91b25d42d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning (Uni)/Gaussian Mixture Models.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
       },
       {
-        "id": "26877718a9553abf",
+        "id": "9243d79b6e3d53ba",
         "type": "tabs",
         "children": [
           {
-            "id": "f21070c58694ac2c",
+            "id": "fcf0f6b3b27163d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Mobile Robotics/Questions/Least Squares Questions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8d6da1e8ede5fe18",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introduction to Mobile Robotics/Questions/Kalman Filter Questions.md",
+                "file": "Machine Learning (Uni)/Questions/Gaussian Mixture Models Questions.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#flas",
+                "query": "tag:#KMeans",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Machine Learning (Uni)/Questions/Gaussian Mixture Models Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,17 +114,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "67daa0e1c9543632",
+  "active": "fcf0f6b3b27163d2",
   "lastOpenFiles": [
-    "Introduction to Mobile Robotics/Least Squares.md",
-    "Introduction to Mobile Robotics/Questions/Least Squares Questions.md",
-    "Introduction to Mobile Robotics/Questions/Kalman Filter Questions.md",
-    "Introduction to Mobile Robotics/Camera Calibration.md",
-    "Pictures/Pasted image 20221101102157.png",
-    "Pictures/Pasted image 20221101114135.png",
-    "Untitled.md",
-    "Introduction to Mobile Robotics/Questions/Image Correlation, Convolution and Filtering Questions.md",
-    "Introduction to Mobile Robotics/Image Correlation, Convolution and Filtering.md",
-    "Machine Learning (Uni)/Generalization 4.md"
+    "Machine Learning (Uni)/Gaussian Mixture Models.md",
+    "Machine Learning (Uni)/Questions/Gaussian Mixture Models Questions.md",
+    "Machine Learning (Uni)/K means.md",
+    "Pictures/Pasted image 20221104195620.png",
+    "Machine Learning (Uni)/Questions/K means questions.md",
+    "Pictures/Pasted image 20221103152145.png",
+    "Machine Learning (Uni)/Principal Component Analysis.md",
+    "Machine Learning (Uni)/Questions/Principal Component Analysis Questions.md",
+    "Machine Learning (Uni)/Information Theory.md",
+    "Machine Learning (Uni)/High Dimensional Statistics.md"
   ]
 }
