@@ -1,6 +1,6 @@
 Lidar is a light laser based ranging device. It was developed for study the atmosphere and then Apollo 15 used lidar to map the surface of the moon.
 
-You need three things to make lidar work. A system that outputs the light (can be spinning to get many angles). A way to sense the data again. Then a very accurate close to allow the time difference to measure the distance.
+You need three things to make lidar work. A system that outputs the light in a direction (can be spinning to get many angles). A way to sense the light again after it has bounced of somethig. Then a very accurate clock to allow the time difference to measure the distance.
 
 ![[Pasted image 20221031104248.png]]
 
@@ -13,6 +13,8 @@ In **3D** we can sense higher angles and get a better view of the world.
 
 ### Measurement models
 The two angles the elevation and azimuth allows us to find the vector to the point hence get its $x,y,z$. But this is **non-linear** if we convert from the polar coordinates to $x,y,z$. This is called the **Inverse Sensor model** but we also get then we have the **forward sensor model** going form $x,y,z$ to polar coordinates.
+
+![[Pasted image 20221106173507.png]]
 
 ![[Pasted image 20221031104854.png]]
 
@@ -64,7 +66,7 @@ We need to find $\{\check C_{s,s'},\check r_s^{s,s'}\}$ each iteration. We can u
 ![[Pasted image 20221031110512.png]]
 
 ### Outliers
-Sometimes not all points are paired up correctly. Even the prefect transform will give erros.
+Sometimes not all points are paired up correctly. Even the prefect transform will give errors.
 
 ![[Pasted image 20221031110651.png]]
 
@@ -73,3 +75,5 @@ This will cause a huger error in the loss. One way to get around this is to use 
 ![[Pasted image 20221031110744.png]]
 
 This discounts errors that are too far away making them make less difference to the overall result.
+
+[[LIDAR, Point Cloud and Iterative Closest Points Questions]]

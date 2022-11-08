@@ -76,8 +76,10 @@ where
 This defines a sphere and the intersection of 4 spheres will gives us a good position for the coordinate.
 
 ### GPS Error Sources
-**Ephemeris & clock errors**: As GPS heavily sues speed of light for distance computation a clock error of 1x10^-6s gives 300m positional error. Or if we don't know the satellites position we will get erroneous readings.
+**Ephemeris & clock errors**: As GPS heavily uses speed of light for distance computation a clock error of 1x10^-6s gives 300m positional error. Or if we don't know the satellites position we will get erroneous readings.
 **Multipath effect** here sometimes signals can come in from buildings and this causes extra time to be added to the time offset.
 **Ionosphere delay** here charged ions in the atmosphere can affect signal propagation. This cause sit to not work well in in rainy weather.
 
 These error cause the requirement to perform lo
+
+[[Coordinate Systems and Reference Frames Questions]]
