@@ -4,35 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "80f4b3f39caef3b8",
+        "id": "8188377ebdf4c774",
         "type": "tabs",
         "children": [
           {
-            "id": "2e2caa00aab0da8c",
+            "id": "cfcd9b210f7e994b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Mobile Robotics/Occupancy Grid and Maps.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e3796d3057cd4341",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introduction to Mobile Robotics/Questions/Kalman Filter Questions.md",
+                "file": "Machine Learning (Uni)/Expectation Maximization.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "431b1274e914821a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7915db0792bbee08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning (Uni)/Questions/Expectation Maximization Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#OcupancyGridMaps",
+                "query": "tag:#MachineLearningUni",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,11 +75,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 312.00418853759766
+    "width": 312.00418853759766,
+    "collapsed": true
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -90,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Mobile Robotics/Questions/Kalman Filter Questions.md",
+                "file": "Machine Learning (Uni)/Questions/Expectation Maximization Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +115,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e3796d3057cd4341",
+  "active": "7915db0792bbee08",
   "lastOpenFiles": [
-    "Pictures/Pasted image 20221106173507.png",
-    "Machine Learning (Uni)/Expectation Maximisation.md",
+    "Machine Learning (Uni)/Expectation Maximization.md",
+    "Machine Learning (Uni)/Questions/Expectation Maximization Questions.md",
+    "Machine Learning (Uni)/MLG.md",
+    "Introduction to Mobile Robotics/Questions/Kalman Filter Questions.md",
     "Introduction to Mobile Robotics/Occupancy Grid and Maps.md",
+    "Pictures/Pasted image 20221106173507.png",
     "Introduction to Mobile Robotics/Questions/Occupancy Grid Maps Questions.md",
     "Introduction to Mobile Robotics/Semantic Segmentation.md",
     "Introduction to Mobile Robotics/Camera Calibration.md",
-    "Introduction to Mobile Robotics/Questions/Semantic Segmentation Questions.md",
-    "Introduction to Mobile Robotics/Questions/Coordinate Systems and Reference Frames Questions.md",
-    "Introduction to Mobile Robotics/Coordinate Systems and Reference Frames.md",
-    "Introduction to Mobile Robotics/Questions/Image Feature Matching Questions.md"
+    "Introduction to Mobile Robotics/Questions/Semantic Segmentation Questions.md"
   ]
 }

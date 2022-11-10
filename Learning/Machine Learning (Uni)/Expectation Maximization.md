@@ -17,6 +17,7 @@ We know its hard to maximize with $X$ on it's own instead we will use the second
 
 ![[Pasted image 20221107152414.png]]
 
+### Formulation
 Let $q(X)$ be a discrete probability function on $Z$, that is 
 
 ![[Pasted image 20221107152449.png]]
@@ -29,6 +30,7 @@ we have a log of a sum here so we use **Jensen's inequality**. To give
 
 ![[Pasted image 20221107152706.png]]
 
+##### Understanding why it works
 We all this $\mathcal L(q,\theta)$. We want to visualize how these $\mathcal L$ parts work in terms of our parameter space to understand what we are doing when we optimize with it. This is as we control $q$ and $\theta$. The distribution $q$ we use will depend on this.
 
 ![[Pasted image 20221107153130.png]]
@@ -67,20 +69,21 @@ Giving a formula for our $\log p(X|\theta)$ as
 
 ![[Pasted image 20221107154459.png]]
 
-Hence to find $q$ we minimize KL (that is $p=q$).
+Hence to find $q$ we minimize KL (that is $p=q$). This will not change $\log p(X|\theta)$ at all hence it must increase $\mathcal L$.
 
 ![[Pasted image 20221107154646.png]]
 
+### Formulation of EM
 This gives the steps 
 
 1. Choose an initial $\theta^{old}$
-2. **Expectation Step**. Let $q^*(Z)=p(Z|X,\theta^{old})$ giving the best loer bound at $\theta^{old}$
+2. **Expectation Step**. Let $q^*(Z)=p(Z|X,\theta^{old})$ giving the best lower bound at $\theta^{old}$
 ![[Pasted image 20221107154802.png]]
 3. **Maximization Step**
 ![[Pasted image 20221107154825.png]]
 
+[[Expectation Maximization Questions]]
 
+Is there a situation where maximizing $\theta$ will cause setting $p=q$ to lower $\mathcal L$ to below where it started?
 
-### Observed and Latent Variables
-
-### Formulation of EM
+Might minimizing KL divergence increase $\mathcal L$?
