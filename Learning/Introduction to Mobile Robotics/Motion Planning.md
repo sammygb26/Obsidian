@@ -85,3 +85,4 @@ Dynamic vehicles / pedestrian also impose more challenging constraints. Constrai
 ### Hierarchical Planner
 Mission planner is the highest level focusing on **map-level-navigation**. We can use algorithms like A* and Dijkstra to solve this ang get the best path. The behavior planner focuses on other agents and *rules of the road, driving behaviors*. Then **local planner**
 
+[[Motion Planning Questions]]
