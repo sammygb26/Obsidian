@@ -49,7 +49,7 @@ What is the idea behind AdaBoost? #flashcard #MachineLearningUni #Boosting
 What are the steps in AdaBoost? #flashcard #MachineLearningUni #Boosting 
 	1. Initialize the weights $w=(w_1,...,w_n)$ so that $w_i=\frac1n$.
 	2. For m=1 to ML
-		1.Fit a classifier $f_m(x) to the weighted training data.
+		1.Fit a classifier $f_m(x)$ to the weighted training data.
 		2. Compute $\text{err}_m=\frac{\sum_{y_i\neq f_m(x_i)}w_i}{\sum_{i=1}^nw_i}$ as the sum of unexplained weight over the total weight.
 		3. Compute $\alpha_m=\frac12\log\left(\frac{1-\text{err}_m}{\text{err}_m}\right)$ the inverse logit of the err percentage
 		4. Update the weights $w_i\leftarrow w_ie^{\{\alpha_m\mathbb1(y\neq f_m(x_i))\}}$, that is they stay the same if correctly classified and are scaled up by $e^{\alpha_m}$ if not.
