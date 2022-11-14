@@ -58,7 +58,7 @@ What makes up the nicotinic acetylcholine receptor, what is its structure? #flas
 	It is made up of 5 protein subunits. Two $\alpha$ subunits and one each of $\beta$, $\gamma$ and $\delta$. This makes up a cone structure that spans the membrane. The pore itself is around .8nm in diameter. The $\alpha$ subunits bind for acetylcholine and initiate the conformation change that opens the channel only when both sites are bound. There are 4 membrane spanning domains for each subunit M1-4 with all the M2 domains facing into the pore having a negative charged amino acids and so allowing positive charges through.
 
 ---
-Why does the nicotinic receptor depolarize despite allowing both potassium and sodium into the cell? #flashcfdxewdA|ZAZard #FundamentalsOfNeuroscience #ExcitationAndInhibition 
+Why does the nicotinic receptor depolarize despite allowing both potassium and sodium into the cell? #flashcard #FundamentalsOfNeuroscience #ExcitationAndInhibition 
 	The reason for this is that even though the permeability for both ions is increased sodium has a higher driving force so has more of an effect on the potential. All this is also described by the reversal potential being not positive but also not as negative as potassium, it is around -10mV.
 
 ---

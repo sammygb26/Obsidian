@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c61dbe400e934d39",
+        "id": "1aacd1335bfc3046",
         "type": "tabs",
         "children": [
           {
-            "id": "7465db86b8294f7d",
+            "id": "4dc8c8138fd481fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Mobile Robotics/Motion Planning.md",
+                "file": "Machine Learning (Uni)/Support Vector Machines.md",
                 "mode": "source",
                 "source": false
               }
@@ -22,16 +22,16 @@
         ]
       },
       {
-        "id": "aaae92f1619e5792",
+        "id": "05663c5746fb15e1",
         "type": "tabs",
         "children": [
           {
-            "id": "bba754a6c2f89474",
+            "id": "4f2c4f9f103a5861",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Mobile Robotics/Questions/Motion Planning Questions.md",
+                "file": "Machine Learning (Uni)/Questions/Support Vector Machines Questions.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Mobile Robotics/Questions/Motion Planning Questions.md",
+                "file": "Machine Learning (Uni)/Questions/Support Vector Machines Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,17 +114,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bba754a6c2f89474",
+  "active": "4f2c4f9f103a5861",
   "lastOpenFiles": [
-    "Introduction to Mobile Robotics/Motion Planning.md",
-    "Introduction to Mobile Robotics/Questions/Motion Planning Questions.md",
-    "Introduction to Mobile Robotics/Object Detection.md",
-    "Introduction to Mobile Robotics/Occupancy Grid and Maps.md",
-    "Introduction to Mobile Robotics/Semantic Segmentation.md",
-    "Machine Learning (Uni)/MLG.md",
-    "Pictures/Pasted image 20221110111545.png",
-    "Introduction to Mobile Robotics/Kalman Filter.md",
+    "Machine Learning (Uni)/Questions/Boosting Questions.md",
+    "Machine Learning (Uni)/Support Vector Machines.md",
+    "Machine Learning (Uni)/Tasks.md",
     "Machine Learning (Uni)/Boosting.md",
-    "Machine Learning (Uni)/Support Vector Machines.md"
+    "Machine Learning (Uni)/Questions/Support Vector Machines Questions.md",
+    "Fundamentals of Neuroscience/Questions/Excitation and Inhibition Questions.md",
+    "Introduction to Mobile Robotics/Feedforward Neural Networks.md",
+    "Introduction to Mobile Robotics/Image Correlation, Convolution and Filtering.md",
+    "Introduction to Mobile Robotics/Hardware and Software Architectures.md",
+    "Introduction to Mobile Robotics/Image Feature Matching.md"
   ]
 }

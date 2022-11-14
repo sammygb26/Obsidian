@@ -47,7 +47,7 @@ Whether this works a lot depends on the task and the dataset used.
 Boosting considers a weighted sum of all functions
 
 ![[Pasted image 20221111153034.png]]
-($\theta_i$ should be replace with $\theta_n$)
+($\theta_i$ should be replace with $\theta_m$)
 Fine tuned to find $\alpha$?
 
 Here all the $f_m$ functions have output +1 or -1. There is usually no closed form solution. We fit additive models sequentially fitting the data better and better.
@@ -106,4 +106,6 @@ Some other methods were tried after AdaBoost. For example Logit Boost
 
 ![[Pasted image 20221111155653.png]]
 
-We can use gradient boosting where we differentiate with respect tot he functions in order to find boosting values. Then extreme gradient boosting which works best for small tabular data sets.
+We can use gradient boosting where we differentiate with respect to the functions in order to find boosting values. Then extreme gradient boosting which works best for small tabular data sets.
+
+[[Boosting Questions]]
