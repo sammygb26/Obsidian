@@ -59,3 +59,7 @@ What can L2 regularization allow us to do with a p-Lipschitz loss? #flashcard #M
  When optimizing over a $p$-Lipschitz loss adding L2 regularization allows us to make what we are minimizing also strongly convex.  Hence we can get and upper bound on the stability score $$||A(S^{(i)}-A(S)||\le\frac{2p}{\lambda n}$$which can be further passes through the Lipschitz definition to give $$\mathbb E_{S\sim\mathcal D^n}[L_{\mathcal D}(A(S))-L_S(A(S))]\le\frac{2p^2}{\lambda n}$$
 
 ---
+If the loss is p-Lipschitz continuous what does that imply mathematically? #flashcard #MachineLearningUni #Generalization3 
+	If the loss if $p$-Lipschitz continuous then $$l(A(S^{(i)})(x_i),y_i)-l(A(S)(x_i),y_i)\le p||A\left(S^{(i)}\right)-A(S)||$$ that is our loss is bounded (we are stable) if the algorithm we choose is bounded.
+
+---

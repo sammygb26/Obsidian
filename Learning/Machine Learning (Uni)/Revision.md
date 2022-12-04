@@ -1,0 +1,338 @@
+- Probability (Rev)
+	- [x] Definition of probability (basic rules etc.)
+	- [x] Meaning in discrete case
+	- [x] Set comprehension
+	- [x] Meaning in continuous case
+	- [x] Gaussian distribution formula
+	- [x] Sampling notation
+	- [x] Expectation
+	- [x] Law of the uniconcious statistician
+	- [x] Free and bound variables
+	- [x] Joint distribution
+	- [x] Marginal distribution
+	- [x] Conditional distribution
+	- [x] Bayes rule
+	- [x] Independence
+	- [x] Independence and expectation
+	- [x] Linear combination of gaussians
+	- [x] Making gaussians from uniforms
+	- [x] Moment generating functions
+	- [ ] MGF of gaussians
+	- [x] i.i.d.
+	- [x] Maximum likelihood
+- Linear regression
+	- [x] MSE minimization
+	- [x] Loss function
+	- [x] Solving in matrix form
+	- [x] Feature function
+	- [x] Too many features
+	- [x] Linear in features
+	- [x] MSE from gaussians
+	- [x] Solution to LR
+- Linear classification
+	- [x] Classification problem
+	- [x] Classification regions form model
+	- [x] Classification model
+	- [x] Zero one loss
+	- [x] Problem with zero-one-loss
+	- [x] Probabilistic model
+	- [x] Sigmoid function
+	- [x] Combining individual probabilities into full formula
+	- [x] Log likelihood
+	- [x] No analytical solution
+	- [x] Adding in features
+	- [x] Extension to multiple classes
+	- [x] SoftMax
+	- [x] SoftMax sharpness result
+- Information theory
+	- [x]  Definition of information
+	- [x]  Meaning of the base
+	- [x] Channel coding
+	- [x] Unit of coding
+	- [x] Bits to send a coin flip
+	- [x] Entropy definition
+	- [x] Entropy of a coin
+	- [x] Conditional entropy
+	- [x] Mutual information
+	- [x] Cross entropy
+	- [x] KL-divergence
+	- [x] Mutual information
+	- [x] Cross entropy connection to log loss
+- Tasks
+	- [x] What can LR do
+	- [x] What can LC do
+	- [x] Reducing complex problems to ML tasks
+- Optimization 1
+	- [x] Convex optimization
+	- [x] Minimizer definition
+	- [x] Convex definition
+	- [x] Convex 1st derivative property
+	- [x] Positive semi-definite matrices
+	- [x] Sufficient conditions for convex
+	- [x] Squared distance convexity
+	- [x] Affine transform convexity preserving
+	- [x] Non-negative sum convexity
+	- [x] Convexity of MSE
+	- [x] Optimality condition
+	- [x] Solution to MSE
+	- [x] Convexity of log loss
+	- [x] Strong convexity
+	- [x] Quadratic lower bound
+	- [x] Lipschitz continuous
+	- [x] Smoothness
+	- [x] Quadratic upper bound
+- Optimization 2
+	- [x] Approximate solutions definition
+	- [x] Gradient descent
+	- [x] Approximate iterative solutions
+	- [x] Potential results
+	- [x] Implications of smoothness
+	- [x] Implications of strong convexity
+	- [x] Guarantee of gradient descent
+	- [x] Guaranteed of gradient descent for L-smooth
+	- [x] Gradient descent on log loss
+	- [x] Size of the dataset
+	- [x] Computing gradient
+	- [x] Stochastic gradient descent
+	- [x] SGD implications for gradients
+	- [x] Guarantee for stochastic gradient descent
+	- [x] Subgradient definition
+	- [x] Subgradient  implications for convergence
+- Neural networks 1
+	- [x] Perceptron
+	- [x] Perceptron decision boundary
+	- [x] Training perceptron procedure
+	- [ ] Geometry of perceptrons error correction
+	- [x] Perceptron learning algorithm
+	- [x] Linearly separable
+	- [x] Perceptron structures and decision boundaries
+	- [x] Perceptron logical functions
+	- [x] Perceptron XOR
+	- [x] Edges vs number of perceptrons
+	- [x] Perceptron extension to multiple outputs
+	- [x] Limitations of perceptron
+	- [x] Training multiple layers problem
+	- [x] Training multiple layers solution
+	- [x] Universal approximation theorem
+- Optimization 3
+	- [x] Unconstrained optimization
+	- [x] Constrained optimization
+	- [x] Feasible solutions
+	- [x] Constraint functions
+	- [x] Lagrangians
+	- [x] Dual function
+	- [x] Dual problem
+	- [ ] Unigram model problem
+	- [ ] Projection
+	- [ ] Maximal projection (PCA...)
+- Neural networks 2
+	- [ ] Approximation of posterior probabilities
+	- [x] Training with MSE
+	- [ ] Single layer training
+	- [x] Single layer calculus
+	- [x] Cross-entropy error and sigmoid
+	- [x] Tanh
+	- [x] ReLU - LeakyReLU
+	- [x] Multiple output nodes
+	- [x] Training with multiple output nodes
+	- [x] SoftMax activation
+	- [x] Training multilayer NNs
+- Neural networks 3
+	- [x] Problems with multi-layer NNs trained with EBP (error back propagation)
+	- [x] Overfitting and generalization
+	- [x] Flexibility
+	- [x] Generalization error
+	- [x] Undertraining
+	- [x] Overtraining
+	- [x] Early stopping
+	- [x] Training-set
+	- [x] Validation-set
+	- [x] Regularization
+	- [x] CNNs
+	- [ ] LSTMs
+	- [x] ReLU
+	- [ ] CNN background
+	- [x] 1D convolutions
+	- [x] 2D convolutions
+	- [x] Kernels
+	- [x] Convolution parameters
+	- [x] Pooling
+	- [ ] Normalization layers
+	- [x] Autoencoder
+	- [x] GAN
+	- [ ] RNN
+	- [ ] Transformers
+- High-dimensional statistics
+	- [x] Sphere volume concentration
+	- [x] Unit ball volume
+	- [x] Distance to corner in cube
+	- [x] Volume near the equator
+	- [x] Random vectors inside unit ball
+	- [x] Random vector distance
+	- [x] Gaussian soap bubble
+- Generalization 1 (Rev)
+	- [x] Failure cases for machine learning
+	- [x] Generalization
+	- [x] Measuring generalization
+	- [x] train/test dataset
+	- [x] Unknown distribution
+	- [x] Training error
+	- [x] Generalization error
+	- [x] GE estimate
+	- [x] Learning algorithm
+	- [x] Hypothesis class
+	- [x] PAC learnable (Rev)
+	- [x] No free lunch theorem
+	- [ ] Complexity generalization trade-offs
+	- [ ] Error decomposition
+	- [x] Empirical Risk Minimization
+	- [x] Uniform convergence
+	- [x] Uniform convergence PAC ERM result
+- Generalization 2
+	- [x] Error decomposition
+	- [x] Generalization bounds
+	- [x] Sample complexity
+	- [x] VC generalization bounds
+	- [x] Capacity measures
+	- [x] Shattering
+	- [x] Shattering points in 2D
+	- [x] Interpreting generalization bounds
+	- [x] Approximation error
+	- [x] Surrogate losses
+	- [x] Complete error decomposition
+	- [x] Underfitting definition
+	- [x] Overfitting definition
+	- [x] In practice ERM and surrogate losses
+	- [x] Test error
+	- [x] Need for dev set
+- Generalization 3
+	- [x] Reusing test sets
+	- [x] Capacity-generalization trade-off
+	- [ ] Large (non-finite) hypothesis classes
+	- [x] Limiting high VC dimension
+	- [x] L2 regularization
+	- [x] Shattering
+	- [x] Rademacher complexity
+	- [ ] Rademacher generalization bounds (2?)
+	- [x] Rademacher complexity upper bound for linear classifiers with bounded norm
+	- [x] Stability
+	- [ ] Stability and overfitting
+	- [x] Lipschitz losses
+	- [x] Lipschitz and strong convexity
+	- [ ] L2 regularizer with Lipschitz losses
+	- [x] Hypothesis limited by learning
+- Generalization 4
+	- [x] Universal approximation definition
+	- [x] Other universal approximators
+	- [x] Depth separation
+	- [x] VC dimension of sine function
+	- [x] Turing machines on NN
+	- [x] VC dimension of NN Asymptotics
+	- [x] Hardness of optimizing NNs
+	- [x] Optimization on random variables
+	- [x] Overparameterization affect on fitting random variables
+	- [x] Overparameterization definition
+	- [x] Interpolation
+- Principal component analysis
+	- [x] Motivations of PCA
+	- [x] Dimensionality reduction
+	- [x] Applications
+	- [x] Maximum variance formulation
+	- [x] Maximum variance formulation solution
+	- [x] Example of use
+	- [x] Cumulative variance
+	- [x] Bad applications
+	- [ ] PCA implementation and runtime
+- K-means
+	- [x] K means problem
+	- [x] K means problem formulation (maths)
+	- [x] Distortion
+	- [x] Solution
+	- [x] Choosing K
+	- [x] Initializing mu
+	- [x] Hard vs soft assignment
+- Gaussian mixture models
+	- [x] Problems with k-means
+	- [x] Mixture models
+	- [x] Generative process
+	- [x] Mixture of gaussians to generate data
+	- [x] Problems with Maximum likelihood solution
+	- [x] EM for GMMs
+	- [x] EM derivation for GMMs
+	- [x] Jensen's inequality
+	- [x] ELBO for GMMs
+	- [x] Solution for GMMs
+	- [x] Choosing number of components for GMMs
+- Expectation maximization
+	- [x] General latent variable model
+	- [x] Motivation behind EM
+	- [x] Jensen's inequality (shortened version)
+	- [x] KL - divergence and properties
+	- [x] EM motivations
+	- [x] Lower bound for marginal log-likelihood definition
+	- [x] EM visualization 1
+	- [x] Evidence lower bound
+	- [x] ELBO reformulation (KL)
+	- [x] EM intuition
+	- [x] EM solution steps
+- Support vector machines
+	- [x] Logistic regression
+	- [x] Decision boundary
+	- [x] Margin
+	- [x] Margin formula
+	- [x] SVM idea
+	- [x] SVM definition
+	- [x] SVM classification
+	- [x] Optimizations problems with SVM
+	- [x] Soft margin SVM
+	- [x] Soft SVM loss
+	- [x] Non-linear SVM
+	- [x] Kernel need
+	- [x] Kernel functions
+	- [x] Making kernels
+	- [x] Composing kernels
+	- [x] SVM extras
+- Boosting
+	- [x] Ensemble learning
+	- [x] Committee method
+	- [x] Theoretical* positive result
+	- [x] Connection to binomial distribution
+	- [x] Binomial result for p>0.5
+	- [x] Bagging
+	- [x] Boosting
+	- [x] Adaboost method
+	- [ ] Derivation of Adaboost
+	- [x] Exponential loss in Adaboost
+	- [ ] Other boosting methods
+- Statistical Dependencies 1 (rev )
+	- [x] Independence
+	- [x] Independent sets
+	- [x] Importance of independence
+	- [x] Mutual and pairwise independence
+	- [x] Conditional independence
+	- [x] Testing independence
+	- [x] Chain rule for conditional probabilities
+	- [x] Applying independence
+	- [x] DAG representation
+	- [x] Factorizing according to a graph
+	- [x] Difference between distribution and graph
+	- [x] Basic structures and their consequences
+	- [x] V-structure
+	- [x] Separation
+	- [x] Independence in the two objects
+	- [x] Naive Bayes
+	- [x] Naive bayes Loss
+- Statistical dependencies 2
+	- [x] HMMs
+	- [x] HMMs factorization
+	- [x] Undirected graph representation
+	- [x] Separation on an undirected graph
+	- [x] Undirected graph factorization
+	- [x] Cliques
+	- [x] Maximal cliques
+	- [x] Independence of graph and distribution
+	- [x] Names for different distribution graph pairs
+	- [ ] Ising model
+	- [x] Linear-chain conditional random field
+	- [x] Linear chain conditional random field factorization
+	- [x] Hammersley Clifford

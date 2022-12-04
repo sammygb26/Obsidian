@@ -101,3 +101,5 @@ Then if we pass this bound through the definition for $p$-Lipschitz we get
 Meaning adding L2 regularization to a $p$-Lipschitz loss makes it have stable learning and hence doesn't overfit.
 
 ![[Pasted image 20221027160246.png]]
+
+[[Generalization 3 Questions]]

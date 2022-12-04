@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5b74798f91826103",
+        "id": "fcfde5e54053013c",
         "type": "tabs",
         "children": [
           {
-            "id": "fb3c12daf8bbb639",
+            "id": "099238c910228011",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning (Uni)/Boosting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7f5051382447d74a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning (Uni)/Questions/Boosting Questions.md",
+                "file": "Machine Learning (Uni)/Revision.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#MachineLearningUni",
+                "query": "tag:#StatisticalDependencies2",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning (Uni)/Questions/Boosting Questions.md",
+                "file": "Machine Learning (Uni)/Revision.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7f5051382447d74a",
+  "active": "099238c910228011",
   "lastOpenFiles": [
-    "Machine Learning (Uni)/Boosting.md",
-    "Pictures/Pasted image 20221114151703.png",
-    "Machine Learning (Uni)/Statistical Dependencies 1.md",
+    "Machine Learning (Uni)/Statistical Dependencies 2.md",
     "Machine Learning (Uni)/Questions/Support Vector Machines Questions.md",
-    "Machine Learning (Uni)/Questions/Boosting Questions.md",
-    "Machine Learning (Uni)/Support Vector Machines.md",
+    "Machine Learning (Uni)/Questions/Statistical Dependencies 2 Questions.md",
+    "Machine Learning (Uni)/Statistical Dependencies 1.md",
+    "Machine Learning (Uni)/Revision.md",
+    "Introduction to Mobile Robotics/Summary.md",
+    "Introduction to Mobile Robotics/Behavior Planning.md",
+    "Machine Learning (Uni)/MLG.md",
     "Machine Learning (Uni)/Tasks.md",
-    "Fundamentals of Neuroscience/Questions/Excitation and Inhibition Questions.md",
-    "Introduction to Mobile Robotics/Feedforward Neural Networks.md",
-    "Introduction to Mobile Robotics/Image Correlation, Convolution and Filtering.md"
+    "ML Research/GANs (Goodfellow et al).md"
   ]
 }

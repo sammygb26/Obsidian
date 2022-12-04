@@ -65,7 +65,7 @@ When we have some Ada function F_{m-1} and we want to make F_m what do we need t
 
 ---
 How is the weight defined in AdaBoost and how is it updated? #flashcard #MachineLearningUni #Boosting 
-	The weight in Adobos is defined as the loss of the network calculated with $F_{m-1}$ only previous $f_{u}$ ($0<u<m$) functions. Hence is $$w_{m,i}=\sum_{i=1}e^{-y_iF_{m-1}(x_i)}$$ Hence to calculate it we just add on $w_{m,i}=w_{m-1,i}e^{\alpha_m\mathbb 1(y_i\neq f_m(x_i))}$ 
+	The weight in Adobos is defined as the loss of the network calculated with $F_{m-1}$ only previous $f_{u}$ ($0<u<m$) functions. Hence is $$w_{m,i}=\sum_{i=1}^ne^{-y_iF_{m-1}(x_i)}$$ Hence to calculate it we just add on $w_{m,i}=w_{m-1,i}e^{\alpha_{m-1}\mathbb 1(y_i\neq f_{m-1}(x_i))}$ 
 
 ---
 What solution does minimizing L_m yield for the alpha values for the new function in AdaBoost? #flashcard #MachineLearningUni #Boosting 
