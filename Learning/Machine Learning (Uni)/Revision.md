@@ -194,8 +194,8 @@
 	- [x] Sample complexity
 	- [x] VC generalization bounds
 	- [x] Capacity measures
-	- [x] Shattering
-	- [x] Shattering points in 2D
+	- [x] Shattering (rev)
+	- [x] Shattering points in 2D (rev)
 	- [x] Interpreting generalization bounds
 	- [x] Approximation error
 	- [x] Surrogate losses
@@ -304,7 +304,7 @@
 	- [ ] Derivation of Adaboost
 	- [x] Exponential loss in Adaboost
 	- [ ] Other boosting methods
-- Statistical Dependencies 1 (rev )
+- Statistical Dependencies 1 
 	- [x] Independence
 	- [x] Independent sets
 	- [x] Importance of independence
@@ -313,7 +313,7 @@
 	- [x] Testing independence
 	- [x] Chain rule for conditional probabilities
 	- [x] Applying independence
-	- [x] DAG representation
+	- [x] DAG representation (rev)
 	- [x] Factorizing according to a graph
 	- [x] Difference between distribution and graph
 	- [x] Basic structures and their consequences
