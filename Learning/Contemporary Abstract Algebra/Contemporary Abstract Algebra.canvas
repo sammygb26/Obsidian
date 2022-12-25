@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"9d809fa667da3212","x":-465,"y":-404,"width":572,"height":489,"type":"file","file":"Contemporary Abstract Algebra/Preliminaries.md"},
+		{"id":"a24daf7daef61793","x":107,"y":-404,"width":554,"height":489,"type":"file","file":"Contemporary Abstract Algebra/Introduction to Groups.md"}
+	],
+	"edges":[
+		{"id":"374aca7a80082f62","fromNode":"a24daf7daef61793","fromSide":"left","toNode":"9d809fa667da3212","toSide":"right"}
+	]
+}

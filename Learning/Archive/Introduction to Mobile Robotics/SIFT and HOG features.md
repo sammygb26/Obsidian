@@ -1,0 +1,26 @@
+We can find corners using [[Harris Corner Detection]] this combined with using the Laplacian to calculate a neighborhood around a corner. For a patch we can then also calculate the orientation. We know the *center, radius* and *orientation* of a set of an image patch but we need to represent this. **Orientations** make good representations as they are unaffected by changes in brightness and different textures tend to have different orientation fields. The patters of orientation throughout the patch should be distinctive and our representation should be robust to small errors in the center and radius (as we can only approximate these).
+
+The neighborhoods can be through of as being made our of **pattern elements**. As above these can be *orientations* but we can represent a neighborhood with different pattern elements. These elements may not be exactly right for a neighborhood but if the match is overall right then the neighborhood has the right properties. So when **building features** we want to make it clear when pattern elements are present and in the right place. But we want our features to be **invariant** to some shifts.
+
+One way is to represent the neighborhood as a histogram of element that appear there. This will tell us what is present but too many patters can be confused with one another as the minutia of the arrangement of elements. For example all vertical stripes will get mixes up and the width of the stripe will not matter. Instead histograms can be taken locally throughout the neighborhood. This leads to **SIFT Features**.
+
+### SIFT Features
+This representation isn't affected by **translation**, **rotation** or **scale**. For each patch we rectify the patch by translating the center to the origin, rotating so the orientation direction lies along the same axis (arbitrary) and scaling so the radius is 1. Any representation we compute for this rectified patch will be invariant to translations, rotations, and scale. In practice *rectification* isn't required however as instead we can work the rectification into each step of computing the description.
+
+A **SIFT descriptor** (SIFT for Scale Invariant Feature Transform) is constructed out of image gradients and it uses bot *magnitude* and *orientation*. The descriptor is normalized to suppress the effects of changes in illumination intensity. The descriptor is a set of **histograms** of image gradients that are then normalized. These histograms expose general spatial trends in the image gradients but suppress detail (this accounts for changes in patch center and miscalculations in orientation). 
+
+##### Calculations
+We first divide the **rectified patch** into an $n\times n$ grid. We then subdivide each grid in an $m\times m$ sub grid of sub cells. At the center of each sub cell we compute a gradient estimate. The gradient estimate is obtained as a weighed average of gradients around the center of the cell. We weight each by $$(1-d_x/s_x)(1-d_y/s_y)/N$$where $d_x$ is the $x$ distance from the gradient to the center of the sub cell and $s_x$ is the $x$ spacing between the sub cell centers. So ones closest to the center are weighted more than ones further away. This means gradients make contributions to more than one sub cell. This ensure small error of the center of the patch leads to small change in the descriptor.
+
+These gradient estimates are then used to produce histograms. Each grid element has a $q$-cell orientation histogram ($q$ different orientations in the histogram). The magnitude of each gradient estimate is accumulated into the histogram cell corresponding to its orientation. The magnitude is weighted by a gaussian in distance from the center of the patch, using a standard deviation of half the patch size. 
+
+Each histogram is then concatenated into a vector of of $n\times n\times q$ entries ($q$ bins in each cells histogram $n\times n$ total cells. This vectors length gets doubled if the intensity were doubled as this would double the gradient magnitude and so the bin size. So to make the descriptor invariant to this we **normalize** each vector.
+
+Another problem is sometimes very large gradient magnitudes can occur abnormally  like surfaces all lining up to give the same gradient. Hence the normalization cannot be trusted. To avoid this each value in in the normalized vector is thresholder with threshold $t$ then resulting vector is renormalized.
+
+![[Pasted image 20221218153437.png]]
+
+Extensive experimental evidence shows patches that match one another will have similar SIFT feature representations and visa versa.
+
+### HOG Features
+The HOG feature (meaning Histogram Of Gradient orientations) is an important variant of the SIFT features. Similarly to before we histogram gradient orientations in cells, But now adjust the process to try and identify high-contrast edges. **Contrast information** can be recovered by counting gradient orientation with weights that reflect how significant a gradient is compared to other gradients within the same cell. This means that rather than normalizing gradient contribution over the whole neighborhood we normalize with respect to nearby gradients only.

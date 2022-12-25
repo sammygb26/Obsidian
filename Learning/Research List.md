@@ -11,6 +11,10 @@ How does graph ML work
 
 https://www.deeplearningbook.org/
 
+#### Math
+_Vector Calculus_ by Peter Baxandall and Hans Liebeck
+Polya - How to solve it
+
 # Ethics
 
 Superintelligence: Paths, Danger, Strategies by Nich Bostrom
