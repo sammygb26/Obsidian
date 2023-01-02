@@ -18,26 +18,21 @@
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "d454508fe4560282",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "b985c775c55d7822",
+            "id": "b37b135c43733b26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Contemporary Abstract Algebra/Questions/Introduction to Groups Questions.md",
+                "file": "Contemporary Abstract Algebra/Groups.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Contemporary Abstract Algebra/Questions/Introduction to Groups Questions.md",
+                "file": "Contemporary Abstract Algebra/Groups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +118,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "b985c775c55d7822",
+  "active": "b37b135c43733b26",
   "lastOpenFiles": [
     "Contemporary Abstract Algebra/Introduction to Groups.md",
     "Contemporary Abstract Algebra/Questions/Introduction to Groups Questions.md",
