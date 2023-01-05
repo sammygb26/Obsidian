@@ -109,3 +109,5 @@ Note: For groups where that addition symbol $+$ is used we would call $b$'s inve
 ![[Pasted image 20230102181220.png]]
 
 We have $(ab)^{-1}(ab)=e$ but by associativity and *cancellation* we also get $b^{-1}a^{-1}(ab)=e$ hence by *cancellation* again $(ab)^-1=b^{-1}a^{-1}$.
+
+[[Groups Questions]]
