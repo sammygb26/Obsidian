@@ -4,47 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "2773af4c1e596721",
+        "id": "19f6511db32dce1a",
         "type": "tabs",
         "children": [
           {
-            "id": "b37b135c43733b26",
+            "id": "9f60b34284ac22ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Contemporary Abstract Algebra/Groups.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bed1f6e54404328a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Contemporary Abstract Algebra/Finite Groups, Subgroups.md",
+                "file": "Contemporary Abstract Algebra/Cyclic Groups.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "09105afedcf91558",
+        "id": "c379870af26dc09c",
         "type": "tabs",
         "children": [
           {
-            "id": "f21b46d1180e265b",
+            "id": "bdca8e136d0242f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Contemporary Abstract Algebra/Questions/Finite Groups, Subgroups Question.md",
+                "file": "Contemporary Abstract Algebra/Questions/Cyclic Groups Questions.md",
                 "mode": "source",
                 "source": false
               }
@@ -88,8 +75,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -110,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Contemporary Abstract Algebra/Questions/Finite Groups, Subgroups Question.md",
+                "file": "Contemporary Abstract Algebra/Questions/Cyclic Groups Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,17 +123,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "f21b46d1180e265b",
+  "active": "bdca8e136d0242f8",
   "lastOpenFiles": [
-    "Contemporary Abstract Algebra/Finite Groups, Subgroups.md",
-    "Contemporary Abstract Algebra/Questions/Finite Groups, Subgroups Question.md",
+    "Contemporary Abstract Algebra/Cyclic Groups.md",
+    "Contemporary Abstract Algebra/Questions/Cyclic Groups Questions.md",
     "Contemporary Abstract Algebra/Groups.md",
+    "Contemporary Abstract Algebra/Questions/Finite Groups, Subgroups Question.md",
+    "Contemporary Abstract Algebra/Finite Groups, Subgroups.md",
     "Contemporary Abstract Algebra/Questions/Groups Questions.md",
     "Contemporary Abstract Algebra/Questions/Preliminaries Questions.md",
     "Contemporary Abstract Algebra/Questions/Introduction to Groups Questions.md",
     "Contemporary Abstract Algebra/Contemporary Abstract Algebra.canvas",
-    "Contemporary Abstract Algebra/Introduction to Groups.md",
-    "Pictures/Pasted image 20221223150954.png",
-    "Contemporary Abstract Algebra/Preliminaries.md"
+    "Contemporary Abstract Algebra/Introduction to Groups.md"
   ]
 }
