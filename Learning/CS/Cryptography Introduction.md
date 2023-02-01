@@ -97,3 +97,5 @@ This comes from $k\oplus k=0$. Many secret agencies use OTPs and **reuse them!**
 
 ## Key Management
 We make the algorithms public so now all the secrecy is in the keys. So we must understand how they keys are generated, how the keys are stopped and where are the keys actually used (generated, stored, used, replaced).
+
+[[Cryptography Introduction Questions]]
