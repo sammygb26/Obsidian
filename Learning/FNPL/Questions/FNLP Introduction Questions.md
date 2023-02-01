@@ -74,3 +74,7 @@ What is a conjunction? #flashcard #FNLP #FNLPIntroduction
 	A conjunction joins, words, phrases or clauses (and, but, or, while, because)
 
 ---
+What is an interjection? #flashcard #FNLP #FNLPIntroduction 
+	An interjection is a word used to express emotion (oh, wow, oops)
+
+---
