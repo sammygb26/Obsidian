@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "67fea7c056ea4e9b",
+        "id": "052a24bb696418fb",
         "type": "tabs",
         "children": [
           {
-            "id": "75224d5ea40790da",
+            "id": "6bc9e5edcfb61b4a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "FNPL/More Smoothing and Noisy Channel Model.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#FiniteGroupsSubgroups",
+                "query": "tag:#MethodsInAnnotationAndEvaluation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "FNPL/More Smoothing and Noisy Channel Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,17 +105,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "75224d5ea40790da",
+  "active": "6bc9e5edcfb61b4a",
   "lastOpenFiles": [
-    "FNPL/Corpa.md",
-    "FNPL/Questions/Corpa Questions.md",
-    "FNPL/Introduction.md",
-    "FNPL/Questions/FNLP Introduction Questions.md",
-    "CS/Network Communication.md",
+    "CS/Cryptography Introduction.md",
+    "CS/Questions/Cryptography Introdctun Questions.md",
+    "Pasted image 20230130102948.png.md",
+    "CS/Network Security.md",
+    "FNPL/N-gram language models.md",
+    "Pasted image 20230130100145.png.md",
+    "Pasted image 20230130133933.png",
+    "CS/Questions/Network Security Questions.md",
     "CS/Questions/Network Communication Questions.md",
-    "CS/Introduction.md",
-    "CS/Questions/Introduction Questions.md",
-    "Contemporary Abstract Algebra/Questions/Permutation Groups Questions.md",
-    "Contemporary Abstract Algebra/Permutation Groups.md"
+    "CS/Questions/Network Application Layer Questions.md"
   ]
 }

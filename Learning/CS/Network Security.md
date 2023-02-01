@@ -1,4 +1,4 @@
-(ATP, IP, TCP, UDP) - These are protocols uses at the lower levels of the internet stack. Computers have two addresses IP addresses and MAC addresses. MAC addresses are given to physical devices while IP are given by administrators. We need to map the IP addresses to MAC addresses to allow communication.
+(ARP, IP, TCP, UDP) - These are protocols uses at the lower levels of the internet stack. Computers have two addresses IP addresses and MAC addresses. MAC addresses are given to physical devices while IP are given by administrators. We need to map the IP addresses to MAC addresses to allow communication.
 
 - IP addresses are used by higher level protocols.
 - MAC addresses are used by lower level protocols.
@@ -26,6 +26,7 @@ The ARP table is updated whenever an ARP response is received. Requests are not 
 ##### ARP Normal Operation
 Take a scenario with two computers Alice and Bob. Both machines say (name)'s IP is at MAC addresses. They both respond can get a mapping for MAC addresses.
 
+##### ARP Failure
 A machine Eve can interest itself saying it is Bob to Alice it is Alice to Bob. This machine now sits in between the two computers. This happens as both computers trust the ARP commands Even has sent. The wrong information has been put in the caches. You many not often have to do this.
 
 ARP is still used as new techniques are build on top of this system.
@@ -76,4 +77,28 @@ The TCP header includes both a source and destination port. Ports 0 through 1023
 The rest of the port are reserved for many packets.
 
 ##### TCP Format
+![[Pasted image 20230128094921.png]]
+
+### TCP Data Transfer
+To initiate a TCP connection a three way handshake s performed with **initial sequence number**. A connecting machine sends out a **Syn** with some special number $x$. Then it is responded to with a **Syn-Ack** which give another special number $y$ aswell as returning $x+1$ to prove it received the first message. Finally the initial computer sends back an **Ack** with $y+1$.
+
+![[Pasted image 20230128100115.png]]
+
+Each TCP header includes a 16 bit checksum of the data and part of the header , including the source and destination. **Ack** packages or their lack are used to track packer loss, network congestion and flow control.
+
+### Syn Flooding
+Here attackers use their own IP to flood a server. Some malicious computer sends many **Syn** packages to a victim computer without acknowledging and **Acks**, so the target continues to try get an acknowledgement. This computer then runs out of pace to handle the packages.
+
+A problem with this is the **attacker** must use their own IP which could be traced. The attack also must yield a higher bandwidth then the attacking computer. Hence this is **effective against a small target**, like a home server but isn't effective against a large target like a company.
+
+##### Spoofing: forged TCP packets
+Set the source of the TCP packet to another IP. Advantages: harder to trace
+But we still have to use some address on our network due to **ingress filtering** where packets trying to get our of a LAN not labeled in that LAN are dropped.. Then also **Acks** are sent to a second computer so the attacker needs less bandwidth.
+
+### Smurfing (direct broadcast)
+This use ICMP (Internet Control Message Protocol) **ping** uses this. We ping on the broadcast address, all machines will respond to this address. So we write the source address as the *victim*. Then we ping everyone on the network and get a multiplied response.
+
+This is also called a **reflection attack**. Many LAN which are vulnerable to this attack are listed.
+
+[[Network Security Questions]]
 
