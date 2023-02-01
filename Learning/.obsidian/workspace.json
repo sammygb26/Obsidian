@@ -4,37 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "995ac01f46d9c6f0",
+        "id": "c49be8bc43522d5b",
         "type": "tabs",
         "children": [
           {
-            "id": "30370c78d530e63e",
+            "id": "fe354b49512ba19c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Contemporary Abstract Algebra/Isomorphisms.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "f71197f3c773f44f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3af972a76ded9cb0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Contemporary Abstract Algebra/Questions/Isomorphisms Questions.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -79,8 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -96,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Contemporary Abstract Algebra/Questions/Isomorphisms Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,8 +99,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3af972a76ded9cb0",
+  "active": "fe354b49512ba19c",
   "lastOpenFiles": [
+    "FNPL/Questions/FNLP Introduction Questions.md",
+    "Contemporary Abstract Algebra/Questions/Isomorphisms Questions.md",
     "Contemporary Abstract Algebra/Isomorphisms.md",
     "Contemporary Abstract Algebra/Preliminaries.md",
     "Contemporary Abstract Algebra/Permutation Groups.md",
@@ -132,8 +110,6 @@
     "Contemporary Abstract Algebra/Groups.md",
     "Contemporary Abstract Algebra/Finite Groups, Subgroups.md",
     "Contemporary Abstract Algebra/Cyclic Groups.md",
-    "Pictures/Pasted image 20230201102437.png",
-    "Pictures/Pasted image 20230201102916.png",
-    "Pictures/Pasted image 20230201102943.png"
+    "Pictures/Pasted image 20230201102437.png"
   ]
 }

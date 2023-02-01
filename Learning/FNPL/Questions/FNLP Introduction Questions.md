@@ -46,3 +46,31 @@ What is statistical NLP? #flashcard #FNLP #FNLPIntroduction
 	Statistical NLP uses Corpa of data to learn statistical patters allowing data to be parsed statistically.
 
 ---
+What is a noun? #flashcard #FNLP #FNLPIntroduction 
+	A noun is the name of a person, place, thing or idea (man,  box,  Aberdeen, Grand Falls).
+
+---
+What is a pronoun? #flashcard #FNLP #FNLPIntroduction 
+	A pronoun is a word used in the place of noun. It is like a pointer to some noun (she, we, they, it)
+
+---
+What is a verb? #flashcard #FNLP #FNLPIntroduction 
+	A verb expresses an action or being (jump, is, write, become)
+
+---
+What is an adjective? #flashcard #FNLP #FNLPIntroduction 
+	An adjective modifies or describes a noun or pronoun. (jump is write become)
+
+---
+What is an adverb? #flashcard #FNLP #FNLPIntroduction 
+	An adverb describes or modifies a verb or adjective. (very, gently, carefully, well)
+
+---
+What is a preposition? #flashcard #FNLP #FNLPIntroduction 
+	A preposition is a word placed before a noun pronoun to form a phrase modifying another word in the sentence, so it gives structure (by, with, about, until).
+
+---
+What is a conjunction? #flashcard #FNLP #FNLPIntroduction 
+	A conjunction joins, words, phrases or clauses (and, but, or, while, because)
+
+---
