@@ -78,3 +78,7 @@ What is an interjection? #flashcard #FNLP #FNLPIntroduction
 	An interjection is a word used to express emotion (oh, wow, oops)
 
 ---
+What is a determiner? #flashcard #FNLP #FNLPIntroduction 
+	A determiner modifies or describes a noun by clarifying what is refers to (one, the, a, another)
+
+---

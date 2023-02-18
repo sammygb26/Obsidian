@@ -51,3 +51,7 @@ What is the centralizer of a in a group G? #flashcard #CAA #FiniteGroupsSubgroup
 	The centralizer of $a$ in $G$, $C(a)$, is the set of all elements in $G$ that commute with $a$, In symbols $$C(a)=\{g\in G\mid ga=ag\}$$Every centralizer is a subgroup.
 
 ---
+What is the difference between a centralizer and the center in group theory? #flashcard #CAA #FiniteGroupsSubgroups 
+	The **centralizer** is defined for a single element and is the set of elements that commute with that elements. While the **center** is defined for all elements and is the set of all elements that commute with every other element in the group.
+
+---

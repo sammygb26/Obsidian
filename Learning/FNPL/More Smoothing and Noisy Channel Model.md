@@ -122,6 +122,8 @@ Mathematically what we want is $\arg\max_y P(y|x)$. What should $y$ be given wha
 To recover $y$ best we need a language model (different for different applications) and a noise model (depends on application). We train both on corpus data.
 
 
-We can train $P(X|Y)$, but why can't we just train $P(Y|X)$. But our language model is much easier to train as we have much more training data for it.
+We can train $P(X|Y)$, but why can't we just train $P(Y|X)$. But our language model is much easier to train as we have much more training data for it. That is $P(Y|X)$ is the our entire problem i.e. probability of what was meant to be said given what we observe. The key thing is we can reuse the language model and just change the error model.
 
 ![[Pasted image 20230131130144.png]]
+
+[[More Smoothing and Noisy Channel Questions]]

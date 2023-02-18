@@ -34,7 +34,7 @@ With a unigram the model uncertainty is about 11 (5 more bits).
 If we designed an optimal code based on our bigram model, we could encode the entire sentence with about $42$ bits. This is just the sum of the information in each decision (unaveraged entropy). With a unigram model this would be $11*7=77$.
 
 ##### Perplexity
-LM performance is often reported as **perplexity** rather than cross-entropy. Perplexity is simply $2^{\text{cross-entropy}}$. This is the average branching factor at each decision point if our distributions were uniform. So in the case about we get $2^g=64$ perplexity.
+LM performance is often reported as **perplexity** rather than cross-entropy. Perplexity is simply $2^{\text{cross-entropy}}$. This is the average branching factor at each decision point if our distributions were uniform. So in the case about we get $2^g=64$ perplexity. Another way of writing perplexity with the application above is therefore $$\text{perplexity}(W)=\sqrt[N]{\frac{1}{P(w_1w_2\dots w_N)}}=\sqrt[N]{\prod_{i=1}^N\frac{1}{P(w_i\mid w_{i-1})}}$$With the final step being for **bigrams**. This reveals again the branching factor insight as the invers of the probability the number of possible paths that could be taken. There are $N$ of these so the average branching factor is the $N$th root (since we are multiplying).
 
 ### Interpreting these measures
 How well these measures look depends a lot on our corpus. May mean the corpus is easy or the model is good. We have to compare on a common corpus. We have to measure these models against each other. We also need held out data to ensure we are testing our models performance on more realistic data it hasn't seen.

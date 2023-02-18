@@ -95,6 +95,8 @@ This comes from $k\oplus k=0$. Many secret agencies use OTPs and **reuse them!**
 
 **OTP is Malleable** - If we know some section of the message, if we know the stat is say "To Bob" we can add anther "To Bob" and add in a new chosen text like "To Eve". So we can mess with parts of a message.
 
+**Perfect Security Doesn't Capture all possible attacks**
+
 ## Key Management
 We make the algorithms public so now all the secrecy is in the keys. So we must understand how they keys are generated, how the keys are stopped and where are the keys actually used (generated, stored, used, replaced).
 
