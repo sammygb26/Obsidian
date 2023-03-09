@@ -11,9 +11,9 @@ For example Turkish is an **agglutinative** language and tends to express concep
 **Affixes** (prefixes, suffixes, infixes and circumfixes), Prefix goes at the start, suffix after the stem, infix middle of the step and circumfix reduces the stem.
 
 #### Four Methods for combining them
-**Inflectional** (step + grammar affix): no change to grammatical meaning (walk -> walking)
+**Inflectional** (stem + grammar affix): no change to grammatical meaning (walk -> walking)
 
-**Derivation** (step + grammar affix): change to grammatical category (combine -> combination)
+**Derivation** (stem + grammar affix): change to grammatical category (combine -> combination)
 
 **Compounding (stems together)**: doghouse
 

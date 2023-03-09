@@ -113,6 +113,9 @@ This is also vulnerable to quantum computer attacks and this could break encrypt
 
 **PKCS#7** - byte padding - the value of each added byte is the total number of padded bytes. The padding will be 01, or 02 02 or 03 03 03 or 04 04 04 04, etc.
 
+## Modes of Operation
+These are different ways block ciphers can be used to encrypt a text.
+
 ### Electron Code Book (ECB) mode
 This is a block cipher with ($E$, $B$). To encrypt a message $M$ under a key $K$ using ECB mode. $M$ is padded so $M'=M||P$ such that $|M'|=m\times l$. Then $M'$ is broken into $m$ blocks of length $l$. $M'= M_1\parallel M_2\parallel\dots\parallel M_m$. Each block $M_i$ is encrypted under the key $K$ using the block cipher $$C_i=E(K,M_i)\text{ for all }i\in\{1,\dots,m\}$$. The cipher text corresponding  to $M$ is concatenated of the $C_i$s $$C=C_1\parallel C_2\parallel\dots\parallel C_m$$
 

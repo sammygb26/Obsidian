@@ -4,49 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d2aa04dc3b74a250",
+        "id": "4d79b2b130127445",
         "type": "tabs",
         "children": [
           {
-            "id": "0a85a97b5425881c",
+            "id": "8f2d585e7ab7522b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "FNPL/FNLP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1fedf51e6255aaa3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FNPL/Morphology Parsing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "07a99a8884c1601e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4da264a4f0728c2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FNPL/Questions/Morphology Questions.md",
-                "mode": "source",
-                "source": false
+                "file": "Pictures/Pasted image 20230301175741.png"
               }
             }
           }
@@ -79,8 +46,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#AsymetricEncryption",
-                "matchingCase": false,
+                "query": "tag:#SyntaxParsing",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -108,7 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FNPL/Morphology Parsing.md",
+                "file": "Pictures/Pasted image 20230301175741.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,17 +102,43 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "1fedf51e6255aaa3",
+  "active": "92e0631eac8f9100",
   "lastOpenFiles": [
-    "FNPL/Questions/Morphology Questions.md",
-    "FNPL/Morphology Parsing.md",
-    "FNPL/FNLP.md",
+    "FNPL/Syntax and Parsing.md",
+    "FNPL/Questions/Syntax and Parsing Questions.md",
+    "Pictures/Pasted image 20230309170450.png",
+    "Pictures/Pasted image 20230309165755.png",
+    "Pictures/Pasted image 20230309165736.png",
+    "Pictures/Pasted image 20230309165537.png",
+    "Pictures/Pasted image 20230309165527.png",
+    "Pictures/Pasted image 20230309165454.png",
+    "Pictures/Pasted image 20230309153157.png",
+    "FNPL/Constituent Parsing.md",
+    "Pictures/Pasted image 20230309125403.png",
+    "Pictures/Pasted image 20230309125315.png",
+    "Pictures/Pasted image 20230309125229.png",
+    "CS/Password Authentication.md",
+    "CS/UNIX Security Model.md",
+    "FNPL/Untitled.md",
+    "FNPL/Questions/POS Tagging With HMMs Questions.md",
+    "FNPL/POS tagginf with HMMs.md",
+    "FNPL/Reading/6 HMMs.md",
+    "CS/Operating Systems.md",
+    "Archive/Reasoning and Agents/Search.md",
+    "Archive/Reasoning and Agents/Reasoning and Agents - Overview.md",
+    "Archive/Reasoning and Agents/Probabilistic Reasoning Over Time.md",
+    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Viterbi Algorithm.md",
+    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Seam Carving.md",
+    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Fibonacci Numbers.md",
+    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Edit Distance.md",
+    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Coin Change.md",
+    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/All-pairs shortest paths.md",
+    "Archive/Reasoning and Agents/Classical Planning.md",
+    "CS/Symmetric Encryption.md",
     "FNPL/Text Classification  - Logistic Regression.md",
-    "Text Classification  - Logistic Regression.md",
-    "ML Research/ML General.md",
-    "CS/Computer Security.md",
-    "CS/Public Key Infrastructure.md",
-    "CS/Firewalls, NAT and Intrusion Detection.md",
-    "CS/Anonymous Communication.md"
+    "FNPL/Introduction.md",
+    "FNPL/Methods in Annotation and Evaluation.md",
+    "FNPL/Part-of-Speech Tagging.md",
+    "Contemporary Abstract Algebra/Contemporary Abstract Algebra.canvas"
   ]
 }

@@ -1,9 +1,12 @@
 {
 	"nodes":[
-		{"id":"9d809fa667da3212","x":-465,"y":-404,"width":572,"height":489,"type":"file","file":"Contemporary Abstract Algebra/Preliminaries.md"},
-		{"id":"a24daf7daef61793","x":107,"y":-404,"width":554,"height":489,"type":"file","file":"Contemporary Abstract Algebra/Introduction to Groups.md"},
-		{"id":"d7206ce14ac2c069","x":661,"y":-404,"width":554,"height":489,"type":"file","file":"Contemporary Abstract Algebra/Groups.md"},
-		{"id":"0111ae93ca853c92","x":1215,"y":-404,"width":474,"height":489,"type":"file","file":"Contemporary Abstract Algebra/Finite Groups, Subgroups.md"}
+		{"type":"file","file":"Contemporary Abstract Algebra/Preliminaries.md","id":"9d809fa667da3212","x":-465,"y":-404,"width":572,"height":489},
+		{"type":"file","file":"Contemporary Abstract Algebra/Introduction to Groups.md","id":"a24daf7daef61793","x":107,"y":-404,"width":554,"height":489},
+		{"type":"file","file":"Contemporary Abstract Algebra/Groups.md","id":"d7206ce14ac2c069","x":661,"y":-404,"width":554,"height":489},
+		{"type":"file","file":"Contemporary Abstract Algebra/Finite Groups, Subgroups.md","id":"0111ae93ca853c92","x":1215,"y":-404,"width":474,"height":489},
+		{"id":"62ed9103a642b3f3","x":1689,"y":-404,"width":471,"height":489,"type":"file","file":"Contemporary Abstract Algebra/Cyclic Groups.md"},
+		{"id":"dc65b1d3f1618dc4","x":2160,"y":-404,"width":480,"height":489,"type":"file","file":"Contemporary Abstract Algebra/Permutation Groups.md"},
+		{"id":"69cfdaec45ddf201","x":2640,"y":-404,"width":480,"height":489,"type":"file","file":"Contemporary Abstract Algebra/Isomorphisms.md"}
 	],
 	"edges":[
 		{"id":"374aca7a80082f62","fromNode":"a24daf7daef61793","fromSide":"left","toNode":"9d809fa667da3212","toSide":"right"}

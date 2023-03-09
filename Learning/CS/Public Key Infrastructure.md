@@ -48,3 +48,6 @@ Scandals can also happen when countries controlling CAs force them for fake sign
 
 ### Revocation
 A certificate need to be revoked if the corresponding private key has been compromised. Certificate revocation lists CRLs are the solution adopted in X.509. Online certificate status protocols OCSP stapling is the modern solution to this problem.
+
+[[Public Key Infrastructure]]
+

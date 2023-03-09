@@ -18,7 +18,7 @@ Lecture 9: [[Asymmetric Encryption]]
 
 Lecture 10: [[Digital Signatures]]
 
-Lecture 11: [[Public Key Infrastructure]]
+Lecture 11: [[CS/Public Key Infrastructure]]
 
 Lecture 12: [[SSL - TLS]]
 
