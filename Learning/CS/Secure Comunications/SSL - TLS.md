@@ -96,3 +96,5 @@ They MITM doesn't have the server's secret key so cannot authenticate and sit in
 ![[Pasted image 20230216110101.png]]
 
 This can be solved by **signing the transcript**.
+
+[[SSL TLS Questions]]

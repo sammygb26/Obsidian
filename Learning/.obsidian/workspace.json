@@ -4,16 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "4d79b2b130127445",
+        "id": "ff0cd702bfeffd81",
         "type": "tabs",
         "children": [
           {
-            "id": "8f2d585e7ab7522b",
+            "id": "230aaa5b9a2ac857",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pictures/Pasted image 20230301175741.png"
+                "file": "CS/OS/UNIX Security Model.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "8afa2bbca9a21163",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "468fae9c3acf4d8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/Questions/Unix Security Model Questions.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -75,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pictures/Pasted image 20230301175741.png",
+                "file": "CS/OS/UNIX Security Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,43 +122,50 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "92e0631eac8f9100",
+  "active": "230aaa5b9a2ac857",
   "lastOpenFiles": [
+    "CS/Questions/Unix Security Model Questions.md",
+    "CS/OS/UNIX Security Model.md",
+    "CS/Secure Comunications/Tor.md",
+    "CS/OS/Operating Systems.md",
+    "CS/Questions/Operating Systems Questions.md",
+    "CS/OS/Memory Mangement.md",
+    "CS/Secure Comunications/Public Key Infrastructure.md",
+    "CS/Secure Comunications/Anonymous Communication.md",
+    "CS/Questions/Tor Questions.md",
+    "CS/Secure Comunications/Usable Security and Phishing.md",
     "FNPL/Syntax and Parsing.md",
     "FNPL/Questions/Syntax and Parsing Questions.md",
-    "Pictures/Pasted image 20230309170450.png",
-    "Pictures/Pasted image 20230309165755.png",
-    "Pictures/Pasted image 20230309165736.png",
-    "Pictures/Pasted image 20230309165537.png",
-    "Pictures/Pasted image 20230309165527.png",
-    "Pictures/Pasted image 20230309165454.png",
-    "Pictures/Pasted image 20230309153157.png",
-    "FNPL/Constituent Parsing.md",
-    "Pictures/Pasted image 20230309125403.png",
-    "Pictures/Pasted image 20230309125315.png",
-    "Pictures/Pasted image 20230309125229.png",
-    "CS/Password Authentication.md",
-    "CS/UNIX Security Model.md",
-    "FNPL/Untitled.md",
-    "FNPL/Questions/POS Tagging With HMMs Questions.md",
-    "FNPL/POS tagginf with HMMs.md",
-    "FNPL/Reading/6 HMMs.md",
-    "CS/Operating Systems.md",
-    "Archive/Reasoning and Agents/Search.md",
-    "Archive/Reasoning and Agents/Reasoning and Agents - Overview.md",
-    "Archive/Reasoning and Agents/Probabilistic Reasoning Over Time.md",
-    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Viterbi Algorithm.md",
-    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Seam Carving.md",
-    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Fibonacci Numbers.md",
-    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Edit Distance.md",
-    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/Coin Change.md",
-    "Archive/Introduction to Algorithms and Data Structures/Dynamic Programming/All-pairs shortest paths.md",
-    "Archive/Reasoning and Agents/Classical Planning.md",
-    "CS/Symmetric Encryption.md",
     "FNPL/Text Classification  - Logistic Regression.md",
-    "FNPL/Introduction.md",
     "FNPL/Methods in Annotation and Evaluation.md",
-    "FNPL/Part-of-Speech Tagging.md",
+    "FNPL/More Smoothing and Noisy Channel Model.md",
+    "FNPL/N-gram language models.md",
+    "FNPL/Morphology Parsing.md",
+    "CS/Questions/SSL TLS Questions.md",
+    "CS/Secure Comunications/SSL - TLS.md",
+    "Pasted image 20230310150049.png",
+    "FNPL/Heads Dependency Parsing.md",
+    "Pasted image 20230310125521.png",
+    "Pasted image 20230310125038.png",
+    "Pasted image 20230310124340.png",
+    "Pasted image 20230310123852.png",
+    "Pasted image 20230310123526.png",
+    "Pasted image 20230310123418.png",
+    "Pasted image 20230310123253.png",
+    "Pasted image 20230310123034.png",
+    "Pasted image 20230310123010.png",
+    "CS/Cryptography/Symmetric Encryption.md",
+    "CS/Cryptography/Digital Signatures.md",
+    "ML Research/Questions/GNN Questions.md",
+    "CS/Web",
+    "CS/OS",
+    "CS/Secure Comunications",
+    "CS/Cryptography",
+    "CS/Network",
+    "ML Research/Questions.md",
+    "ML Research/Questions",
+    "ML Research/A Gentle Intro to GNNs.md",
+    "FNPL/Constituent Parsing.md",
     "Contemporary Abstract Algebra/Contemporary Abstract Algebra.canvas"
   ]
 }

@@ -78,3 +78,5 @@ Here the idea is to keep a mechanism simple to ensure the use and implementation
 **Complete mediation** - every access to a resource must be checked from compliance with security policy.
 
 **Usable security** - UIs and security mechanisms should be designed with the ordinary user in mind - the users should be supported in interacting in a secure way with the system - you can't blame users, it doesn't help.
+
+[[Operating Systems Questions]]

@@ -92,4 +92,3 @@ All applications install by a single user account have the same privileges. So t
 Each app runs with a different users ID, apps do not interact and permissions are set per app.
 
 ![[Pasted image 20230306104848.png]]
-
