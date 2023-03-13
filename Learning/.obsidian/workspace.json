@@ -20,24 +20,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "8afa2bbca9a21163",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "468fae9c3acf4d8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS/Questions/Unix Security Model Questions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -66,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#SyntaxParsing",
+                "query": "tag:#flashcard",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,12 +104,15 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "230aaa5b9a2ac857",
+  "active": "92e0631eac8f9100",
   "lastOpenFiles": [
-    "CS/Questions/Unix Security Model Questions.md",
+    "CS/OS/Password Authentication.md",
+    "CS/Questions/Password Authentication Questions.md",
+    "CS/OS/Buffer Overruns.md",
     "CS/OS/UNIX Security Model.md",
-    "CS/Secure Comunications/Tor.md",
     "CS/OS/Operating Systems.md",
+    "CS/Questions/Unix Security Model Questions.md",
+    "CS/Secure Comunications/Tor.md",
     "CS/Questions/Operating Systems Questions.md",
     "CS/OS/Memory Mangement.md",
     "CS/Secure Comunications/Public Key Infrastructure.md",
@@ -162,10 +147,7 @@
     "CS/Secure Comunications",
     "CS/Cryptography",
     "CS/Network",
-    "ML Research/Questions.md",
     "ML Research/Questions",
-    "ML Research/A Gentle Intro to GNNs.md",
-    "FNPL/Constituent Parsing.md",
     "Contemporary Abstract Algebra/Contemporary Abstract Algebra.canvas"
   ]
 }

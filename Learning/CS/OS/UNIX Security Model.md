@@ -36,7 +36,7 @@ Groups are set of users that share resources. Every group has a name and a uniqu
 These entries have the fields: $$\text{group\_name:password:gid:group\_list}$$Users can be part of many groups.
 
 ### File Permissions
-All resources (sockets, directories, files) are managed as files 3 defined permissions read (r), write (w) and execute (x). Permissions are defined for the **owner**, the **owner's group** and the **other users**.
+All resources (sockets, directories, files) are managed as files. 3 defined permissions read (r), write (w) and execute (x). Permissions are defined for the **owner**, the **owner's group** and the **other users**.
 
 ![[Pasted image 20230306101633.png]]
 
@@ -79,7 +79,7 @@ So this run from root allows to spawn a new process with a new uid. But this wou
 Hence we must be careful to drop privileges.
 
 ##### Elevating privileges - setuid programs
-Something we need to modify users privileges say to change passwords. The way this is done is with a **setuid** program. The idea is we allow all users to run a program (which we know well how it acts). Bellow the $s$ bit is said.  This just mean the file will run with its owners user id. The program being run here should change a root **shadow** file but the user can only access this in a basic way through the program which restricts access.
+Something we need to modify users privileges say to change passwords. The way this is done is with a **setuid** program. The idea is we allow all users to run a program (which we know well how it acts). Bellow the $s$ bit is set.  This just mean the file will run with its owners user id. The program being run here should change a root **shadow** file but the user can only access this in a basic way through the program which restricts access.
 
 ![[Pasted image 20230306104213.png]]
 
@@ -92,3 +92,5 @@ All applications install by a single user account have the same privileges. So t
 Each app runs with a different users ID, apps do not interact and permissions are set per app.
 
 ![[Pasted image 20230306104848.png]]
+
+[[Unix Security Model Questions]]

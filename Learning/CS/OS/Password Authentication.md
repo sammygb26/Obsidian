@@ -52,8 +52,8 @@ This is an attack when we are remotely authenticating to a server. This happens 
 There are different ways to defend against this attack
 
 1. **Choose a good password** - we want to ensure the *space* of passwords is large. If there are only a small number of possible (say short) password the attacker can find the password quickly. Generally a website may have a password strength meter that ensure passwords are a given length. But this conflict with users need for an easy to use system.
-1. **Rate limit** - impose a limit on the number of failed password attempts before locking the system for a set amount of time. This way the speed the attacker can search through the network is limited.
-2. Include **captchas** - here there is a puzzle that must be solved along with the submission of the password. These are hard to read from the computer point of view and these remove the automated side of the computer task. However this is becoming harder with AI techniques in the mix.
+2. **Rate limit** - impose a limit on the number of failed password attempts before locking the system for a set amount of time. This way the speed the attacker can search through the network is limited.
+3. Include **captchas** - here there is a puzzle that must be solved along with the submission of the password. These are hard to read from the computer point of view and these remove the automated side of the computer task. However this is becoming harder with AI techniques in the mix.
 
 ## Offline Guessing Attacks
 This is the most common password-related attacks on servers. In this scenario somehow an attacker has stolen a password database. For example via an exploit in the hardware or software or even an **insider attack**. The database has usernames associated with credentials
@@ -109,3 +109,5 @@ This can also be used to defend against compromised passwords.
 
 ### Password managers
 This makes dictionary and frequency attacks harder as passwords are very long, complected and different from other users passwords.
+
+[[Password Authentication Questions]]
