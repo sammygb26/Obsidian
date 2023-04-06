@@ -1,0 +1,18 @@
+This stands for **spike time dependent plasticity** where plasticity is the ability of a synapse to potentiate (strengthen) or depress (weaken) over time. Originally LTP (Long Term Potentiation) was found in response to high frequency stimulation (HFS - with electrical pluses). It can also be triggered with low frequency stimulation (LFS) along with *large post-synaptic depolarization*. Then LTD (Long Term Depression) was found in response to LFS without the large depolarization. Following this it was found that the timing of week and strong pulses affected potentiation and depression.
+
+![[Asymmetric-STDP-learning-window-Spike-timing-window-of-STDP-for-the-induction-of.png]]
+
+### Cellular Mechanisms
+For **glutamatergic synapses** one line of thought puts the mechanism as [[NMDA Receptor]] (N-methyl-d-aspartate) encoded rises in Ca2+ ions. The receptor must be activated by *glutamate* from the presynaptic terminal and depolarization of the membrane which causes Mg2+ ions to be expelled unblocking the channel. They act as a **coincidence detectors** allowing for large influx of Ca2+ when post-synaptic depolarization happens while glutamate levels are still high from an arriving AP.
+
+The level of Ca2+ rise depends on how the neuron is activated. HFS leads to quick large Ca2+ rise while LFS leads to a prolonged modest Ca2+ rise. The different Ca2+ level characteristics activate different **molecular pathways**. Large Ca2+ rise causes Ca2+/calmodulin-dependent protein kinase II (CaMKII) which can cause to LTP. Modest rise in Ca2+ causes protein phosphatase 1 (PP1) and calcineurin to activate which is needed for LTD.
+
+### tLTP Window
+This is concerned with how the characteristic tLTP window is given. This requires activation of the pre-synaptic input milliseconds before the *backpropagating action potential* (BAP). The BAP causes Mg2+ to unblock form the NMDA receptors allowing Ca2+ influx. But the window is not explained entirely by NMDA activation as disassociation from the NMDA receptor takes place over 100s of milliseconds. This could be due to the **kinetics of Mg2+**. So BAPs only close to the EPSP (Excitatory Post Synaptic Potential) can properly open the NMDA receptor.
+
+This may not be the only cause. For example EPSP induced changes in dendritic conductance could affect the AP back-propagation into the dendrites. For example in the *hippocampus* in CA1 pyramidal neuron express a high density of A-type K+ channels which regulate BAP amplitude. An EPSP must arrive close enough to deactivate K-channels which amplifies the BAP if it arrives within 10s of milliseconds. The BAPs once boosted can increase Ca2+ influx through voltage-dependent Ca2+ channels (VDCCs). In the *neocortex* similar boosting can be caused by a EPSP is cuased by voltage gated Na2+ channel activation. The key idea is these short scale interactions between the EPSP and the BAP cause supra linear influx of Ca2+.
+
+### tLTD Window
+The Ca2+ hypothesis is also used to explain the tLTD window. If the BAP causes an after-polarization lasting 10s of milliseconds and that all the relevant Ca2+ enters the post-synaptic terminal through NMDA receptors then the interaction between the BAP and EPSP can explain tLTD. This is as EPSP arrival after during afterdepolarization only leads to moderate Ca2+ influx. This also predicts a second window for tLTD when the EPSP is just too early. This is observed in hippocampal CA1 neurons but not in other synapses.
+
+Another model for tLTD based on Ca2+ hypothesis has the BAP preceding an EPSP inducing Ca2+ influx through
