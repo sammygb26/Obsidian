@@ -40,7 +40,10 @@ This may not even happen with addition but instead with just very large buffers 
 ##### Heap-based buffer overflows
 Due to arithmetic overflow memory. **Dynamically allocated** and will persists across multiple function calls. This memory is allocate on the **heap** segment. Heap-based buffer overflow are more complex and require understanding garbage collection and heap implementation.
 
-...
+![[Pasted image 20230406111304.png]]
+
+Here we can allocate a size 0 buffer (which will just give us a pointer) an then write our overflow lengths. This happens as the size of a int is 0. But when the length and int are multiplied together a 0 values is achieved.
+
 
 ### Ariane 5 Disaster
 Here in 1996 the Ariane rocket ignited. Then it suddenly flipped 90' and then self destructed at 4km. Then enquire found this was due to an overflow bug.
@@ -56,3 +59,5 @@ This allows stack memory to be read at any location. We can walk up the stack un
 Here a program can check check if a server is still alive b responding with a word for example "bird". We also send the number of byte sin the word. We could for example tell the server the word is bigger than it is. This will then reveal more bytes than are in the string.
 
 This has been used to retrieve TLS master keys.
+
+[[Buffer Overruns Questions]]

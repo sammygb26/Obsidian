@@ -51,3 +51,5 @@ Here we want to stop the attacker from predicting the location of things in memo
 Hackers can always develop complicated exploits. It boils down the programmer to do the defending. The most important measure is **safe programming**.  We must ensure whenever a program copies user-supplied input into a buffer we should ensure the program copies into the correct space in data.
 
 ![[Pasted image 20230317171400.png]]
+
+[[Memory Safety Defenses Questions]]

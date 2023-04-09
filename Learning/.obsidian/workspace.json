@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "b7a2e8a623a432f2",
+        "id": "8bebbadc76e44206",
         "type": "tabs",
         "children": [
           {
-            "id": "8807958bec2756a5",
+            "id": "633386e7e2fe1438",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/OS/Buffer Overruns.md",
+                "file": "FNPL/Methods in Annotation and Evaluation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bffe107bf115c1c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FNPL/Reading/Syntax and Syntactic Parsing/Treebanks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#RecurentProcessing",
+                "query": "tag:#BufferOverruns",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ff68a28e59093273",
@@ -77,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/OS/Buffer Overruns.md",
+                "file": "FNPL/Reading/Syntax and Syntactic Parsing/Treebanks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,44 +118,46 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "8807958bec2756a5",
+  "active": "bffe107bf115c1c9",
   "lastOpenFiles": [
-    "CS/OS/Memory Mangement.md",
+    "Pasted image 20230408215047.png",
+    "Pasted image 20230408214357.png",
+    "Pasted image 20230408214240.png",
+    "Pasted image 20230408211225.png",
+    "Pasted image 20230408211159.png",
+    "Pasted image 20230408211048.png",
+    "FNPL/Reading/Syntax and Syntactic Parsing/Treebanks.md",
+    "FNPL/Methods in Annotation and Evaluation.md",
+    "FNPL/Reading/Syntax and Syntactic Parsing/Some grammer rules for English.md",
+    "Pasted image 20230408210622.png",
+    "Pasted image 20230408210443.png",
+    "Pasted image 20230408210217.png",
+    "Pasted image 20230408205944.png",
+    "Pasted image 20230408174011.png",
+    "FNPL/Reading/Syntax and Syntactic Parsing/Context-Free Grammars.md",
+    "FNPL/Reading/Syntax and Syntactic Parsing/Constituency.md",
+    "FNPL/Syntax and Parsing.md",
+    "FNPL/Reading/Methods in Annotations and Evaluation/Avoiding Harms in Classification.md",
+    "FNPL/Reading/Syntax and Syntactic Parsing",
+    "FNPL/Reading/Methods in Annotations and Evaluation/Evaluation.md",
+    "FNPL/Reading/Methods in Annotations and Evaluation/Statistical Significance Testing.md",
+    "FNPL/Reading/Methods in Annotations and Evaluation",
+    "FNPL/Reading/Test sets and Cross-Validation.md",
+    "CS/Web/Cross Site Request Forgeries.md",
+    "CS/Web/Injection Attacks.md",
+    "CS/Questions/Cross-Site Request Forgery Questions.md",
+    "CS/Questions/Cross Site Scripting Questions.md",
+    "CS/Web/Cross Site Scripting.md",
+    "CS/Web/Web Security Model.md",
+    "CS/Web/Web Basics.md",
     "CS/OS/Memory Safety Defenses.md",
+    "CS/Questions/Memory Safety Defenses Questions.md",
+    "CS/OS/Buffer Overruns.md",
+    "CS/Questions/Buffer Overruns Questions.md",
+    "CS/OS/Memory Mangement.md",
+    "CS/Questions/Memory Management Questions.md",
     "CS/OS/Operating Systems.md",
     "CS/OS/Password Authentication.md",
-    "CS/OS/UNIX Security Model.md",
-    "FNPL/Recurrent Neural Language Modeling.md",
-    "FNPL/Questions/Recurrent Neural Language Processing Questions.md",
-    "Pasted image 20230405135418.png",
-    "Pasted image 20230405135403.png",
-    "Pasted image 20230405134305.png",
-    "Pasted image 20230405134148.png",
-    "Pasted image 20230405134052.png",
-    "Pasted image 20230405133845.png",
-    "Pasted image 20230405133823.png",
-    "Pasted image 20230405133627.png",
-    "Pasted image 20230405133454.png",
-    "Pasted image 20230405132537.png",
-    "FNPL/Neural Embeddings and Neural Classifiers.md",
-    "FNPL/Questions/Neural Embeddings Questions.md",
-    "FNPL/Distributional Semantics.md",
-    "FNPL/Questions/Distributional Semantics Questions.md",
-    "Untitled.md",
-    "FNPL/Word senses, relations and classes.md",
-    "FNPL/Questions/Word Sense Questions.md",
-    "FNPL/Questions/Word Senses Questions.md",
-    "FNPL/Compositional Semantics.md",
-    "CS/Web/Web Security Model.md",
-    "CS/Questions/Web Security Model Questions.md",
-    "CS/Web/Web Basics.md",
-    "CS/Web/Cross Site Scripting.md",
-    "CS/Web/Cross Site Request Forgeries.md",
-    "CS/Questions/Web Basics Questions.md",
-    "FNPL/Constituent Parsing.md",
-    "FNPL/Questions/Compositional Semantics Questions.md",
-    "FNPL/Questions/Syntax and Parsing Questions.md",
-    "FNPL/Questions/Text Classification Logistic Regression Questions.md",
     "Neuroscience",
     "CS/Web",
     "CS/OS",

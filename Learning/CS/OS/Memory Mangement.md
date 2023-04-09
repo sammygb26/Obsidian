@@ -5,7 +5,7 @@ We will look at how x86 manages memory. In general the CPU needs to fetch its pr
 The **CPU** then reads from the EIP (instruction pointer). *EIP* is incremented after each instruction, then call, ret, jmp and conditional jmp change EIP.
 
 ### x86-32 Registers
-The CPU maintains other special registers to speed up processing. So $\%e(a-d)x$ and $\%edx$ , $\%edi$ and $\%esi$. These are variable like register built into the program. Most instructions are performed on these registers as they are fast.
+The CPU maintains other special registers to speed up processing. So $\%e(a-d)x$ and $\%edi$ and $\%esi$. These are variable like register built into the program. Most instructions are performed on these registers as they are fast.
 
 We also have the extended stack pointer $\%esp$ which points to the top of the stack. Then $\%ebp$ which point to the base of the stack frame of the current function call.
 
@@ -34,3 +34,5 @@ To call a function we first push out arguments to the stack (in reverse order) s
 ### Returning function
 7. Reset the previous stack frame %esp = %ebp, %ebp = (%ebp)
 8. Jump back to the return address %eip = 4(%ebp)
+
+[[Memory Management Questions]]

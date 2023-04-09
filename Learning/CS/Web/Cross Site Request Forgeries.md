@@ -3,6 +3,8 @@ Different feature of websites are exploited by XSRFs.
 ### HTML forms
 These allow personalized access to a webapp for different used. A standardized way to have user input. To allow this the different accounts are stored on the server and will return data when the user authenticates. For this the server maintains a **state** for your session. In this case the arguments will be passed in the URL of a GET request and in the body of a PUT request. Upon submitting a request all the *cookies in the scope of the URL will also be sent.
 
+![[Pasted image 20230406125136.png]]
+
 Another note is that even visiting one website many request may be made to different websites to get say images and tools form other websites. The SOP attempts to protect against abused of these multisite requests.
 
 ### CSRF Attacks
@@ -25,19 +27,20 @@ The SOP cannot prevent this as pages can make request to multiple pages.
 6. bank.com the receives the request along with the cookies
 
 ### CSRF Flow
-
-### CSRF Attack Example
+![[Pasted image 20230406130010.png]]
 
 ### CSRF Defenses
 Using POST or GET makes no difference. Then using TLS also makes no difference as the attack doesn't affect the browser and requests send which are being exploited.
 
 **Check the referer** - The client's HTTP request includes the referer header specifying the context from which this request was issued. The server ensure client's the HTTP request has come from the original site means that attacks from other sites will not function.
 
+![[Pasted image 20230406131312.png]]
+
 A problem with this is too much information is given and this allow analytics to be performed on the user. So referer may not be included and evil.com can instruct this.
 
 **CSRF Tokens** - The idea is to make URLs unpredictable. The server stores CSRF token along user's session token. Includes a fresh CSRF token in every form as a hidden field. On every request , the server check that the supplied CSRF token is the valid one. This must be unpredictable. Ruby on Rails embeds secrets in every link automatically (so less error prone). To avoid any **replay attack** should be different in each server response.
 
-- FLOW
+![[Pasted image 20230406131525.png]]
 
 It needs to be long enough to avoid replay attacks.
 
@@ -45,4 +48,6 @@ It needs to be long enough to avoid replay attacks.
 
 ### Twitter SMS account Hijacking
 Twitter allowed user to change account details using SMS. The phone allowed you to authenticate account changes. Another thing is CSRF tokens were used but not checked.
+
+[[Cross Site Request Forgeries]]
 
