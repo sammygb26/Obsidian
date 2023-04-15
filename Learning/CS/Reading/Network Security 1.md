@@ -99,7 +99,15 @@ Each machine typically knows if a IP address belongs to its network so will know
 
 Misconfiguration in routing tables can cause packets to travel forever aimlessly and so to prevent this each one has a TTL which counts own for each hop it makes.
 
-##### AIs and Subnets
+When a router receives a packet one of three things happens.
+
+1. **Drop** - The TTL means the packet expires and is dropped
+2. **Deliver** - This router has the IP for the packet so it is delivered
+3. **Forward** - Anther router has this IP we forward it.
+
+The *forwarding* is done using **Open Shortest Path First** within an autonomous system while **BGP** (Border Gat Protocol) is used between ASs.
+
+##### ASs and Subnets
 The internet is divided into autonomous systems, so routing tables have to be able to direct traffic to node clusters not individual destinations. Networks are partitioned on logical grouping known as **subnets**. To know what is in an outside a subnet a **subnet mask** is used.
 
 ![[Pasted image 20230209204733.png]]
@@ -137,11 +145,19 @@ One way to deal with this is by configuring **border routers** so that packets w
 
 IP traceback techniques can also be used to reverse this.
 
+### Packet Sniffing
+A problem with IP is packets aren't encrypted. This makes some kinds of **eavesdropping** possible. For example in ethernet network packets can be received for different MAC addresses. Usually these are thrown away but we can configure the network interface to run in *promiscuous mode* and keep  packets and read their contents.
+
+##### Defending Against Sniffing
+Using **switches** instead of **hubs** can help. But there are no switches when it comes to wireless traffic. You can attempt to detect promiscuous mode either by the slowdown it causes or catching a host responding to an invalid packet. The best way around this is to encrypt traffic however.
+
 # The Transport Layer
 This extends the functionality of IP addresses by viewing machines as having multiple ports Applications can live on these ports and receive notifications when packets arrive addressed to them. These ports are 16-bot source and destination numbers in the transport layer headers. Two common ones are **TCP** and **UDP**.
 
 ### Transmission Control Protocol
 This is a critical protocol for the internet and it ensures information it transmitted in full without loss. A program can interface with TCP specifying an IP address and port then TCP will ensure the data is transmitted over IP from machine to the other. The data will then be handed off to the other machine.
+
+TCP also implements **flow control** to keep the rate of traffic form going too high. This is done with a **sliding window protocol**. Here the receiving party describes their **receive window** which is the largest number of bytes it will accept before the sender must pause and wait for a response. The receiver pauses if the current sequence number is larger than the last response sequence number plus the window size. Any data not acknowledged will be resent.
 
 ##### Congestion Control
 TCP keeps track of what packets are sent and how long transmissions are taking. This allows it to limit the number of packets it needs to send to achieve good data quality. Acknowledgements are send of previously sent packages allowing TCP to track how much data has been successfully sent.

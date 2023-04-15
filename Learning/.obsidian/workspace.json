@@ -4,35 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "8bebbadc76e44206",
+        "id": "fb4953dcd2aba71d",
         "type": "tabs",
         "children": [
           {
-            "id": "633386e7e2fe1438",
+            "id": "0cbddd892e8f509f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FNPL/Methods in Annotation and Evaluation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bffe107bf115c1c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FNPL/Reading/Syntax and Syntactic Parsing/Treebanks.md",
+                "file": "CS/Cryptography/Cryptographic Protocols.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "f0fbee547fe01896",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c1000af4301657e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/Questions/Cryptographic Protocols Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#BufferOverruns",
+                "query": "tag:#flashcard",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FNPL/Reading/Syntax and Syntactic Parsing/Treebanks.md",
+                "file": "CS/Questions/Cryptographic Protocols Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,53 +123,54 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "bffe107bf115c1c9",
+  "active": "8c1000af4301657e",
   "lastOpenFiles": [
-    "Pasted image 20230408215047.png",
-    "Pasted image 20230408214357.png",
-    "Pasted image 20230408214240.png",
-    "Pasted image 20230408211225.png",
-    "Pasted image 20230408211159.png",
-    "Pasted image 20230408211048.png",
-    "FNPL/Reading/Syntax and Syntactic Parsing/Treebanks.md",
+    "CS/Cryptography/Cryptographic Protocols.md",
+    "CS/Questions/Cryptographic Protocols Questions.md",
+    "CS/Cryptography/Cryptography Introduction.md",
+    "CS/Cryptography/Digital Signatures.md",
+    "CS/Cryptography/Symmetric Encryption.md",
+    "CS/Introduction.md",
+    "CS/Computer Security.md",
+    "CS/Secure Comunications/Tor.md",
+    "CS/Secure Comunications/SSL - TLS.md",
+    "CS/Secure Comunications/Public Key Infrastructure.md",
+    "CS/Secure Comunications/Anonymous Communication.md",
+    "CS/Secure Comunications/Usable Security and Phishing.md",
+    "FNPL/Introduction.md",
+    "FNPL/Heads Dependency Parsing.md",
+    "FNPL/Text Classification  - Logistic Regression.md",
+    "FNPL/Questions/Text Classification Logistic Regression Questions.md",
+    "Pasted image 20230415181919.png",
+    "Pictures/Pasted image 20230415112907.png",
+    "FNPL/Naive Bayes and Classification.md",
+    "FNPL/Reading/Regular Expressions, Text Normalization, Edit Distance.md",
+    "FNPL/Reading/Spelling Correction and the Noisy Channel.md",
+    "Pictures/Pasted image 20230415160435.png",
+    "Pictures/Pasted image 20230415160253.png",
+    "Pictures/Pasted image 20230415151146.png",
+    "Pictures/Pasted image 20230415151109.png",
+    "Pictures/Pasted image 20230415150657.png",
+    "Pictures/Pasted image 20230415143849.png",
+    "FNPL/Evaluation and Smoothing.md",
+    "FNPL/Reading/N-gram Language Models.md",
+    "Pictures/Pasted image 20230415140643.png",
+    "Pictures/Pasted image 20230415135505.png",
+    "FNPL/Questions/Evaluation and Smoothing Questions.md",
+    "Archive/Machine Learning (Uni)/Information Theory.md",
+    "FNPL/FNLP.md",
     "FNPL/Methods in Annotation and Evaluation.md",
-    "FNPL/Reading/Syntax and Syntactic Parsing/Some grammer rules for English.md",
-    "Pasted image 20230408210622.png",
-    "Pasted image 20230408210443.png",
-    "Pasted image 20230408210217.png",
-    "Pasted image 20230408205944.png",
-    "Pasted image 20230408174011.png",
-    "FNPL/Reading/Syntax and Syntactic Parsing/Context-Free Grammars.md",
-    "FNPL/Reading/Syntax and Syntactic Parsing/Constituency.md",
-    "FNPL/Syntax and Parsing.md",
-    "FNPL/Reading/Methods in Annotations and Evaluation/Avoiding Harms in Classification.md",
+    "FNPL/Questions/FNLP Introduction Questions.md",
+    "CS/Reading/Application Program Security",
+    "CS/Reading/OS security",
+    "FNPL/Reading/Vector Semantics and Embeddings",
+    "FNPL/Reading/Statistical Parsing",
     "FNPL/Reading/Syntax and Syntactic Parsing",
-    "FNPL/Reading/Methods in Annotations and Evaluation/Evaluation.md",
-    "FNPL/Reading/Methods in Annotations and Evaluation/Statistical Significance Testing.md",
     "FNPL/Reading/Methods in Annotations and Evaluation",
-    "FNPL/Reading/Test sets and Cross-Validation.md",
-    "CS/Web/Cross Site Request Forgeries.md",
-    "CS/Web/Injection Attacks.md",
-    "CS/Questions/Cross-Site Request Forgery Questions.md",
-    "CS/Questions/Cross Site Scripting Questions.md",
-    "CS/Web/Cross Site Scripting.md",
-    "CS/Web/Web Security Model.md",
-    "CS/Web/Web Basics.md",
-    "CS/OS/Memory Safety Defenses.md",
-    "CS/Questions/Memory Safety Defenses Questions.md",
-    "CS/OS/Buffer Overruns.md",
-    "CS/Questions/Buffer Overruns Questions.md",
-    "CS/OS/Memory Mangement.md",
-    "CS/Questions/Memory Management Questions.md",
-    "CS/OS/Operating Systems.md",
-    "CS/OS/Password Authentication.md",
     "Neuroscience",
     "CS/Web",
     "CS/OS",
     "CS/Secure Comunications",
-    "CS/Cryptography",
-    "CS/Network",
-    "ML Research/Questions",
     "Contemporary Abstract Algebra/Contemporary Abstract Algebra.canvas"
   ]
 }

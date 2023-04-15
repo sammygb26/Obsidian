@@ -1,8 +1,8 @@
-These are schemes for transmitting data securely from entity to entity. Used in eBanking, eComerce, eVoting, Blockchains etc. With these protocols we have a model of what the attacker can do.
+These are schemes for transmitting data securely from entity to entity. Used in eBanking, eComerce, eVoting, Blockchains etc. We build these protocols with a model of what the attacker can do in mind.
 
 - We assume **attacker can** : record messages, alter messages, delete messages, insert new messages, redirect messages, reorder messages, and reuse past or current messages, inject new messages.
 
-These things are all possible in one way or another on the internet. If we have a system that is secure to all of these then we can be sure our messaging is secure. This is important as often **attackers control the network**.
+These things are all possible on the internet in one way or another. If we have a system that is secure to all of these then we can be sure our messaging is secure. This is important as often **attackers control the network**.
 
 An example could be a unencrypted login. Looking at the traffic will reveal the password and user information.
 
@@ -108,3 +108,5 @@ Here a protcol doesn't differ between the content of messages and the actual com
 ![[Pasted image 20230213105310.png]]
 
 Automated reasoning is being attempted to be used to prove protocols are secure.
+
+[[Cryptographic Protocols Questions]]

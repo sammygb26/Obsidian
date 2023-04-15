@@ -35,7 +35,7 @@ What is the security goal with TLS and SSL? #flashcard #CS #SSL-TLS
 
 ---
 What are the goal of TLS and SSL?  #flashcard #CS #SSL-TLS 
-	These hope to provide end-to-end confidentiality, end-to-end integrity. They require server authentication and have optional client authentication.
+	These hope to provide end-to-end confidentiality, end-to-end integrity. They require **server authentication** and have **optional client authentication**. We also want modular deployment working as part of the internet protocol stack above transport but bellow application.
 
 ---
 What is a public key certificate?  #flashcard #CS #SSL-TLS 
@@ -92,5 +92,9 @@ What is a possible attack on signed DH key exchange in TLS?  #flashcard #CS #SSL
 ---
 In signed DH what changes?  #flashcard #CS #SSL-TLS 
 	Here at the end the server can sign and send a hash of the XOR of the exchanged messages. This ensures the server received both and there is no MITM giving two keys between the client and server.
+
+---
+In signed DH key exchange where do the keys come from? #flashcard #CS #SSL-TLS 
+	We have to have publicly verifiable keys for example from a chain of trust. With these the server can sed a signed hash of the message it sent and the message the client sent. This ensures as long as the encryption isn't broken since the signature cannot be forged the keys sent must be correct and so there cannot be a MITM.
 
 ---

@@ -123,6 +123,8 @@ This assumes factorization is hard. This gives us two keys a public key and a pr
 
 This works assuming we can't find $\phi(N)$, we can't find this as we would need to factorize $N$ to $pq$.
 
+This also works if $x\not\in\mathbb Z_n^*$. This is as it is either equal to $ip$ or $iq$ since $x\le N=pq$ (least common multiple). Now $m^{ed}=m^{\phi(N)+1}=m(1+hq)=m+hipq=m+hin=m\mod n$. The first step is since $m^{\phi(N)}=1+hq$ which is due to $\phi(N)=(p-1)(q-1)$.
+
 ($G_{RSA}$, $RSA$, $RSA^{-1}$) is called raw RSA. Do not use raw RSA directly as an asymmetric cipher. This is as **deterministic** and so is vulnerable to chosen plaintext attacks. It also takes a lot of time hence it is better to perform some more sophisticated attack.
 
 ### ISO Standard

@@ -22,7 +22,15 @@ What is the problem with textbook RSA signing? #flashcard #CS #DigitalSignatures
 	With textbook RSA signing the signature for two messages multiplies together is the two signature multiplied together. This provides a road to **forging signatures**.
 
 ---
+How can signatures be forges with textbook RSA signing?   #flashcard #CS #DigitalSignatures  
+	The issue is for messages $m_1$ and $m_2$ we can get signatures $s_1$ and $s_2$. Where $s_1=m_1^d\mod n$ but then $s_1s_2=m_1^dm_2^d=(m_1m_2)^d$ is a valid signatures for $m_1m_2$! This makes RSA textbook signing mutable.
+
+---
 What is the solution to make textbook RSA signing secure? #flashcard #CS #DigitalSignatures 
 	Instead of signing the message we sign a hash of the message. This means the relationship between two messages and two signatures is unintelligible as the hash between block any inference. This also **speeds** up computation as hashes are much smaller.
+
+---
+What are the three properties we want in a signature security wise? #flashcard #CS #DigitalSignatures  
+	We want **non-forgeability** where an adversary can forge a signature for a document that hasn't been signed and **non-mutability** where its difficult to take an existing signature and convert it to sign another message. Together these mean the signature provides **non-repudiation** and the signer can't assert they didn't sign something.
 
 ---

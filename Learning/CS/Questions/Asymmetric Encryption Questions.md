@@ -107,3 +107,25 @@ What are the encryption and decryption algorithms for ElGammel? #flashcard #CS #
 	These are $$E_{EG}(pk,x)=(g^r\mod p), m\cdot (g^d)^r\mod p))$$here $pk=g^d\mod p$. Then $r$ is random from $\mathbb Z$. decryption works as $$D_{EG}(sk,x)=e^{-d}c\mod p$$ where $x=ec$. $-d$ comes from the private key and cancels out the $d$ used in encryption. But it also multiplies against $r$ and so it cancels out too.
 
 ---
+What is Grsa and what properties hold of its output?  #flashcard #CS #AsymetricEncryption 
+	$G_{RSA}$ is the generation algorithm for public and private RSA keys. We generate $pk$ and $sk$ where $pk=(N,e)$ and $sk=(N,d)$. Here $N=pq$ for large random primes $p$ and $q$, then $e.d=1\mod \phi(n)$.
+
+---
+What is Ersa and Drsa in the ISO standard?  #flashcard #CS #AsymetricEncryption 
+	Basically $E_{RSA}$ uses the private key to send over some random message. This message generates a private key when used with $H$. This is used to encrypt the message. We send $y||E_s(k,m)$ for a message $m$, encrypted with $k=H(x)$, then $y=RSA(pk, x)$. This means $x$ can be found with $sk$ and $y$ allowing $k$ to be found and so $m$ revealed. Then $D_{RSA}$ is $$D_{RSA}(sk,y||c)=D_s(H(RSA^{-1}(sk,y)), c)$$
+
+---
+How are RSA messages be decrypted when gdc(m,N)=1?  #flashcard #CS #AsymetricEncryption 
+	We want to ensure $m\in \mathbb Z_n^*$ this way **Euler's theorem** applies and $m^{\phi(N)}=1\mod N$. This ensures that the private key and public key cancel our under modular $N$ as powers of $m$. Since $ed=1\mod \phi(N)$ that is $ed=k\phi(n)+1$.
+
+---
+Why is the ISO standard for RSA required?  #flashcard #CS #AsymetricEncryption 
+	The ISO standard for RSA is requires as RSA is deterministic. Hence we could defeat it with a chose plaintext attack.
+
+---
+In El Gammel who is able to derive the value of the random number r?  #flashcard #CS #AsymetricEncryption 
+	Since discrete log is an intractable problem on the public key sender know the $r$ value. Although the descriptor can use $g^r\mod p$ to derive $g^{-dr}\mod p$.
+
+---
+Why can't RSA be broken?   #flashcard #CS #AsymetricEncryption 
+	We want to find $m$ given $m^e\mod n$. We could do this if we knew $\phi(n)$ as $d$ is derives such that $ed=1\mod \phi(n)$ but since $\phi(n)=(p-1)(q-1)$ we need to factorize $n=pq$ to find $\phi(n)$. Factorizing is hard and so we don't find $\phi(n)$.

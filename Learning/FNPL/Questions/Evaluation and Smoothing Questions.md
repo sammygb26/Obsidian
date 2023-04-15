@@ -67,6 +67,14 @@ How does good Turing smoothing work? #flashcard #FNLP #MethodsInAnnotationAndEva
 
 ---
 How does good Turing work mathematically? #flashcard #FNLP #MethodsInAnnotationAndEvaluation 
-	In good Turing we want $\frac c N$ for out probability to be replaced by $\frac{c^\star}N$. We have $$c^*=(c+1)\frac{N_{c+1}}{N_c}\hspace{16pt}P_{* c}=\frac{c^*}{N}=\frac{(c+1)\frac{N_{c+1}}{N_c}}{N}$$
+	In good Turing we want $\frac c N$ for out probability to be replaced by $\frac{c^\star}N$. We have $$c*=(c+1)\frac{N_{c+1}}{N_c}\hspace{16pt}P_{* c}=\frac{c*}{N}=\frac{(c+1)\frac{N_{c+1}}{N_c}}N$$
+
+---
+What is a good interpretation of cross entropy? #flashcard #FNLP #MethodsInAnnotationAndEvaluation 
+	We can imagine cross entropy $H(x,y)=-\sum p(x)\log p(y)$ from the point of view of $x$ being true. Then this measures the average amount someone believing $y$ (distribution) sees the information  increase after the event.
+
+---
+What is the difference between laplace and Lidstone smoothing? #flashcard #FNLP #MethodsInAnnotationAndEvaluation 
+	Laplace is a form of Lidstone smoothing. The idea is basically to add $\gamma$ to every count even the unseen count. This way nothing has probability 0.
 
 ---

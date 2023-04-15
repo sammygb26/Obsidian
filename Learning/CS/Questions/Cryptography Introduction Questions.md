@@ -66,3 +66,63 @@ What problem can arise when it comes to key generation? #flashcard #CS #Cryptogr
 	We must ensure key generation is truly random otherwise attackers may be able to spot patterns, predict keys and break encryption.
 
 ---
+What is Kerchoff's principle? #flashcard #CS #CryptographyIntroduction 
+	No **security through obscurity** basically the open design principle.
+
+---
+Why is Kerchoff's principle goo to follow? #flashcard #CS #CryptographyIntroduction 
+	Following Kerchoff's principle ensures the most people are able to find problems as possible hardening the system. Without this it can make it easier for attackers to find vulnerabilities that have slipped under the radar.
+
+---
+Why are brute force attacks generally unfeasible? #flashcard #CS #CryptographyIntroduction
+	They are generally unfeasible due to the number of possible keys. Here we keep trying keys until we find the correct one but there are so many the amount of time it would take should be unfathomably long.
+
+---
+What is the definition for perfect secrecy mathematically? #flashcard #CS #CryptographyIntroduction 
+	A cipher $(E,D)$ over $(\mathcal M, \mathcal C, \mathcal K)$ satisfies perfect secrecy if for all messages $m_1,m_2\in\mathcal M$ of the same length ($|m_1|=|m_2|$), and for all ciphertexts $c\in\mathcal C$ $$|P(E(k,m_1)=c-P(E(k,m_2)=c)|\le\epsilon$$Here $k\gets^r\mathcal K$ and $\epsilon$ is some "negligible quantity".
+
+---
+What are some limitations of OTP? #flashcard #CS #CryptographyIntroduction 
+	The **key-length** means we need massive keys for massive text (cannot encrypt a harddrive without another), **getting true randomness** (if the key isn't random message can be leaked), **perfect secrecy doesn't capture all attacks** (malleability and two-time attacks).
+
+---
+If we are using a stream cipher to generate a OTP how is the OTP key changed? #flashcard #CS #CryptographyIntroduction 
+	It goes from being truly random to only being **pseudorandom**.
+
+---
+What does a stream cipher take to generate? #flashcard #CS #CryptographyIntroduction 
+	We need a **generator** which is a function $$G:\{0,1\}^S\to\{0,1\}^n$$with $s<<n$. Then encryption an decryption with a key $k$ is just $$x\oplus G(k)$$
+
+---
+What is the issue with WEP using only 24 bits in the IV and how can this be fixed? #flashcard #CS #CryptographyIntroduction 
+	The issue is after $2^{24}$ messages the key used will be reused. This means we can use a two time pad attack. To solve this longer IVs should be used.
+
+---
+How can the FMS attack on WEP(RC4) be prevented and why does it work? #flashcard #CS #CryptographyIntroduction 
+	Basically since WEP has an incrementing IV combines with a key $k$ to give the key used for RC4 we have a somewhat predictable key. This can allow from $m$ bytes of the key $m+1$ to be found revealing the key. To fix this **pseudo random IVs** should be used so keys aren't related. This is an example of a **poor implementation** leading to a vulnerability.
+
+---
+What is the key size and length in DES when the NBS adopted it? #flashcard #CS #CryptographyIntroduction 
+	This would be $k=56$ and $l=64$.
+
+---
+How are messages padded in bit padding? #flashcard #CS #CryptographyIntroduction 
+	Here we just append 0s until we reach the required length.
+
+---
+How are messages padded in ANSI X.923? #flashcard #CS #CryptographyIntroduction 
+	In this padding mode we add 00 bytes until we have reached then end of the message. The final block will be the number of 00s added in total. So "00 00 00 00 00 00 08".
+
+---
+How are messages padded in PKCS7? #flashcard #CS #CryptographyIntroduction 
+	Here we add block of bytes. The number of bytes in a block is also the value of the bytes in the block. So "02 02" or "04 04 04 04".
+
+---
+What does CBC stand for? #flashcard #CS #CryptographyIntroduction 
+	This stand for **cipher block chaining**.
+
+---
+What does CTR mode mean? #flashcard #CS #CryptographyIntroduction 
+	This is **Counter mode** for block ciphers. The idea is we combine our blocks with a key derived from our key and some increasing value.
+
+---

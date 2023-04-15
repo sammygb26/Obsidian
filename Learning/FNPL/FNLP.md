@@ -6,7 +6,7 @@ Lecture 3: [[Corpa]]
 
 Lecture 4: [[Methods in Annotation and Evaluation]]
 
-Lecture 5: [[N-gram language models]]
+Lecture 5: [[FNPL/N-gram language models]]
 
 Lecture 6: [[Evaluation and Smoothing]]
 

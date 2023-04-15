@@ -97,4 +97,11 @@ They MITM doesn't have the server's secret key so cannot authenticate and sit in
 
 This can be solved by **signing the transcript**.
 
+### Bleichenbacher Attack
+This works on the RSA algorithm with the padding used in PKCS#1 v1.5.
+
+The basic idea is a message under PKCS#1 v1.5 must start with 0x00 02 byte when decrypted. So an attacker can not send this padding but instead the cypher text raised to different number say $s^e$ then we get $Ms$ decrypted and if this is 0x00 02 the message is accepted otherwise we get a decryption error.
+
+if $C'=Cs^e\mod n$ ad is accepted then we know the rough size of $Ms$ as it starts with $0x 00 02$. We can continue to search like this to track the message.
+
 [[SSL TLS Questions]]

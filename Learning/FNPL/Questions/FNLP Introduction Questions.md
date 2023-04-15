@@ -82,3 +82,27 @@ What is a determiner? #flashcard #FNLP #FNLPIntroduction
 	A determiner modifies or describes a noun by clarifying what is refers to (one, the, a, another)
 
 ---
+What are homophones? #flashcard #FNLP #FNLPIntroduction 
+	Homophones are words which sound the same pronunciation but different meanings / spellings.
+
+---
+What is a word sense ambiguity? #flashcard #FNLP #FNLPIntroduction 
+	An example is **bank** is it a river bank or a financial bank. Here the words has multiple meanings.
+
+---
+What is a part of speech ambiguity? #flashcard #FNLP #FNLPIntroduction
+	A part of speech ambiguity might be **chair** it can mean the object chair but also to chair which means being the head, having the chair man role. POS tags refer to categories of word which can be substituted into a sentence.
+
+---
+What is quantifier scope ambiguity? #flashcard #FNLP #FNLPIntroduction 
+	How quantifiers interact leads to different interpretations. For example "Every child loves some movie". Either every child loves the same movie or every child loves a possibly different movie. In the first case every outscopes some and the reverse in the other case.
+
+---
+What is reference ambiguity? #flashcard #FNLP #FNLPIntroduction 
+	**Reference ambiguity** is the ambiguity that comes with words that refer to others. There can be multiple objects a referer can link to making the interpretation of a sentence different. "I threw a ball at the table, it broke".
+
+---
+What is discourse ambiguity? #flashcard #FNLP #FNLPIntroduction 
+	In discourse ambiguity the logic for how sentences interact is ambiguous. For example "The meeting is canceled today. John isn't coming into work." It meeting canceled because of John or is john not coming in because of the meeting being canceled.
+
+---

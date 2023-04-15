@@ -38,3 +38,7 @@ What are the downsides of MaxEnt Models? #flashcard #FNLP #TextClassificationLog
 	They can be more expensive to train and since they can perform shortcut learning and aren't forced to use all features they may have poor generalization and robustness.
 
 ---
+Can you give an example of features that aren't independent given the class in Naive Bayes? #flashcard #FNLP #TextClassificationLogisticRegression 
+	If we have the classes $Rocketry$, $Cars$ and $Naval$ the words $catastrophy$ and for example $survivor$ may be non-independent.
+
+---

@@ -74,3 +74,18 @@ How are android permissions different from standard Unix ones? #flashcard #CS #O
 	Here programs are given their own space int the computer. This ensures they don't have the power to interact with each other and have the minimal privilege they require.
 
 ---
+What are the real user id, effective user id and saved user id for a process? #flashcard #CS #OperatingSystems 
+	**Real user ID (uid)** - the user ID that spawned the process
+	**Effective user ID (euid)** - the user ID that determines permissions
+	**Saved user ID (suid)** - the effective user ID before last modification
+
+---
+How does setuid and seteuid affect the processes IDs? #flashcard #CS #OperatingSystems 
+	**setuid** will change the uid, euid and suid to the new value (if the euid has permission to do so). **seteuid** doesn't change the uid or the suid but only the euid.
+	Unprivileged users can only change euid to uid or suid.
+
+---
+Why can seteuid be dangerous to call? #flashcard #CS #OperatingSystems 
+	If we want to lower a process' privileges say before the user gets control we would call **setuid** to set all IDs to a given value. If we sed **seteuid** instead then the saved uid and uid would still be root allowing the user to escalate.
+
+---

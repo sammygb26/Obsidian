@@ -1,4 +1,4 @@
-Trigrams may not always work better than bigrams if the extra context they add doesn't give real clues [[N-gram language models]]. There are two kinds of evaluation
+Trigrams may not always work better than bigrams if the extra context they add doesn't give real clues [[FNPL/N-gram language models]]. There are two kinds of evaluation
 
 **Extrinsic**: here we measure the performance eon a downstream application. Can plug and play different language models. Measure how well it performs a task. But this isn't available in many cases as switching model can be hard.
 

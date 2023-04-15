@@ -1,7 +1,7 @@
-Encryption we want to give confidentiality against interception. We ha we also want authenticity which is how we can prove a message came form one user.
+Encryption we want to give **confidentiality** against interception. We also want **authenticity** which is how we can prove a message came form one user.
 
 ### One Way function 
-A PWF is a function that is easy to compute but hard to invert.
+A **OWF** is a function that is easy to compute but hard to invert.
 
 ![[Pasted image 20230203100414.png]]
 
@@ -19,6 +19,8 @@ A function is CRF if it is hard to find two messages that get mapped to the same
 Constant function are of course not collision resistant as for all $m_1$ and $m_2$, $f(m_1)=f(m_2)$. The successor function in $\mathbb N$ is CRF the predecessor of a positive number is unique hence this is CRF. We often have a function range smaller than the domain. Hence why the definition includes a computational element.
 
 - Multiplication of primes is CRF since all composite numbers have a unique prime factorization.
+
+There is another similar concept to **hash collisions** called a **second-pre-image attack**. Here instead of finding two values with the same hash the attacker find a hash that matches a given value. We are searching for a single value rather than a match. This means the *birthday paradox* doesn't come into play and so **second-preimage** attacks are must harder. For this reason **second-preimage** resistance is also called *weak-collision resistance* as its a harder problem to attack by default and so the defence property is weaker.
 
 # Cryptographic Hash Functions
 A cryptographic hash function takes messages of arbitrary length and return a fixed-size bit string such that any change to the data will (with very high probability) change the corresponding hash value.

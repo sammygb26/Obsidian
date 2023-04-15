@@ -46,3 +46,25 @@ What are ports within computers and what do they allow? #flashcard #CS #NetworkS
 	To allow applications to speak to one another they lie on different ports. When an IP packet arrived on the computer the transport layer protocol within will contain a port which will allow the packet to be forwarded to a specific program.
 
 ---
+What are the steps in the TCP handshake? #flashcard #CS #NetworkSecurity 
+	1) A TCP TYN packet with Seq=x (some random number) is sent to the server
+	2) The server sends back TCP SYN-ACK packet with Seq=y (some random number) and Ack = x+1.
+	3) The client sends back a TCP-ACK packet with Seq=x+1 and Y=y+1.
+
+---
+What is the aim of a Syn Flooding attack? #flashcard #CS #NetworkSecurity 
+	Here an adversary sends thousands of Syn packets to a server without responding to them. This creates thousands of entries in the server's TCP table. This causes a DoS on the server as it cannot reply to legitimate responses.
+
+---
+What are the upsides and downsides of the TCP flooding attack? #flashcard #CS #NetworkSecurity 
+	One downside it the **adversary's IP** must be used and it is only effective against small targets.
+
+---
+What is an upgrade to a basic TCP syn flood attack? #flashcard #CS #NetworkSecurityR1 
+	The we can forge our IP addresses this way all the SYN-ACKs will be send to random addresses, this hides us and reduces out bandwidth usage.
+
+---
+What is the smurfing attack? #flashcard #CS #NetworkSecurityR1 
+	In smurfing ICMP ping is used on the broadcast address with the source set to our victim.
+
+---

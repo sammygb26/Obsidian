@@ -87,7 +87,7 @@ To initiate a TCP connection a three way handshake s performed with **initial se
 Each TCP header includes a 16 bit checksum of the data and part of the header , including the source and destination. **Ack** packages or their lack are used to track packer loss, network congestion and flow control.
 
 ### Syn Flooding
-Here attackers use their own IP to flood a server. Some malicious computer sends many **Syn** packages to a victim computer without acknowledging and **Acks**, so the target continues to try get an acknowledgement. This computer then runs out of pace to handle the packages.
+Here attackers use their own IP to flood a server. Some malicious computer sends many **Syn** packages to a victim computer without acknowledging and **Acks**, so the target continues to try get an acknowledgement. This computer then runs out of space to handle the packages.
 
 A problem with this is the **attacker** must use their own IP which could be traced. The attack also must yield a higher bandwidth then the attacking computer. Hence this is **effective against a small target**, like a home server but isn't effective against a large target like a company.
 

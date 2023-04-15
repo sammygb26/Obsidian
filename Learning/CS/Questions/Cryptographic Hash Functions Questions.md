@@ -118,3 +118,27 @@ What is AES-GCM? #flashcard #CS #CryptographicHashFunctionsMACs
 	This is Galois Counter mode. We use a Galois field based one-time MAC for authentication. Then **AES** based counter mode for encryption. A one-time MAC is encrypted for many messages. This is widely adopted as it has high performance and is parallelizable.
 
 ---
+Mathematically what is the birthday attack? #flashcard #CS #CryptographicHashFunctionsMACs 
+	The basic idea is that of the **birthday paradox** basically the probability that two people share a birthday or two messages share a hash grows much faster than a hash being the same as a particular hash. With $n$ hashes we will find a hash in an average of $\sqrt n$ time. We do this by taking $1.2\times \sqrt n$ hashes there will be a $\frac12$ chance there is a match within so on average we only need to repeat this twice.
+
+---
+Can you draw out the ECBC-MAC and then check it? #flashcard #CS #CryptographicHashFunctionsMACs 
+	The basic idea is that messages are either Block encrypted or XORed with the previous encryption and block encrypted. We also add another block encryption with a different key at the end.
+
+---
+Can you draw out hoe PMAC works? #flashcard #CS #CryptographicHashFunctionsMACs 
+	The basic idea is we combine each message with an increasing value from $k_2$ passed through some increasing function then we encrypt each block with the key individually. Finally the finally block is also XORed with every other block.
+
+---
+Can you draw out how HMAC works? #flashcard #CS #CryptographicHashFunctionsMACs 
+	HMAC is a MAC made using hash functions. We initialize with a fixed IV and our K XORed with IP (padding constant). The IV and k XORIP are passed through our hash function. Then output is combines with the next message as in the **Merkle Damgard** construction. This continues until the last block. Here we get k XOR OP (another padding constant) with the IV again and hash it. This is combined with the output of the original construction in a hash to get the output MAC.
+
+---
+How can file system protection be done with MACs? #flashcard #CS #CryptographicHashFunctionsMACs 
+	We can derive a key form the password, then if any file is altered without the password the MAC with the file couldn't be altered without the key and so password.
+
+---
+What is Galois Counter Mode? #flashcard #CS #CryptographicHashFunctionsMACs 
+	In Galois Counter Mode we achieve **authenticated encryption** by passing a one-time MAC along with a AES counter mode encrypted message. If any of the message is changed the one-time MAC will change completely achieving **diffusion** and so breaking the maleability.
+
+---

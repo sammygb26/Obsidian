@@ -1,0 +1,1 @@
+Both tf-idf and PPMI product matrices where word vectors and context vectors are given. Two words can be compared by the [[Cosine for Measuring Similarity]] of their vectors. Equally this can be done for documents by taking the **centroid** of the document vectors $$d=\frac{w_1+w_2+\dots+w_k}k$$Where $w_i$ is the word vector for word $i$.

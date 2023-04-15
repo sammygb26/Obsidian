@@ -1,0 +1,3 @@
+The problem here is the produce the most likely pars $\hat T$ for a given sentence $S$. This following algorithm is based on **probabilistic CKY**. We represent the words as having indices between (fence form). We encode the parse tree in a 2D matrix. A sentence of length $N$ and a grammar of $V$ non-terminals uses the upper-triangular portion of an $(n+1)\times(n+1)$ matrix. Each cell contains an array of values making the overall shape 3D this array consists of all the possible non-terminals that could exist in said space.
+
+![[Pasted image 20230410172313.png]]

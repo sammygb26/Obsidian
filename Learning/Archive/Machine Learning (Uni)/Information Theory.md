@@ -1,4 +1,3 @@
-# Information Theory
 This covers topics like what information is, how we quantify it, measure it. What is *entropy*, *conditional entropy*. If we think about what information is we can define it as **facts learned**, **what is conveyed by a representation of an arrangement of sequence**, **the facts and figures that can be used by a computer program**, can think about what it is and how to measure it.
 
 ![[Pasted image 20220930151624.png]]

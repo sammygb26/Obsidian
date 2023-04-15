@@ -70,3 +70,11 @@ What is DNSSEC? #flashcard #CS #NetworkApplicationLayer
 	This is a secure version of DNS with authentication for DNS answer origin, reply integrity, authenticated denial of existence. This is done via signed DNS replies at each step using asymmetric cryptography.
 
 ---
+What is required for a DNS cache poisoning attack to be possible? #flashcard #CS #NetworkApplicationLayer 
+	For this to be possible we need the query to have predictable identifiers and return ports. We need to respond quicker than the authoritative name server or we need the victim to accept unsolicited DNS records.
+
+---
+What are the refences against DNS cache poisoning? #flashcard #CS #NetworkApplicationLayer 
+	We can 1) Add query randomization with the request identifier 2) Can add random return port. These each give $2^{32}$ possibilities.
+
+---
