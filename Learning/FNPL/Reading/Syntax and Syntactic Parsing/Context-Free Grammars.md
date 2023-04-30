@@ -43,3 +43,5 @@ A CFG $G$ is defined by four parameters $N$, $\Sigma$, $P$, $S$ (and is a four-t
 - $S$ - a designated **start symbol**
 
 A language is defined via the concept of **derivation**. One string is **derived** from another if a sequence of rules can be applied expanding non-terminals in the first to give the second. If this is done by one rule then we have a **direct derivation**. The language is formally describes as the set of string composed of terminal symbols which can be derived from $S$. $$\mathscr{L}_G=\{w\mid w\text{ is in }\Sigma*\text{ and }S\Rightarrow^* w\}$$Mapping a string to the parse tree is called **parsing**.
+
+[[]]

@@ -59,7 +59,7 @@ What is an anonymity set?  #flashcard #CS #AnonymousCommunication
 
 ---
 What are the three kinds of mixes?  #flashcard #CS #AnonymousCommunication 
-	**Threshold mixes** store packets until the number reaches a threshold at which point all packets are sent out, **pooled mixes** packets are send out on a clock if a certain pool number is reached and **timing mixes** packets are send out on a clock even if 1 pack is present (breaking anonymity).
+	**Threshold mixes** store packets until the number reaches a threshold at which point all packets are sent out, **pooled mixes** fraction of packets send out on a clock if a certain pool number is reached, **timing mixes** packets are send out on a clock even if 1 pack is present (breaking anonymity) **continuous**
 
 ---
 What is the problem with sender anonymity?  #flashcard #CS #AnonymousCommunication 
@@ -72,5 +72,13 @@ What is the key idea with return addresses and mixers?  #flashcard #CS #Anonymou
 ---
 What is the idea behind a mix cascade?  #flashcard #CS #AnonymousCommunication 
 	The issue is a malicious mix could break our anonymity. But mixes can be chained by encapsulating traffic for mix inside the body for another. This way we only require one good mix to achieve anonymity.
+
+---
+How can you DOS a dining cryptographers implementation? #flashcard #CS #AnonymousCommunication 
+	The protocol requires everyone who isn't sending a bit to XOR all their pairs together and broadcast that. But if you send random values instead the pairs wont cancel out and you can't find out who did it without revealing secret pairs and deanonymizing!
+
+---
+How do pooled mixes work? #flashcard #CS #AnonymousCommunication 
+	The idea is to get around the limitations of timed and threshold mixes. We only send packets out when the threshold is reached and then we only send out a fraction to give a memoryless curve.
 
 ---

@@ -29,4 +29,4 @@ Words occurring the same window will have similar vectors.
 
 ![[Pasted image 20230411154232.png]]
 
-The vector size will be 50,000 only the top most frequent words (not the 50,000th) are useful in word context. These counts will often be 0 giving a **sparse** vector reprisentation.
+The vector size will be 50,000 only the top most frequent words (not the 50,000th) are useful in word context. These counts will often be 0 giving a **sparse** vector representation.

@@ -4,40 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "fb4953dcd2aba71d",
+        "id": "2567777be5c599c5",
         "type": "tabs",
         "children": [
           {
-            "id": "0cbddd892e8f509f",
+            "id": "24ba9b36c81023d1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Cryptography/Cryptographic Protocols.md",
+                "file": "FNPL/Reading/The Representation of Meaning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2c54aab7422b2ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FNPL/Reading/Dependency Parsing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d6d87ce54e5d9d21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/Reading/Cryptography/Digital Signatures.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
-      },
-      {
-        "id": "f0fbee547fe01896",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8c1000af4301657e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS/Questions/Cryptographic Protocols Questions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -66,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#flashcard",
+                "query": "tag:#LexicalSemanticsQuestions",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/Questions/Cryptographic Protocols Questions.md",
+                "file": "FNPL/Reading/Dependency Parsing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,44 +130,47 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "8c1000af4301657e",
+  "active": "e2c54aab7422b2ea",
   "lastOpenFiles": [
-    "CS/Cryptography/Cryptographic Protocols.md",
-    "CS/Questions/Cryptographic Protocols Questions.md",
-    "CS/Cryptography/Cryptography Introduction.md",
-    "CS/Cryptography/Digital Signatures.md",
+    "Pasted image 20230430165506.png",
+    "Pasted image 20230430162740.png",
+    "Pasted image 20230430162717.png",
+    "Pasted image 20230430151222.png",
+    "Pasted image 20230430140345.png",
+    "Pasted image 20230430135907.png",
+    "Pasted image 20230430135844.png",
+    "Pasted image 20230430135803.png",
+    "Pasted image 20230430125435.png",
+    "Pasted image 20230430123930.png",
+    "Pasted image 20230430121105.png",
+    "FNPL/Reading/The Representation of Meaning.md",
+    "FNPL/Reading/Dependency Parsing.md",
+    "CS/Reading/Cryptography/Public-Key Cryptography.md",
+    "CS/Reading/Cryptography/Symmetric Cryptography.md",
+    "CS/Reading/Cryptography/Cryptographic Hash Functions.md",
+    "CS/Reading/Cryptography/Digital Signatures.md",
+    "FNPL/Questions/Lexical Semantics Questions.md",
     "CS/Cryptography/Symmetric Encryption.md",
-    "CS/Introduction.md",
-    "CS/Computer Security.md",
-    "CS/Secure Comunications/Tor.md",
-    "CS/Secure Comunications/SSL - TLS.md",
-    "CS/Secure Comunications/Public Key Infrastructure.md",
-    "CS/Secure Comunications/Anonymous Communication.md",
-    "CS/Secure Comunications/Usable Security and Phishing.md",
-    "FNPL/Introduction.md",
-    "FNPL/Heads Dependency Parsing.md",
-    "FNPL/Text Classification  - Logistic Regression.md",
-    "FNPL/Questions/Text Classification Logistic Regression Questions.md",
-    "Pasted image 20230415181919.png",
-    "Pictures/Pasted image 20230415112907.png",
-    "FNPL/Naive Bayes and Classification.md",
-    "FNPL/Reading/Regular Expressions, Text Normalization, Edit Distance.md",
-    "FNPL/Reading/Spelling Correction and the Noisy Channel.md",
-    "Pictures/Pasted image 20230415160435.png",
-    "Pictures/Pasted image 20230415160253.png",
-    "Pictures/Pasted image 20230415151146.png",
-    "Pictures/Pasted image 20230415151109.png",
-    "Pictures/Pasted image 20230415150657.png",
-    "Pictures/Pasted image 20230415143849.png",
-    "FNPL/Evaluation and Smoothing.md",
-    "FNPL/Reading/N-gram Language Models.md",
-    "Pictures/Pasted image 20230415140643.png",
-    "Pictures/Pasted image 20230415135505.png",
-    "FNPL/Questions/Evaluation and Smoothing Questions.md",
-    "Archive/Machine Learning (Uni)/Information Theory.md",
-    "FNPL/FNLP.md",
-    "FNPL/Methods in Annotation and Evaluation.md",
-    "FNPL/Questions/FNLP Introduction Questions.md",
+    "CS/Reading/Cryptography",
+    "FNPL/Distributional Semantics.md",
+    "Flashcards.md",
+    "FNPL/Reading/RNNs and LSTMs.md",
+    "FNPL/Questions/Vector Semantics Questions.md",
+    "FNPL/Reading/Lexical Semantics.md",
+    "FNPL/Reading/Vector Semantics and Embeddings/Word2Vec.md",
+    "FNPL/Reading/Vector Semantics and Embeddings/Applications of the tf-idf or PPMI vector models.md",
+    "FNPL/Reading/Vector Semantics and Embeddings/Pointwise Mutual Information.md",
+    "FNPL/Reading/Vector Semantics and Embeddings/TF-IDF- Weighing terms in the vector.md",
+    "FNPL/Reading/Vector Semantics and Embeddings/Cosine for Measuring Similarity.md",
+    "FNPL/Reading/Vector Semantics and Embeddings/Words and Vectors.md",
+    "FNPL/Reading/Vector Semantics and Embeddings/Vector Semantics.md",
+    "FNPL/Reading/Logistic Regression.md",
+    "FNPL/Reading/Vector Semantics and Embeddings/Lexical Semantics.md",
+    "FNPL/Reading/Compositional Semantics.md",
+    "FNPL/Reading/Syntactic Parsing.md",
+    "FNPL/Reading/Statistical Parsing.md",
+    "FNPL/Reading/Untitled",
+    "CS/Reading/Web Security",
     "CS/Reading/Application Program Security",
     "CS/Reading/OS security",
     "FNPL/Reading/Vector Semantics and Embeddings",
@@ -168,9 +178,6 @@
     "FNPL/Reading/Syntax and Syntactic Parsing",
     "FNPL/Reading/Methods in Annotations and Evaluation",
     "Neuroscience",
-    "CS/Web",
-    "CS/OS",
-    "CS/Secure Comunications",
     "Contemporary Abstract Algebra/Contemporary Abstract Algebra.canvas"
   ]
 }

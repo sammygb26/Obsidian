@@ -88,3 +88,24 @@ We have to estimate the probability for an $n$-gram by backing of to first a $n-
 ![[Pasted image 20230415140643.png]]
 
 Katz backoff is combined with a smoothing method called **Good-Turing**.
+
+##### Good Turing
+The basic idea here (and with many other discounting smoothing techniques) is to use the count of things you've seen once to estimate the count for things you've bever seen. The algorithm is based on $N_c$ which will be the number of n-grams occurring $c$ times. Formally defined as $$N_c=\sum_{x\in V}\mathbb 1_{count(x)=c}$$We are estimating $N_0$ with $N_1$ so the GT algorithm replaces the count $c$ with a new count based on the count in $c+1$. So we get $$c^*=(c+1)\frac{N_{c+1}}{N_c}$$here for the $N_c$ n-grams occurring times each occurs $c$ times. This means the total occurrences in that class will be $cN_c$ or $c$ times for each class. We can then calculate the probability for some element in $N_c$ being found according to GT to be $$P^*_{GT}(x)=\frac{(c+1)N_{c+1}}{N_cN}$$
+##### Kneser-Ney Smoothing
+This has its roots in a discounting method called **absolute discounting**. If we look at some counts from GT we can see the motivation.
+
+![[Pasted image 20230417172349.png]]
+
+We see that apart from the low counts we can approximate the change just by subtracting 0.75 from the counts. In *absolute smoothing* this is what we do and we take away a constant $D$ from each count and then pick a coefficient $\alpha$ such that all the probabilities sum up.
+
+![[Pasted image 20230417172531.png]]
+
+This is still a **back-off** model.
+
+**Kneser-Ney** - Here the issue is **multi-word-expressions**. There are words that are very common  together but no so much apart. If we have some word following a context we haven't seen before then if that word is mostly seen in a multi word expression we should probably discount its probability. We divide the number of context a word occurs in by the total number of contexts.
+
+![[Pasted image 20230417173529.png]]
+
+### Class Based N-grams
+The basic idea here is if words are similar in meaning can we draw on the common situations those words appear in? For example the word Salmon and Trout. Say one is rare in our corpus but we know they are both fish. Perhaps is reasonable to say "I caught a trout" if we see many "I caught a salmon". The simples way to do this is with **IBM clustering** which is a type of **hard clustering**. Basically we treat the sentence as a sequence of classes and a word only exists in one class. We then predict the word's frequency based on the probability of that words class given the previous word and the probability of the word given its class. So $$P(w_i\mid w_{i-1})\approx P(c_i \mid c_{i-1})P(w_i\mid c_i)$$Where for a corpus with labeled classes and words we can estimate $$P(w\mid c)=\frac{C(w)}{C(c)}\hspace{64pt}P(c_i\mid c_{i-1})=\frac{C(c_{i-1}c_i)}{\sum_c C(c_{i-1}c)}$$For this type of clustering we would build the class by hand for a given domain. Generally a better way to do this would be with **distributional semantic** which is how modern NLP systems work.
+

@@ -42,3 +42,7 @@ What are secure cookies? #flashcard #CS #WebSecurityModel
 	Secure cookies prevent cookie leaking by forcing a user to use a HTTP instead of HTTPs request. These two requests are in scope of the same cookies so cookies used to authenticate the secure site will be leaked in plaintext across the network. Secure cookies however will only be sent via TLS.
 
 ---
+How does the SOP work with cross domain JS? #flashcard #CS #WebSecurityModel 
+	The SOP means cross stie JS can be loaded and will execute **with the domain of the parent** with the parent being able to call functions form it. But it cannot be inspected (source).
+
+---

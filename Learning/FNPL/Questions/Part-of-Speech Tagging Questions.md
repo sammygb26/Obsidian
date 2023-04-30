@@ -78,3 +78,35 @@ For a HMM model of POS tagging what are the parts? #flashcard #FNLP #MorphologyP
 	The **emissions** are words. The **states** are POS-tags. The **Transition probabilities** are $P(t_i|t_[I-1])$. The emission probabilities are $P(w_i|t_I)$. Then the **initial state** is just the start tag.
 
 ---
+What are insights from Name Entity Recognition and Part-Of-Speech tagging that lend themselves to using HMMs? #flashcard #POSHMMs #flashcard 
+	The basic insight is NER and HMM both depend on the current word and the tags of surrounding words. We assume these are all that matter and that allows us to use HMMs.
+
+---
+What are closed class words?  #flashcard #POSHMMs #flashcard 
+	These are generally *pronouns, determiners, prepositions and connectives* there is a limited number of them and they tie concepts together instead of being concepts.
+
+---
+What are open class words?  #flashcard #POSHMMs #flashcard 
+	These are generally *adjectives, nouns and verbs*, they are generally refer to object, action and features. There is generally now limit to what words are contained in this class.
+
+---
+What are content-bearing words?  #flashcard #POSHMMs #flashcard 
+	These are words that refer to objects, actions and features in the world.
+
+---
+What are modal verbs?  #flashcard #POSHMMs #flashcard 
+	This is a special class of verbs which modify other verbs. For example "can, may, could might, shall, will, should, would". They are generally followed by verbs.
+
+---
+Why is pos tagging hard?  #flashcard #POSHMMs #flashcard 
+	Generally this comes down to **ambiguity** and **sparse data**. We need to distributism between different possibilities but it is hard to directly learn this from word data.
+
+---
+Can you give an example of how the word (itself) can help and hinder POS tagging?  #flashcard #POSHMMs #flashcard 
+	There are words with only one possible tag. For example **arrow** (noun). There are also ambiguous words. "I like water(noun)" vs "Water(verb) the plans".
+
+---
+Can you give an example of how tags can help disambiguate other tags?  #flashcard #POSHMMs #flashcard 
+	The key thing is tags help disambiguate surrounding tags. For example determiners are almost never repeated after one another.
+
+---

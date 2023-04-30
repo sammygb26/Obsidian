@@ -16,7 +16,7 @@ Lecture 8: [[Cryptographic Hash Functions and MACs]]
 
 Lecture 9: [[Asymmetric Encryption]]
 
-Lecture 10: [[Digital Signatures]]
+Lecture 10: [[CS/Cryptography/Digital Signatures]]
 
 Lecture 11: [[Public Key Infrastructure]]
 
